@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<output>
+	<content>
+		<heading>
+			<![CDATA[Blog Post]]>
+		</heading>
+		<meta>
+			<![CDATA[
+			<!-- cmt id="meta" type="metatag" limit="1" aux="private:true;"--><!-- cmt_item type="metatag" aux="private:true;"-->
+				<title>Enter Page Title Here</title>
+				<meta name="keywords" content="" />
+				<meta name="description" content="" />
+			<!-- /cmt_item--><!-- /cmt-->
+			]]>
+		</meta>
+		<masthead>
+			<![CDATA[
+				<img src="/assets/images/masthead/masthead.jpg" alt="" border="0" />
+			]]>
+		</masthead>
+		<inset>
+			<![CDATA[
+				<img src="/assets/images/inset/inset.jpg" alt="" border="0" />
+			]]>
+		</inset>
+		<copy>
+			<![CDATA[
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In ornare, elit nec feugiat mattis, tortor dolor condimentum augue, sit amet hendrerit urna lorem eget quam. Donec eu enim a felis egestas tincidunt. Sed nonummy. Praesent euismod sollicitudin est. Nulla placerat. Donec id mauris id lectus posuere vehicula. Vivamus et ante eu lorem commodo fermentum. Quisque in turpis. Sed tellus nulla, gravida vel, consequat eu, fermentum tincidunt, nulla.</p>
+			]]>	
+		</copy>
+		<formcontent>
+            <script type="text/javascript">
+             var RecaptchaOptions = {
+                theme : 'blackglass' //options are 'red','white','blackglass','clean'
+             };
+             </script>
+			<form method="post" class="standard validate" id="blog-post" action="/mcc/blogprocess" enctype="multipart/form-data">
+				<p>Fields marked (<img class="required-image" src="/assets/images/icon-required.gif" alt="Required" />) are required.</p>
+				<fieldset>
+					<legend>Scrapbook</legend>
+					<div class="field">
+						<label for="first_name">First Name</label>
+						<input type="text" name="scrapbook[first_name]" id="first_name" maxlength="100" class="textfield required" value="" />
+					</div>
+					<div class="field">
+						<label for="last_name">Last Name</label>
+						<input type="text" name="scrapbook[last_name]" id="last_name" maxlength="100" class="textfield required" value="" />
+					</div>
+					<div class="field">
+						<label for="email">Email Address</label>
+						<input type="text" name="scrapbook[email]" id="email" maxlength="100" class="large email textfield required" value="" />
+					</div>
+					<div class="field">
+						<label for="email">Title</label>
+						<input type="text" name="scrapbook[item_title]" id="item_title" maxlength="100" class="large textfield required" value="" />
+					</div>
+					<div class="field">
+						<label for="comments">Comments</label>
+						<textarea name="scrapbook[item_desc]" cols="60" rows="4" id="item_desc" class="textfield" > </textarea>
+					</div>
+					<div class="field">
+						<label for="photo_upload" id="photo_upload_label">Upload Photo: <span class="instructions">Click the Browse button to upload a picture from your computer.</span>
+						</label>
+						<input type="file" name="photo_upload" id="photo_upload" class="textfield" /><br/>
+						<p>Max image size 1 mb</p>
+					</div>
+					<div class="field">
+						<label for="video_link" id="video_link_label"><![CDATA[Link Video: Paste a <a href="http://www.youtube.com" target="_blank">You Tube</a> or <a href="http://video.google.com" target="_blank">Google Video</a> URL below.]]></label>
+						<input type="text" name="scrapbook[video_link]" id="video_link" maxlength="100" class="textfield" />
+					</div>
+                    <div id="recaptchaDiv" />
+				</fieldset>
+				<div class="buttons">
+					<input type="submit" name="submit" id="submit" class="submit" value="Submit" />
+				</div>
+			</form>			
+		</formcontent>
+	</content>
+	<module type="module" id="forms" title="bah" module="forms" action="bindForm" lang="en" device="1">
+		<param name="prepopulate" value="post,get" /> <!-- Set the post value for population if needed -->
+        <!-- Set the post value for population if needed -->
+        <param name="use" value="blog-post" />
+    	<!-- RECAPTCHA -->
+        <param name="captcha" value="recaptcha" />
+    	<param name="recaptcha" value="recaptchaDiv"/> <!-- ID of element recaptcha will appear inside of -->
+    	<param name="recaptcha_error" value="Type the 2 words as they appear below"/> <!-- Custom error message -->
+    	<!-- /RECAPTCHA -->
+	</module>	
+	<caliban import="activeContentPath, includes/extra.xml" />
+</output>

@@ -1,0 +1,641 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteBase /booking/
+
+# Booking Engine Redirects
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=201571
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/738-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=286187
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/6-flagg-dr? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=292095
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/771-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=299791
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/905-inverness-village? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=301097
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/516-barrington-court? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=312105
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/152-tradewinds-trace? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=313309
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1971-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=315459
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/406-windsor-place? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=316161
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/3501-windsor-court-south? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=318333
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1776-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=331875
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7162-harbourside-ii? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=337209
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/56-full-sweep? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=342219
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/710-barrington-park? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=343999
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/580-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=344147
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7169-harbourside-ii? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=345185
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/40-mooring-buoy? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=345809
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/15-promontory-ct? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=347049
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/31-fazio-villa? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=349813
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/167-mooring-buoy? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=350579
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/11-beach-villa? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=350589
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/212-barrington-court? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=352317
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/39-full-sweep? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=353195
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7526-yacht-club? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=355795
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/704-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=356487
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7820-centre-court? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=361231
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/729-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=364877
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7474-anchorage? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=367079
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1953-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=368767
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/9-shelley-court? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=370603
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/625-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=370651
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/21-full-sweep? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=371735
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1956-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=376217
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7433-anchorage? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=377573
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1857-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=380295
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1866-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=380765
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7778-moorings? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=399057
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1-armada? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=399761
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/750-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=400941
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/401-barrington-arms? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=402717
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/3133-villamare? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=408689
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/5-down-wind? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=412429
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1402-villamare? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=412437
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/2516-villamare? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=412441
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/2416-villamare? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=412509
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/2215-villamare? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=416257
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/34-water-oak? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=418929
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/12-port-tack? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=419121
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1-cockle-court? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=579
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/2119-windsor-place-ii? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=580
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/3506-windsor-court-south? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=584
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7809-centre-court? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=586
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/20-port-tack? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=587
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/5502-hampton-place-south? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=591
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/3504-windsor-court-south? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=592
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/3125-villamare? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=603
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7805-centre-court? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=614
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1410-villamare? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=617
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/2119-windsor-place-ii? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=618
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/288-turnberry-village? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=619
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/224-turnberry-village? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=620
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1871-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=621
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7833-centre-court? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=630
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/6-beach-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=631
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/701-barrington-park? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=634
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/951-inverness-village? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=636
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/627-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=637
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/2526-moorings? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=639
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7609-huntington-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=640
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7655-huntington-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=643
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1859-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=647
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/165-mooring-buoy? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=652
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/110-barrington-court? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=658
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/9-starboard-tack? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=659
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/302-tradewinds-trace? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=669
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1-troon-dr? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=683
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/8-flagg-dr? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=689
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1666-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=690
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/2414-windsor-place-ii? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=691
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/2118-windsor-place-ii? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=692
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/5402-hampton-place-south? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=695
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7827-centre-court? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=698
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7621-huntington-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=699
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/5-beach-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=700
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7611-huntington-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=710
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/740-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=719
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7835-centre-court? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=724
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1852-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=726
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/6768-moorings? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=732
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/47-water-oak? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=733
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1952-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=734
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/48-water-oak? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=741
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/284-turnberry-village? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=743
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1202-villamare? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=744
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/41-fazio-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=745
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/193-mooring-buoy? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=748
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/281-turnberry-village? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=749
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/307-windsor-place? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=750
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/404-windsor-place? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=751
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/755-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=754
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1982-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=756
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/307-barrington-arms? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=757
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/833-ocean-cove? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=780
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/28-fazio-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=783
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7124-harbourside-i? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=784
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/495-captains-cove? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=785
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7612-huntington-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=788
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/27-fazio-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=791
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/4-full-sweep? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=793
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/5207-hampton-place-south? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=794
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/301-barrington-arms? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=796
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/665-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=802
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1959-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=806
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/414-barrington-court? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=808
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/944-inverness-village? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=815
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/708-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=818
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/946-inverness-village? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=821
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/4405-windsor-court-north? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=827
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/943-inverness-village? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=832
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7125-harbourside-i? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=834
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/237-turnberry-village? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=835
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/5506-hampton-place-south? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=838
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/706-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=839
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/646-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=840
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1764-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=841
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/9-water-oak? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=845
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/45-water-oak? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=847
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/714-barrington-park? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=848
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/604-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=849
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/925-inverness-village? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=850
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/6-water-oak? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=852
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/71-shore? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=856
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/4-night-harbour? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=858
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/658-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=861
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/614-barrington-park? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=864
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/30-water-oak? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=865
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/428-captains-walk? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=868
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/299-turnberry-village? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=871
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/38-hickory-cove? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=872
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/14-beach-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=876
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/4-slack-tide? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=877
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/11-shore? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=878
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/515-barrington-court? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=879
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/204-turnberry-village? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=881
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/762-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=886
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/439-captains-walk? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=887
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1665-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=889
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/709-barrington-park? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=891
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1878-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=892
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/402-barrington-arms? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=903
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/312-mainsail? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=905
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/213-turnberry-village? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=906
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1862-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=909
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/11-hickory-cove? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=911
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/726-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=915
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/2417-windsor-place-ii? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=917
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/19-heath-dr? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=919
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7632-huntington-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=923
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/36-water-oak? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=925
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/32-heath-dr? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=927
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/8-water-oak? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=929
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/2-beach-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=931
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/3-rum-row? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=933
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/8104-wendover-dunes? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=937
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/2519-villamare? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=939
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/283-turnberry-village? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=941
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/3-cartgate? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=943
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/6566-moorings? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=945
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7114-harbourside-i? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=947
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/26-fazio-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=949
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/1762-st-andrews-commons? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=951
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/3-water-oak? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=953
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/12-cartgate? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=955
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7415-anchorage? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=957
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/410-barrington-court? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=959
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/704-barrington-park? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=961
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/16-beach-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=963
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/3-fazio-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=965
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/42-fazio-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=967
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/46-fazio-villas? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=969
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/928-inverness-village? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=971
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/7576-moorings? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=975
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/728-queens-grant? [NC,R=301,L]
+RewriteCond %{REQUEST_URI} /vacation-rentals/hilton-head-rental-units
+RewriteCond %{QUERY_STRING} propertyid=977
+RewriteRule (.*) https://rentals.palmettodunes.com/hilton-head-vacation-rentals/8108-wendover-dunes? [NC,R=301,L]
+
+RewriteRule ^booking/vacation-rentals/hilton-head-vacation-rentals$ https://rentals.palmettodunes.com/vacation-rentals [NC,R=301,L]
+
+RewriteRule ^vacation-rentals/ https://rentals.palmettodunes.com/vacation-rentals/ [NC,R=301,L]
+
+RewriteRule ^VR/ https://rentals.palmettodunes.com/vacation-rentals/ [NC,R=301,L]
+
+RewriteRule ^$  https://www.palmettodunes.com/booking/vacation-rentals/hilton-head-vacation-rentals? [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*?)$ index.php/$1 [L]
+RewriteRule \/es\/(.*?)$ /es/index.php/$1 [L]
+RewriteRule \/fr\/(.*?)$ /fr/index.php/$1 [L]
+RewriteRule /smart/(.*?)$ /smart/index.php/$1 [L]
+RewriteRule ^(.*?)\/page(.*?)$ /$1?page=$2&%{QUERY_STRING} [L]
+RewriteRule ^.*?/assets/(.*?)$ assets/$1 [L]
+
+#----Image Resize and Optimizing:
+#RewriteRule ^.*?(/cdn/([0-9]+)/).*?\.(jpeg|jpg|gif|png)$ media/?host=%{HTTP_HOST}&port=%{SERVER_PORT}&ssl=%{HTTPS}&file=%{REQUEST_URI}&filetype=$3&w=$2&rmv=$1&%{QUERY_STRING} [L]
+#RewriteRule ^.*?[A-Za-z0-9/_-]+.(jpeg|jpg|gif|png)$ media/?host=%{HTTP_HOST}&port=%{SERVER_PORT}&ssl=%{HTTPS}&file=%{REQUEST_URI}&filetype=$1&w=0&rmv=0&%{QUERY_STRING} [L]
+#RewriteRule ^.*?[A-Za-z0-9/_-]+.(js)$ media/?host=%{HTTP_HOST}&port=%{SERVER_PORT}&ssl=%{HTTPS}&file=%{REQUEST_URI}&filetype=$1&w=0&rmv=0&%{QUERY_STRING} [L]
+
+#----Compress and Minify:
+RewriteRule ^.*?/min/([a-zA-Z_]+)/([a-zA-Z0-9_\/]+)/([a-zA-Z_,&0-9\.\-\/]+)$ media/?b=templates/$1/$2&f=$3 [L]
+
+#---Compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+#---Set Cache Expiration Dates:
+ExpiresByType image/gif "access plus 2 weeks"
+ExpiresByType image/jpeg "access plus 2 weeks"
+ExpiresByType image/png "access plus 2 weeks"
+ExpiresByType image/x-icon "access plus 2 weeks"
+ExpiresByType text/css "access plus 2 weeks"
+ExpiresByType text/javascript "access plus 2 weeks"
+ExpiresByType application/x-javascript "access plus 2 weeks"
+ExpiresByType application/x-shockwave-flash "access plus 2 weeks"
+
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
+
+#---Prevent viewing of structure xml file:
+<FilesMatch ".(xml|htaccess|xsl|xslt)$">
+        Order Allow,Deny
+        Deny from all
+</FilesMatch>
+
+<FilesMatch "^(index.xml|ajax\.xml|BingSiteAuth.xml|palmetto-dunes-vacation-rentals-xml-sitemap.xml)">
+ Allow from all
+</FilesMatch>
+
+#---Disable directory browsing:
+Options All -Indexes
+
+AddDefaultCharset utf-8
+AddCharset UTF-8 .php .js .css
+
+<IfModule mod_mime.c>
+    AddCharset utf-8 .atom \
+                     .bbaw \
+                     .css \
+                     .geojson \
+                     .js \
+                     .json \
+                     .jsonld \
+                     .manifest \
+                     .rdf \
+                     .rss \
+                     .topojson \
+                     .vtt \
+                     .webapp \
+                     .webmanifest \
+                     .xloc \
+                     .xml
+</IfModule>
+

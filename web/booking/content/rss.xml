@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<output>
+	<content>
+		<heading>
+			<![CDATA[Raynor RSS]]>
+		</heading>
+		<meta>
+			<![CDATA[
+			<!-- cmt id="meta" type="metatag" limit="1" aux="private:true;"--><!-- cmt_item type="metatag" aux="private:true;"-->
+				<title>RSS</title>
+				<meta name="keywords" content="" />
+				<meta name="description" content="" />
+			<!-- /cmt_item--><!-- /cmt-->
+			]]>
+		</meta>
+		<masthead>
+			<![CDATA[
+				<img src="/assets/images/masthead/masthead.jpg" alt="" border="0" />
+			]]>
+		</masthead>
+		<inset>
+			<![CDATA[
+				<img src="/assets/images/inset/inset.jpg" alt="" border="0" />
+			]]>
+		</inset>
+		<copy>
+			<![CDATA[
+				<h3>What is RSS?</h3>
+				<p>RSS (Really Simple Syndication) allows you to subscribe to up-to-date offers, in the form of feeds, based on your interests. The feed is sent through an RSS reader, such as My Yahoo! and appears as a link in your account. When the link is clicked on, you're brought to the Web site containing the offer in its entirety. Listed below are our current Specials & Packages, as well as links to subscribe to each respective RSS feed.</p>
+			]]>	
+		</copy>
+	</content>
+	<module type="module" id="rss" title="RSS Feeds" module="mcc" action="getSubscriptions">
+	<param name="feeds">
+		<feed url="rss/feeds" cid="1369" type="1" title="Special Offers" descriptor="offers"/>
+		<feed url="rss/feeds" cid="1509" type="2" title="Events" descriptor="events"/>
+		<feed url="rss/feeds" cid="1366" type="2" title="Press Releases" descriptor="press"/>
+	</param>
+	</module>
+	<caliban import="activeContentPath, includes/extra.xml" />
+</output>

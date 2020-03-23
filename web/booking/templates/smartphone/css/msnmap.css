@@ -1,0 +1,54 @@
+#map-container #categories { padding-bottom: 10px; overflow: hidden; width: 480px; }
+#map-container #categories .category { cursor: pointer; float: left; display: inline; margin: 0 10px 5px 0; font-size: 1.2em; width: 140px; border: 1px solid #000; text-align: center; height: 30px; padding: 5px 0; }
+#map-container #map-wrapper { width: 480px; overflow: hidden; position: relative; }
+
+#map-container #places-wrapper { height: 360px; overflow: auto; margin-right: 5px; width: 189px; float: left; position: relative; }
+#map-container .ui-accordion { height: 420px !important; }
+#map-container #places-wrapper .places { position: relative; }
+#map-container #places-wrapper .places .ui-accordion-header { cursor: pointer; }
+#map-container #places-wrapper .places .title { font-size: 1.2em; border: 1px solid #000; width: 176px; text-transform: capitalize; background-color: #CCC; overflow: hidden; font-weight: bold; padding: 2px 5px; }
+#map-container #places-wrapper .places .title .close { float: right; display: inline; width: 15px; height: 15px; font-weight: bold; cursor: pointer; }
+#map-container .ui-accordion .places .container { background-color:#FFFFFF; height:280px; overflow:auto; position:relative; }
+#map-container #places-wrapper .places .place { border-bottom: 1px solid #000; overflow: hidden; padding: 5px 3px; position: relative; cursor: default; }
+* html #map-container #places-wrapper .places .place { display: inline-block; }
+#map-container #places-wrapper .places .place .pushpin { margin-right: 5px; cursor: pointer; }
+#map-container #places-wrapper .places .place .name { font-size: 1.1em; cursor: pointer; float: left; width: 115px; }
+#map-container #places-wrapper .places .place .add-route { cursor: pointer; float: right; width: 20px; text-indent: -999px; height: 20px; border: 1px solid #000; }
+
+#map-container #route { width: 150px; float: left; margin-right: 5px; }
+#map-container #route #route-list { list-style: none; margin: 0; padding: 5px 0; width: 145px; height: 280px; }
+#map-container #route #route-list li { position: relative; padding: 5px 20px 5px 0; width: 130px; }
+#map-container #route #route-list li .dragPoint { display: block; cursor: n-resize; }
+#map-container #route #route-list li .remove { cursor: pointer; position: absolute; right: 5px; top: 5px; }
+
+#map-container #map-wrapper .map { position: relative; width: 480px; height: 300px; margin-bottom: 10px; }
+
+#map-container .pushpin { float: left; display: inline; text-align: center; position: relative; cursor: default; }
+#map-container .pushpin img { position: absolute; z-index: 1; top: 0; left: 0; }
+#map-container .pushpin span { position: relative; z-index: 50; color: #fff; font-size: 10px; font-weight: bold; padding-top: 4px; display: block; font-family: Verdana; width: 20px; height: 20px; }
+#map-container #map-wrapper .map .pushpin a { color: #fff; font-weight: bold; }
+
+#map-container #map-wrapper .map .mini-control { position: absolute; z-index: 500; background-image: url(../images/map/mini-control.gif); width: 15px; height: 15px; font-size: 1px; cursor: pointer; }
+#map-container #map-wrapper .map #mini-show { bottom: 0; left: 0; background-position: 0 0; }
+#map-container #map-wrapper .map #mini-hide { bottom: 137px; left: 137px; background-position: 0 -15px; }
+#map-container #map-wrapper .show-dir { text-align: center; cursor: pointer; border: 1px solid #000; margin-bottom: 10px; }
+#map-container #map-wrapper .map #MSVE_obliqueNotification { visibility: hidden; }
+#pin-image { float: left; display: inline; margin: 0 5px 5px 0; }
+
+#context-menu { font-size: 10px; display: none; width: 250px; border: 1px solid #000; background-color: #fff; position: absolute; z-index: 5000; }
+#context-menu #context-title { margin: 2px; padding: 3px; background-color: #EAEAFF; font-size: 11px; }
+#context-menu ul { list-style: none; margin: 0; padding: 10px; }
+#context-menu #context-add div { display: none; }
+
+#map-help { display: none; }
+#route-info { display: none; }
+
+.map-dialog { text-align: left; background-color: #fff; border: 1px solid #000; }
+.map-dialog .ui-dialog-titlebar { cursor: move; padding: 5px; font-size: 14px; font-weight: bold; background-color: #CCC; border-bottom: 1px solid #000; position: relative; }
+.map-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close { position: absolute; top: 2px; right: 5px; }
+.map-dialog .ui-dialog-container #route-info { display: block; }
+.map-dialog .ui-dialog-content { margin: 0 0 31px 15px; overflow: auto; position: relative; }
+.map-dialog .ui-resizable-handle { display: none !important; }
+.map-dialog .ui-dialog-buttonpane { height: 30px; width: 100%; border-top: 1px solid #000; }
+
+#MSVE_navAction_View3DMapMode { display: none; }

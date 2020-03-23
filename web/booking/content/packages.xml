@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<output>
+	<content>
+		<heading>
+			<![CDATA[Raynor Packages]]>
+		</heading>
+		<meta>
+			<![CDATA[
+			<!-- cmt id="meta" type="metatag" limit="1" aux="private:true;"--><!-- cmt_item type="metatag" aux="private:true;"-->
+				<title>Enter Page Title Here</title>
+				<meta name="keywords" content="" />
+				<meta name="description" content="" />
+			<!-- /cmt_item--><!-- /cmt-->
+			]]>
+		</meta>
+		<masthead>
+			<![CDATA[
+				<img src="/assets/images/masthead/masthead.jpg" alt="" border="0" />
+			]]>
+		</masthead>
+		<inset></inset>
+		<copy>
+			<![CDATA[
+			]]>	
+		</copy>
+	</content>
+	<module type="module" id="offers" title="Special Offers" module="mcc" action="getOffers">
+		<param name="cid" value="1358"/>
+		<param name="image_url" value="/assets/images/package/" />
+	</module>
+	<caliban import="activeContentPath, includes/extra.xml" />
+</output>

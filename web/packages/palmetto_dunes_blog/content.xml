@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<concrete5-cif version="1.0">
+    <stacks>
+        <stack name="Sidebar Subscribe" type="global_area">
+            <area name="Main">
+                <blocks>
+                    <block type="form" name="" custom-template="sidebar_subscribe.php">
+                        <data table="btForm">
+                            <record>
+                                <questionSetId><![CDATA[1422660927]]></questionSetId>
+                                <surveyName><![CDATA[Subscribe to Blog]]></surveyName>
+                                <thankyouMsg><![CDATA[Thanks for subscribing!]]></thankyouMsg>
+                                <notifyMeOnSubmission><![CDATA[0]]></notifyMeOnSubmission>
+                                <recipientEmail><![CDATA[]]></recipientEmail>
+                                <displayCaptcha><![CDATA[0]]></displayCaptcha>
+                                <redirectCID/>
+                                <addFilesToSet><![CDATA[0]]></addFilesToSet>
+                            </record>
+                        </data>
+                        <data table="btFormQuestions">
+                            <record>
+                                <qID><![CDATA[2]]></qID>
+                                <msqID><![CDATA[1]]></msqID>
+                                <questionSetId><![CDATA[1422660927]]></questionSetId>
+                                <question><![CDATA[Email Address]]></question>
+                                <inputType><![CDATA[email]]></inputType>
+                                <options></options>
+                                <position><![CDATA[0]]></position>
+                                <width><![CDATA[50]]></width>
+                                <height><![CDATA[3]]></height>
+                                <required><![CDATA[0]]></required>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+        </stack>
+    </stacks>
+    <attributekeys>
+        <attributekey handle="blog_entry_thumbnail" name="Thumbnail Image" package="palmetto_dunes_blog" searchable="0" indexed="0"
+                      type="image_file" category="collection">
+        </attributekey>
+        <attributekey handle="blog_entry_topics" name="Category" package="palmetto_dunes_blog" searchable="1" indexed="1" type="topics" category="collection">
+            <tree name="Blog Entries" path="/"/>
+        </attributekey>
+        <attributekey handle="blog_entry_tags" name="Tags" package="palmetto_dunes_blog" searchable="1" indexed="1"
+                      type="select" category="collection">
+            <type allow-multiple-values="1" display-order="display_asc" allow-other-values="1">
+                <options>
+                    <option value="Accommodations" is-end-user-added="0"/>
+                    <option value="Activities" is-end-user-added="0"/>
+                    <option value="Beach" is-end-user-added="0"/>
+                    <option value="Family Fun" is-end-user-added="0"/>
+                    <option value="Golf" is-end-user-added="0"/>
+                    <option value="Outdoor Activities" is-end-user-added="0"/>
+                    <option value="South Carolina Golf resort" is-end-user-added="0"/>
+                    <option value="Tennis" is-end-user-added="0"/>
+                    <option value="Vacation Rentals" is-end-user-added="0"/>
+                </options>
+            </type>
+        </attributekey>
+        <attributekey handle="blog_entry_is_archived" name="Archive Post" package="palmetto_dunes_blog" searchable="1" indexed="0" type="boolean" category="collection">
+            <type checked=""/>
+        </attributekey>
+    </attributekeys>
+    <attributesets>
+        <attributeset handle="blog" name="Blog" package="palmetto_dunes_blog" locked="0" category="collection">
+            <attributekey handle="blog_entry_topics"/>
+            <attributekey handle="blog_entry_tags"/>
+            <attributekey handle="blog_entry_is_archived"/>
+            <attributekey handle="blog_entry_thumbnail"/>
+        </attributeset>
+    </attributesets>
+    <pagetemplates>
+        <pagetemplate icon="right_sidebar.png" name="Blog Entry" handle="blog_entry" package="palmetto_dunes_blog" internal=""/>
+        <pagetemplate icon="right_sidebar.png" name="Blog" handle="blog" package="palmetto_dunes_blog" internal=""/>
+    </pagetemplates>
+    <pagetypes>
+        <pagetype name="Blog Entry" handle="blog_entry" package="palmetto_dunes_blog" is-frequently-added="1" launch-in-composer="1">
+            <pagetemplates type="custom" default="blog_entry">
+                <pagetemplate handle="blog_entry"/>
+            </pagetemplates>
+            <target handle="parent_page" package="palmetto_dunes_blog" path="/blog"/>
+            <composer>
+                <formlayout>
+                    <set name="Basics">
+                        <control custom-template="" required="1" custom-label="Title" type="core_page_property"
+                                 handle="name"/>
+                        <control custom-template="" custom-label="SEO Title" type="collection_attribute" handle="meta_title"/>
+                        <control custom-template="" custom-label="URL" type="core_page_property" handle="url_slug"/>
+                        <control custom-template="" custom-label="Posting Date" type="core_page_property" handle="date_time"/>
+                    </set>
+                    <set name="Classify Post">
+                        <control custom-template="" custom-label="" type="collection_attribute" handle="blog_entry_topics"/>
+                        <control custom-template="" custom-label="" type="collection_attribute" handle="blog_entry_tags"/>
+                        <control custom-template="" custom-label="" type="collection_attribute" handle="blog_entry_is_archived"/>
+                    </set>
+                    <set name="Content">
+                        <control custom-template="" custom-label="" type="collection_attribute" handle="blog_entry_thumbnail"/>
+                        <control custom-template="" custom-label="" output-control-id="6y4mB58T" type="block" handle="content"/>
+                    </set>
+                </formlayout>
+                <output>
+                    <pagetemplate handle="blog_entry">
+                        <page name="" path="" filename="" pagetype="blog_entry" template="blog_entry" user="admin" description="" package="">
+                            <area name="Main">
+                                <blocks>
+                                    <block type="core_page_type_composer_control_output" name="">
+                                        <control output-control-id="6y4mB58T"/>
+                                    </block>
+                                </blocks>
+                            </area>
+                            <area name="Conversation">
+                                <blocks>
+                                    <block type="core_conversation" name="" mc-block-id="z8E17SQA">
+                                        <data table="btCoreConversation">
+                                            <record>
+                                                <enablePosting><![CDATA[1]]></enablePosting>
+                                                <paginate><![CDATA[0]]></paginate>
+                                                <itemsPerPage><![CDATA[0]]></itemsPerPage>
+                                                <displayMode><![CDATA[threaded]]></displayMode>
+                                                <orderBy><![CDATA[date_asc]]></orderBy>
+                                                <enableOrdering><![CDATA[0]]></enableOrdering>
+                                                <enableCommentRating><![CDATA[0]]></enableCommentRating>
+                                                <displayPostingForm><![CDATA[top]]></displayPostingForm>
+                                                <addMessageLabel><![CDATA[Leave Comment]]></addMessageLabel>
+                                                <dateFormat><![CDATA[default]]></dateFormat>
+                                                <customDateFormat><![CDATA[]]></customDateFormat>
+                                                <maxFilesGuest><![CDATA[0]]></maxFilesGuest>
+                                                <maxFilesRegistered><![CDATA[0]]></maxFilesRegistered>
+                                                <maxFileSizeGuest><![CDATA[0]]></maxFileSizeGuest>
+                                                <maxFileSizeRegistered><![CDATA[0]]></maxFileSizeRegistered>
+                                                <fileExtensions><![CDATA[]]></fileExtensions>
+                                                <insertNewMessages><![CDATA[bottom]]></insertNewMessages>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </blocks>
+                            </area>
+                        </page>
+                    </pagetemplate>
+                </output>
+            </composer>
+        </pagetype>
+        <pagetype name="Blog" handle="blog" package="palmetto_dunes_blog" is-frequently-added="0" launch-in-composer="0">
+            <pagetemplates type="custom" default="blog">
+                <pagetemplate handle="blog"/>
+            </pagetemplates>
+            <composer>
+                <formlayout>
+                    <set name="Basics">
+                        <control custom-template="" required="1" custom-label="Page Name" type="core_page_property" handle="name"/>
+                        <control custom-template="" custom-label="" type="core_page_property" handle="description"/>
+                        <control custom-template="" custom-label="" type="core_page_property" handle="url_slug"/>
+                        <control custom-template="" custom-label="" type="core_page_property" handle="publish_target"/>
+                    </set>
+                </formlayout>
+                <output>
+                    <pagetemplate handle="blog">
+                        <page name="" path="" filename="" pagetype="blog" template="blog" user="admin" description="" package="">
+                        </page>
+                    </pagetemplate>
+                </output>
+            </composer>
+        </pagetype>
+    </pagetypes>
+
+    <pages>
+    <page name="Blog" path="/blog" filename="" pagetype="blog" template="blog" user="admin" description="" package="palmetto_dunes_blog">
+    </page>
+    </pages>
+
+    <trees>
+        <tree type="topic" name="Blog Entries">
+            <topic name="Family"/>
+            <topic name="Shelter Cove Harbor"/>
+            <topic name="Golf"/>
+            <topic name="Golf Academy"/>
+            <topic name="Beach"/>
+            <topic name="Tennis"/>
+            <topic name="Outfitters"/>
+            <topic name="Dining"/>
+            <topic name="Wedding"/>
+            <topic name="Wedding Reviews"/>
+        </tree>
+    </trees>
+
+</concrete5-cif>

@@ -1,0 +1,9 @@
+a, a:link, a:focus, a:active {
+	color: #bada55 !important;
+}
+a:visited, a.visited {
+	color: #bada55 !important;
+}
+.post-overlay {
+	border: 4px solid #bada55;
+}

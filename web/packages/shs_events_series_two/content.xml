@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<concrete5-cif version="1.0">
+    <blocktypes>
+      <blocktype handle="shs_event_calendar_series_two" package="shs_events_series_two"/>
+    </blocktypes>
+    <attributekeys>
+      <attributekey handle="event_location" name="Event Location" package="" searchable="1" indexed="1" type="text" category="event"/>
+    </attributekeys>
+</concrete5-cif>

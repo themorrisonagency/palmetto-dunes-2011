@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+Sitemap: https://booking.palmettodunes.com/palmetto-dunes-vacation-rentals-xml-sitemap.xml

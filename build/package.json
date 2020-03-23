@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "download": "~0.1.18",
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "~0.8.1",
+    "temp": "~0.8.1"
+  }
+}

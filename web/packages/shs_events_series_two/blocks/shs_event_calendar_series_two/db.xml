@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btShsEventCalendarSeriesTwo">
+        <field name="bID" type="I">
+            <key/>
+            <unsigned/>
+        </field>
+        <field name="caID" type="I" size="10">
+            <unsigned/>
+            <notnull/>
+            <default value="0"/>
+        </field>
+        <field name="filterByTopicAttributeKeyID" type="I" size="10">
+            <unsigned/>
+            <notnull/>
+            <default value="0"/>
+        </field>
+        <field name="filterByTopicID" type="I" size="10">
+            <unsigned/>
+            <notnull/>
+            <default value="0"/>
+        </field>
+        <field name="paginate" type="I1">
+            <unsigned />
+            <notnull />
+            <default value="0" />
+        </field>
+        <field name="layoutType" type="I">
+            <unsigned />
+            <default value="0"/>
+        </field>
+        <field name="num" type="I2">
+            <unsigned />
+            <notnull />
+        </field>
+    </table>
+</schema>

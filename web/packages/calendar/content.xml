@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<concrete5-cif version="1.0">
+	<attributecategories>
+    	<category handle="event" allow-sets="1" package="calendar"/>
+  	</attributecategories>
+	<attributekeys>
+    	<attributekey handle="topics" name="Event Categories" package="" searchable="1" indexed="1" type="topics" category="event">
+			<tree name="Event Categories" path="/"/>
+	    </attributekey>
+    </attributekeys>
+    <trees>
+        <tree type="topic" name="Event Categories">
+            <topic name="Event Category One"/>
+            <topic name="Event Category Two"/>
+            <topic name="Event Category Three"/>
+            <topic name="Event Category Four"/>
+            <topic name="Event Category Five"/>
+        </tree>
+    </trees>
+</concrete5-cif>

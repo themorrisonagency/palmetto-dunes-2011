@@ -1,0 +1,89 @@
+.topics {
+  color: #4c4c4c;
+  list-style: disc;
+  line-height: 24px;
+  font-family: "Cabin", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #cdcdcd;
+  border-bottom: none;
+
+  .topic {
+    width: 100%;
+    border-bottom: 1px solid #cdcdcd;
+    text-transform: uppercase;
+    font-family: "Cabin", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    background: #ffffff;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, white 0%, #f8f8f8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f8f8f8));
+    background: -webkit-linear-gradient(top, white 0%, #f8f8f8 100%);
+    background: -o-linear-gradient(top, white 0%, #f8f8f8 100%);
+    background: -ms-linear-gradient(top, white 0%, #f8f8f8 100%);
+    background: linear-gradient(to bottom, white 0%, #f8f8f8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f8f8f8', GradientType=0);
+
+
+
+    &:hover > a, &.active > a, &.active > span {
+      background: #003f72 url("/application/blocks/event_stream/images/filters-event-calendar.png") no-repeat 17px 8px;
+      color: white;
+    }
+
+    & > a, & > span {
+      display: block;
+      height: auto;
+      text-decoration: none;
+      color: #5a5a5a;
+      padding: 8px 0 6px 55px;
+      background: transparent url("/application/blocks/event_stream/images/filters-event-calendar.png") no-repeat 17px -247px;
+    }
+
+    &.topic-golf {
+      > a {
+        background-position: 17px -281px;
+      }
+      &:hover > a, > span {
+        background-position: 17px -26px;
+      }
+    }
+
+    &.topic-tennis {
+      > a {
+        background-position: 17px -318px;
+      }
+      &:hover > a, > span {
+        background-position: 17px -63px;
+      }
+    }
+
+    &.topic-dining {
+      > a {
+        background-position: 17px -350px;
+      }
+      &:hover > a, > span {
+        background-position: 17px -95px;
+      }
+    }
+
+    &.topic-seasonal {
+      > a {
+        background-position: 17px -385px;
+      }
+      &:hover > a, > span {
+        background-position: 17px -130px;
+      }
+    }
+
+    &.topic-shelter-cove-harbor {
+      > a {
+        background-position: 17px -453px;
+      }
+      &:hover > a, > span {
+        background-position: 17px -198px;
+      }
+    }
+  }
+}

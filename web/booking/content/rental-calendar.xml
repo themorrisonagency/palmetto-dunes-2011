@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<output>
+	<module type="module" id="calendar" module="reservations" action="getpropertycalendar" />
+</output>

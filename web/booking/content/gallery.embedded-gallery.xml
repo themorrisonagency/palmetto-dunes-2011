@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<output>
+	<content>
+		<heading>
+			<![CDATA[Embeded Media Gallery]]>
+		</heading>
+		<meta>
+			<![CDATA[
+			<!-- cmt id="meta" type="metatag" limit="1" aux="private:true;"--><!-- cmt_item type="metatag" aux="private:true;"-->
+				<title>Embeded Media Gallery</title>
+				<meta name="keywords" content="" />
+				<meta name="description" content="" />
+			<!-- /cmt_item--><!-- /cmt-->
+			]]>
+		</meta>
+		<masthead>
+			<![CDATA[
+				<img src="/assets/images/masthead/masthead.jpg" alt="" border="0" />
+			]]>
+		</masthead>
+		<inset>
+			<![CDATA[
+				<img src="/assets/images/inset/inset.jpg" alt="" border="0" />
+			]]>
+		</inset>
+		<copy>
+			<![CDATA[
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+			]]>	
+		</copy>
+	</content>
+	<caliban import="activeContentPath, includes/extra.xml" />
+</output>

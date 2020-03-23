@@ -1,0 +1,150 @@
+.special-offers {
+  width: 685px;
+  white-space: nowrap;
+}
+.special-offer-row {
+  margin-bottom: 20px;
+}
+.special-offer {
+  display: inline-block;
+  margin-right: 30px;
+  font-family: Cabin, Arial, sans-serif;
+  border: solid 6px transparent;
+  position: relative;
+  white-space: normal;
+
+  .special-offer-image {
+    height: 178px;
+    overflow: hidden;
+    margin-bottom: 15px;
+
+    img {
+      width: 314px;
+      max-width: 314px;
+    }
+  }
+
+  &.active {
+    .special-offer-image {
+      height: 177px;
+
+      img {
+        margin-left: -1px;
+        margin-top: -1px;
+      }
+    }
+  }
+}
+.special-offer .btn-details {
+  background: url("/packages/palmetto_dunes_special_offers/blocks/special_offers/images/arrows-packages.png") no-repeat 0 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  margin-left: -10px;
+  text-indent: -1000px;
+}
+.special-offer:last-child {
+  margin-right: 0;
+}
+.special-offer:hover {
+  border: 6px solid #003f71;
+}
+.special-offer:hover .btn-details {
+  background-position: 0 -80px;
+
+}
+.special-offer-page-extras {
+  margin-bottom: 10px;
+}
+.special-offer.active {
+  background: white;
+  border-top: 5px solid #a7c0d4;
+  border-left: 5px solid #a7c0d4;
+  border-right: 5px solid #a7c0d4;
+  border-bottom: none;
+}
+.special-offer.active .special-offer-wrapper {
+  background: white;
+  border: solid 1px #a7c0d4;
+  padding-bottom: 10px;
+  border-bottom: none;
+  margin: 1px;
+}
+.special-offer.active .btn-details {
+  background-position: 0 -160px;
+  bottom: 23px;
+}
+.special-offer.active .border-cover {
+  height: 7px;
+  background: white;
+  position: absolute;
+  bottom: -6px;
+  margin-left: -2px;
+  left: 0;
+  right: -2px;
+  padding-left: 2px;
+}
+.special-offer.active .border-cover .border-cover-border {
+  background: white;
+  height: 11px;
+  width: 100%;
+  margin-top: -2px;
+  margin-left: -1px;
+  border-left: 1px solid #a7c0d4;
+  border-right: 1px solid #a7c0d4;
+}
+.special-offer .special-offer-wrapper {
+  background: #f9f7ee;
+  text-align: center;
+  position: relative;
+  width: 314px;
+  border-bottom: 1px solid #b5b5b5;
+}
+.special-offer .special-offer-wrapper .special-offer-content {
+  height: 320px;
+}
+.special-offer .special-offer-wrapper .title {
+  color: #5a5a5a;
+  line-height: auto;
+  margin: 0 auto 10px;
+  width: 280px;
+  font-family: "Cabin", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.special-offer .special-offer-wrapper .description {
+  color: #023f72;
+  line-height: 26px;
+  text-transform: uppercase;
+  width: 280px;
+  margin: 0 auto 13px;
+  font-family: "Cabin", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.special-offer-page {
+  border: solid 5px transparent;
+  -webkit-transition: height 350ms;
+  transition: all 350ms;
+  display: none;
+  white-space: normal;
+
+  > .special-offer-page-content {
+    border: 1px solid #a7c0d4;
+    padding: 20px;
+    .long-description {
+      position: relative;
+    }
+  }
+}
+.special-offer-page.active {
+  display: block;
+  overflow: hidden;
+  background: white;
+  border: 5px solid #a7c0d4;
+  padding: 1px;
+}

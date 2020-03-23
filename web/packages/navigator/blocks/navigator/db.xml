@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btNavigator">
+        <field name="bID" type="I">
+            <key />
+            <unsigned />
+        </field>
+        <field name="setting" type="X2"></field>
+    </table>
+    <table name="btNavigatorItem">
+        <field name="id" type="I"><unsigned/><key/><autoincrement/></field>
+        <field name="bID" type="X2"></field>
+        <field name="linkType" type="X2"></field>
+        <field name="pageID" type="X2"></field>
+        <field name="url" type="X2"></field>
+        <field name="linkName" type="X2"></field>
+        <field name="sort" type="I"></field>
+    </table>
+</schema>

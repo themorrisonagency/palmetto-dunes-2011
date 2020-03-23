@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<output>
+	<content>
+		<heading>
+			<![CDATA[Raynor Points of Interest]]>
+		</heading>
+		<meta>
+			<![CDATA[
+			<!-- cmt id="meta" type="metatag" limit="1" aux="private:true;"--><!-- cmt_item type="metatag" aux="private:true;"-->
+				<title>Enter Page Title Here</title>
+				<meta name="keywords" content="" />
+				<meta name="description" content="" />
+			<!-- /cmt_item--><!-- /cmt-->
+			]]>
+		</meta>
+		<masthead>
+			<![CDATA[
+				<img src="/assets/images/masthead/masthead.jpg" alt="" border="0" />
+			]]>
+		</masthead>
+		<inset>
+			<![CDATA[
+				<img src="/assets/images/inset/inset.jpg" alt="" border="0" />
+			]]>
+		</inset>
+		<copy>
+			<![CDATA[
+				<h3>Points of Interest</h3>
+				<p>&nbsp;</p>
+			]]>	
+		</copy>
+	</content>
+	<module type="module" id="poi" title="Points of Interest" module="poi" action="getPoints">
+		<param name="id" value="4260" />
+		<param name="dhr" value="false" />
+	</module>
+	<caliban import="activeContentPath, includes/extra.xml" />
+</output>

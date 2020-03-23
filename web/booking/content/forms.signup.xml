@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<output>
+	<content>
+		<heading>
+			<![CDATA[Sign Up]]>
+		</heading>
+		<meta>
+			<![CDATA[
+			<!-- cmt id="meta" type="metatag" limit="1" aux="private:true;"--><!-- cmt_item type="metatag" aux="private:true;"-->
+				<title>Raynor Sign Up Form</title>
+				<meta name="keywords" content="" />
+				<meta name="description" content="" />
+			<!-- /cmt_item--><!-- /cmt-->
+			]]>
+		</meta>
+		<masthead>
+			<![CDATA[
+				<img src="/assets/images/masthead/masthead.jpg" alt="" border="0" />
+			]]>
+		</masthead>
+		<inset>
+			<![CDATA[
+				<img src="/assets/images/inset/inset.jpg" alt="" border="0" />
+			]]>
+		</inset>
+		<copy>
+			<![CDATA[
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In ornare, elit nec feugiat mattis, tortor dolor condimentum augue, sit amet hendrerit urna lorem eget quam. Donec eu enim a felis egestas tincidunt. Sed nonummy. Praesent euismod sollicitudin est. Nulla placerat. Donec id mauris id lectus posuere vehicula. Vivamus et ante eu lorem commodo fermentum. Quisque in turpis. Sed tellus nulla, gravida vel, consequat eu, fermentum tincidunt, nulla.</p>
+			]]>	
+		</copy>
+		<formcontent>
+			<form class="standard validate" id="signup">
+				<fieldset>
+					<legend>Contact Information</legend>
+					<div class="field">
+						<label for="prefix">Prefix</label>
+						<input type="text" class="textfield" value="" name="prefix" id="prefix" placeholder="Prefix" />
+					</div>
+					<div class="field">
+						<label for="first_name">First Name:</label>
+						<input type="text" name="first_name" id="first_name" maxlength="100" class="textfield required" value="" placeholder="First Name" />
+					</div>
+					<div class="field">
+						<label for="last_name">Last Name:</label>
+						<input type="text" name="last_name" id="last_name" maxlength="100" class="textfield required" value="" placeholder="Last Name" />
+					</div>
+					<div class="field">
+						<label for="email">Email Address:</label>
+						<input type="text" name="email" id="email" maxlength="100" class="large email textfield required" value="" placeholder="Email Address" />
+					</div>
+					<div class="field">
+						<label for="zip">Postal Code:</label>
+						<input type="text" name="zip" id="zip" maxlength="10" class="small textfield" value="" placeholder="Postal Code" />
+					</div>
+				</fieldset>
+				<div class="buttons">
+					<input type="submit" name="submit" id="submit" class="submit" value="Submit" />
+				</div>
+			</form>		
+		</formcontent>
+	</content>
+	<caliban import="activeContentPath, includes/extra.xml" />
+</output>

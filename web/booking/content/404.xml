@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<output>
+	<content>
+		<meta>
+			<![CDATA[
+			<!-- cmt id="meta" type="metatag" limit="1" aux="private:true;"--><!-- cmt_item type="metatag" aux="private:true;"-->
+				<title>404 Page Not Found</title>
+				<meta name="keywords" content="" />
+				<meta name="description" content="" />
+			<!-- /cmt_item--><!-- /cmt-->
+			]]>
+		</meta>
+		<masthead>
+			<![CDATA[
+				<img src="/assets/images/masthead/masthead.jpg" alt="" border="0" />
+			]]>
+		</masthead>
+		<inset>
+			<![CDATA[
+				<img src="/assets/images/inset/inset.jpg" alt="" border="0" />
+			]]>
+		</inset>
+		<copy>
+			<![CDATA[
+					<p>We're sorry, but we are unable to locate the file you have requested. If you have reached this page in error, you may wish to proceed to the <a href="http://www.palmettodunes.com/">home page</a> or use the <a href="http://www.palmettodunes.com/site-map/">sitemap</a> to locate the information you are looking for. If you continue to receive this message, please do not hesitate to <a href="http://www.palmettodunes.com/contact-us/">contact us</a> for assistance.</p><br /><br />
+			]]>
+		</copy>
+	</content>
+	<caliban import="activeContentPath, includes/extra.xml" />
+	<module type="module" id="amaxusheader" module="amaxus" action="getpage">
+		<param name="url" value="https://www.palmettodunes.com/cde-header/" />
+	</module>
+	<module type="module" id="amaxusfooter" module="amaxus" action="getpage">
+		<param name="url" value="https://www.palmettodunes.com/cde-footer/" />
+	</module>
+</output>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<output>
+	<content>
+		<heading>
+			<![CDATA[Media Gallery]]>
+		</heading>
+		<meta>
+			<![CDATA[
+			<!-- cmt id="meta" type="metatag" limit="1" aux="private:true;"--><!-- cmt_item type="metatag" aux="private:true;"-->
+				<title>Media Gallery</title>
+				<meta name="keywords" content="" />
+				<meta name="description" content="" />
+			<!-- /cmt_item--><!-- /cmt-->
+			]]>
+		</meta>
+		<masthead>
+			<![CDATA[
+				<img src="/assets/images/masthead/masthead.jpg" alt="" border="0" />
+			]]>
+		</masthead>
+		<inset>
+			<![CDATA[
+				<img src="/assets/images/inset/inset.jpg" alt="" border="0" />
+			]]>
+		</inset>
+		<copy>
+			<![CDATA[
+				<h2>Media Gallery Examples</h2>
+				<ul>
+					<li><a href="#" class="one-cat">Single category, no video</a></li>
+					<li><a href="#" class="cat-lady">Multi-category, no video</a></li>
+					<li><a href="#" class="cat-lady-videos">Multi-category, with video toggle</a></li>
+				</ul>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+			]]>	
+		</copy>
+		<flashgallery>
+			<![CDATA[
+				<!-- START EMBED CODE -->
+
+				<script type="text/javascript" src="http://mobilehotelier.com/sspro/m/embed.js"></script>
+
+				<div id="album-390">
+
+				</div>
+
+				<script type="text/javascript">
+					SlideShowPro({
+						attributes: {
+							id: "album-390",
+							width: 550,
+							height: 400
+						},
+						mobile: {
+							auto: true
+						},
+						params: {
+							bgcolor: "#000000",
+							allowfullscreen: true
+						},
+						flashvars: {
+							xmlFilePath: "http://mobilehotelier.com/sspro/images.php?album=390"
+						}
+					});
+				</script>
+
+				<!-- END EMBED CODE -->
+			]]>
+		</flashgallery>
+	</content>
+	<caliban import="activeContentPath, includes/extra.xml" />
+</output>

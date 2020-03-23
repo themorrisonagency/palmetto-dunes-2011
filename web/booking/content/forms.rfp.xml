@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<output>
+  <content>
+    <heading>
+      <![CDATA[Request for Proposal]]>
+    </heading>
+	<meta>
+		<![CDATA[
+		<!-- cmt id="meta" type="metatag" limit="1" aux="private:true;"--><!-- cmt_item type="metatag" aux="private:true;"-->
+			<title>Enter Page Title Here</title>
+			<meta name="keywords" content="" />
+			<meta name="description" content="" />
+		<!-- /cmt_item--><!-- /cmt-->
+		]]>
+	</meta>
+    <masthead>
+      <![CDATA[<img src="/assets/images/masthead/masthead.jpg" alt="" border="0" />]]>
+    </masthead>
+    <inset>
+      <![CDATA[<img src="/assets/images/inset/inset.jpg" alt="" border="0" />]]>
+    </inset>
+		<copy>
+			<![CDATA[
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In ornare, elit nec feugiat mattis, tortor dolor condimentum augue, sit amet hendrerit urna lorem eget quam. Donec eu enim a felis egestas tincidunt. Sed nonummy. Praesent euismod sollicitudin est. Nulla placerat. Donec id mauris id lectus posuere vehicula. Vivamus et ante eu lorem commodo fermentum. Quisque in turpis. Sed tellus nulla, gravida vel, consequat eu, fermentum tincidunt, nulla.</p>
+			]]>	
+		</copy>
+    <formcontent>
+        <script type="text/javascript">
+         var RecaptchaOptions = {
+            theme : 'clean' //options are 'red','white','blackglass','clean'
+         };
+         </script>
+		<form name="rfp" id="rfp" class="standard validate">
+			<p>Fields marked bold are required</p>
+			<fieldset>
+				<legend>Contact Information</legend>
+				<div class="field">
+					<label for="group_name">Group Name:</label>
+					<input type="text" value="" class="textfield required" maxlength="100" id="group_name" name="group_name" />
+				</div>
+				<div class="field">
+					<label for="prefix">Prefix</label>
+					<select class="textfield" name="prefix" id="prefix" />
+				</div>
+				<div class="field">
+					<label for="first_name">First Name:</label>
+					<input type="text" value="" class="textfield required" maxlength="100" id="first_name" name="first_name" />
+				</div>
+				<div class="field">
+					<label for="last_name">Last Name:</label>
+					<input type="text" value="" class="textfield required" maxlength="100" id="last_name" name="last_name" />
+				</div>
+				<div class="field">
+					<label for="company">Company:</label>
+					<input type="text" value="" class="textfield" maxlength="100" id="company" name="company" />
+				</div>
+				<div class="field">
+					<label for="email">Email Address:</label>
+					<input type="text" value="" class="email textfield required" maxlength="100" id="email" name="email" />
+				</div>
+				<div class="field">
+					<label for="phone">Phone:</label>
+					<input type="text" value="" class="textfield required" maxlength="15" id="phone" name="phone" />
+				</div>
+				<div class="field">
+					<label for="fax">Fax:</label>
+					<input type="text" value="" class="textfield" maxlength="25" name="fax" id="fax" />
+				</div>
+				<div class="field">
+					<label for="address1">Address:</label>
+					<input type="text" value="" class="textfield" maxlength="100" id="address1" name="address1" />
+				</div>
+				<div class="field">
+					<label for="address2"><span class="alt">Address (line 2):</span></label>
+					<input type="text" value="" class="textfield" maxlength="100" id="address2" name="address2" />
+				</div>
+				<div class="field">
+					<label for="city">City:</label>
+					<input type="text" value="" class="textfield" maxlength="100" id="city" name="city" />
+				</div>
+				<div class="field">
+					<label for="state">State/Province</label>
+					<select class="textfield" name="state" id="state" />
+				</div>
+				<div class="field select-other" style="display: none;">
+					<label for="state_other">Other State/Province:</label>
+					<input type="text" value="" class="textfield" maxlength="100" id="state_other" name="state_other" />
+				</div>
+				<div class="field">
+					<label for="zip">Postal Code:</label>
+					<input type="text" value="" class="textfield" maxlength="10" id="zip" name="zip" />
+				</div>
+				<div class="field">
+					<label for="country">Country</label>
+					<select class="textfield" name="country" id="country" />
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Event Information</legend>
+				<div class="field">
+					<label for="start_date">Start Date:</label>
+					<input type="text" value="mm/dd/yyyy" class="textfield date-picker date-begin required" maxlength="10" id="start_date" name="start_date" />
+				</div>
+				<div class="field">
+					<label for="end_date">End Date:</label>
+					<input type="text" value="mm/dd/yyyy" class="textfield date-picker date-end required" maxlength="10" id="end_date" name="end_date" />
+				</div>
+				<div class="field">
+					<label for="meeting_attendees">Approximate Number of Attendees:</label>
+					<input type="text" value="" class="small textfield" id="meeting_attendees" name="meeting_attendees" />
+				</div>
+			</fieldset>
+			<div id="room-requirements">
+				<fieldset>
+					<legend>Guest Room Requirements</legend>
+					<div class="field meeting-room-field">
+						<label>Specify Room Block Requirements:</label>
+							<table class="rfp-details" id="block-requirements">
+								<thead>
+									<tr>
+										<th scope="col" class="meeting-day">Day</th>
+										<th scope="col">Single</th>
+										<th scope="col">Double</th>
+										<th scope="col">Suite</th>
+										<th scope="col">Daily Total</th>
+									</tr>
+								</thead>
+						</table>
+						<div class="clear-left" style="padding: 10px 0 10px 25%; font-weight: bold;">OR</div>
+						<label for="room_block_total">Room Block Total:</label>
+						<input type="text" value="" class="small textfield" id="room_block_total" name="room_block_total" />
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Meeting Room Requirements</legend>
+					<div class="field meeting-room-field">
+						<label>How would you like your meeting or event set-up?</label>
+						<table class="rfp-details" id="meeting-requirements">
+							<thead>
+								<tr>
+									<th scope="col" class="meeting-day">day</th>
+									<th>Meeting Room Setup</th>
+									<th>Breakout Rooms</th>
+									<th>People per Room</th>
+									<th>Breakout Room Setup</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+				</fieldset>
+			</div>
+			<fieldset>
+				<legend>Additional Information</legend>
+				<div class="field list clear-float">
+					<label for="contact_type">Preferred form of contact:</label>
+					<ul id="contact-list" class="checkboxgroup required">
+						<li>
+							<input type="radio" value="Telephone" class="radio" id="contact_telephone" name="contact_type" />
+							<label for="contact_telephone">Telephone</label>
+						</li>
+						<li>
+							<input type="radio" value="Fax" class="radio" id="contact_fax" name="contact_type" />
+							<label for="contact_fax">Fax</label>
+						</li>
+						<li>
+							<input type="radio" value="Email" class="radio" id="contact_email" name="contact_type" />
+							<label for="contact_email">Email</label>
+						</li>
+						<li>
+							<input type="radio" value="Regular Mail" class="radio" id="contact_mail" name="contact_type" />
+							<label for="contact_mail">Regular Mail</label>
+						</li>
+						<li>
+							<input type="radio" value="Overnight Mail" class="radio" id="contact_overnight" name="contact_type" />
+							<label for="contact_overnight">Overnight Mail</label>
+						</li>
+						<li>
+							<input type="radio" value="Other: " class="radio other" id="contact_other" name="contact_type" />
+							<label for="contact_other">Other:</label>
+							<input type="text" value="" class="medium textfield other" maxlength="50" id="contact_other_field" name="contact_other_field" style="display: none;" />
+						</li>
+					</ul>
+				</div>
+				<div class="field list clear-float">
+					<label for="filter-list">Would you like information on any of the following leisure activities:</label>
+					<ul id="filter-list" class="checkboxgroup">
+						<li>
+							<input type="checkbox" value="1" id="filter-1" name="filters[]" />
+							<label for="filter-1">Golf</label>
+						</li>
+						<li>
+							<input type="checkbox" value="2" id="filter-2" name="filters[]" />
+							<label for="filter-2">Spa</label>
+						</li>
+						<li>
+							<input type="checkbox" value="3" id="filter-3" name="filters[]" />
+							<label for="filter-3">Gallery Tours</label>
+						</li>
+						<li>
+							<input type="checkbox" value="4" id="filter-4" name="filters[]" />
+							<label for="filter-4">General Recreation</label>
+						</li>
+						<li>
+							<input type="checkbox" value="5" id="filter-5" name="filters[]" />
+							<label for="filter-5">Shopping</label>
+						</li>
+						<li>
+							<input type="checkbox" class="other" value="6" id="filter-6" name="filters[]" />
+							<label for="filter-6">Other</label>
+							<input type="text" value="" class="medium textfield other" maxlength="50" id="filters_other" name="filters_other" style="display: none;" />
+						</li>
+					</ul>
+				</div>
+				<div class="field list clear-float">
+					<label for="past-sales-team">Have you worked with any member of our sales team?</label>
+					<ul id="past-sales-team" class="checkboxgroup">
+						<li>
+							<input type="radio" value="no" class="radio" id="sales-team-no" name="past_sales_team" />
+							<label for="sales-team-no">no</label>
+						</li>
+						<li>
+							<input type="radio" value="yes: " class="radio other" id="sales-team-yes" name="past_sales_team" />
+							<label for="sales-team-yes">yes:</label>
+							<input type="text" value="" class="medium textfield other" maxlength="50" id="past_sales_team_member" name="past_sales_team_member" style="display: none;" />
+						</li>
+					</ul>
+				</div>
+				<div class="field textarea">
+					<label for="other_destinations">What destinations have hosted this meeting in the past?</label>
+					<textarea class="textfield" id="other_destinations" rows="4" cols="60" name="other_destinations"> </textarea>
+				</div>
+				<div class="field textarea">
+					<label for="comments">Comments:</label>
+					<textarea class="textfield" id="comments" rows="4" cols="60" name="comments"> </textarea>
+				</div>
+				<div id="recaptchaDiv" />
+			</fieldset>
+			<div class="buttons">
+				<input type="submit" value="submit" class="submit" id="submit" name="submit" />
+			</div>
+			<input type="hidden" value="en" name="lang" />
+        </form>
+    </formcontent>
+  </content>
+  <module type="module" id="forms" title="bah" module="forms" action="bindForm" lang="en" device="1">
+    <param name="prepopulate" value="post,get" />
+    <!-- Set the post value for population if needed -->
+    <param name="use" value="rfp" />
+    <!-- What element ID are we assigning this to?  -->
+    <param name="modifiers"><!--modifiers allow us to pull in things like states and countries from CSV files -->
+		<modifier use="prefix" type="selectlist" params="values:0|select,Mr,Ms,Mrs,A/S,Dr,Jr;" />
+		<modifier use="state" type="selectlist" params="prepend-values:0|select;type:csv;location:utilities/states.csv;columns:1,0;" />
+		<modifier use="country" type="selectlist" params="prepend-values:0|select;type:csv;location:utilities/countries.csv;columns:1,2;" />
+    </param>
+	<!-- RECAPTCHA -->
+	<param name="recaptcha" value="recaptchaDiv"/> <!-- ID of element recaptcha will appear inside of -->
+	<param name="recaptcha_error" value="Type the 2 words as they appear below"/> <!-- Custom error message -->
+	<!-- /RECAPTCHA -->
+    <!-- CDC Parameters -->
+    <param name="datasource_id" value="118" />
+    <param name="form_id" value="1472" />
+    <param name="success_message" value="Thank you, your form was submitted." />
+    <param name="datasource_key" value="ds_id" />
+    <!-- Optional -->
+    <param name="site_id" value="100" />
+    <!-- Optional -->
+    <param name="redirect_page" value="success" />
+    <!-- Optional -->
+    <!-- /CDC Parameters -->
+  </module>
+  <caliban import="activeContentPath, includes/extra.xml" />
+</output>

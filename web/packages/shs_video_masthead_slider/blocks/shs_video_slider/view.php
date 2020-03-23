@@ -1,0 +1,131 @@
+<? defined('C5_EXECUTE') or die("Access Denied.");
+$c = Page::getCurrentPage();
+/*
+Block configuration settings:
+- $loopVideo (0|1)
+- $muteSound (0|1)
+- $autoplay (0|1)
+- $arrows (0|1)
+- $speed (in milliseconds)
+- $autoplaySpeed (in milliseconds)
+
+Each slide in the collection ($rows) contains these elements:
+- video (URL)
+- videoImage (file ID)
+- promoTitle (string)
+- promoDescription (HTML)
+- promoButtonText (string)
+- internalLinkCID (page ID)
+- externalLinkURL (URL string)
+- linkedFileID (file ID)
+- sortOrder (integer)
+*/
+?>
+
+<?php if ($c->isEditMode()) { ?>
+    <div class="ccm-edit-mode-disabled-item" style="width: <?php echo $width; ?>; height: <?php echo $height; ?>">
+        <div style="padding: 40px 0px 40px 0px"><?php echo t('Video Slider disabled in edit mode.')?></div>
+    </div>
+<?php  } else { ?>
+
+<div class="contentHeaderVid">
+    <?php
+        $idx = 0;
+        foreach ($rows as $slide) {
+            $f = File::getByID($slide['videoImage']);
+            if(is_object($f)) {
+                $poster = File::getRelativePathFromID($slide['videoImage']);
+            }
+    ?>
+        <div class="video">
+            <img src="<?=$poster?>" alt="" />
+            <video id="headerVid<?=$idx?>" poster="<?=$poster?>" class="cover">
+                <source src="<?=$slide['video']?>" type="video/mp4">
+            </video>
+            <div class="masthead-promo">
+                <div class="masthead-title"><?=$slide['promoTitle']?></div>
+                <div class="masthead-description">
+                    <?=$slide['promoDescription']?>
+                </div>
+                <div class="masthead-buttons">
+                    <a href="<?=$slide['linkURL']?>" class="orange-btn"><?=$slide['promoButtonText']?></a>
+                </div>
+            </div>
+        </div>
+    <?php
+        $idx++;   
+        }
+    ?>     
+</div>
+
+<div class="buttons">
+    <div class="vidBtn" id="slickPrev">
+        <span class="prev-icon"></span>
+    </div>
+    <div class="vidBtn" id="slickNext">
+        <span class="next-icon"></span>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('.contentHeaderVid').slick({
+            // arrows: <?=$this->controller->boolString($arrows)?>,
+            // autoplay: <?=$this->controller->boolString($autoplay)?>,
+            // autoplaySpeed: <?=$autoplaySpeed?>,
+            draggable: false,
+            slide: 'div',
+            cssEase: 'ease-in-out',
+            fade: true,
+            arrows: false,
+            speed: 1000
+        });
+        $('#slickPrev').on('click', function() {
+            $('.contentHeaderVid').slick('slickPrev');
+        });
+        $('#slickNext').on('click', function() {
+            $('.contentHeaderVid').slick('slickNext');
+        });
+        $('.contentHeaderVid').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            playProperVid(currentSlide, nextSlide);
+        });
+        pageLoaded();
+    });
+        
+    // Play first video once entire page is loaded
+    var vid0 = document.getElementById("headerVid0");
+    function pageLoaded() {
+        vid0.play();
+        // Hide initial masthead-promo on load, then fade in after 5 seconds using animate.css fadeIn.
+        $('.masthead-promo').hide();
+        if ( $(window).width()>764 ) {
+            setTimeout(function() {
+              $('.masthead-promo').show().addClass('fadeIn animated');
+            }, 6000);
+        } else {
+            $('.masthead-promo').show().addClass('fadeIn animated');
+        }
+    }
+
+    // Auto advance to the next slide. NOTE: "loop" attribute for <video> and "ended" will not work together. "loop" must be removed from <video>
+    $("#headerVid0").bind("ended", function() {
+       $('.contentHeaderVid').slick('slickNext');
+       console.log();
+    });
+    $("#headerVid1").bind("ended", function() {
+       $('.contentHeaderVid').slick('slickNext');
+    });
+    $("#headerVid2").bind("ended", function() {
+       $('.contentHeaderVid').slick('slickNext');
+    });
+
+    // Play/Pause vid based on which one is currently showing in slider
+    function playProperVid(currentSlide, nextSlide) {
+        var currSlide = document.getElementById("headerVid" + currentSlide);
+        var nxtSlide = document.getElementById("headerVid" + nextSlide);
+        //console.log("currSlide: "+currSlide.id, "nxtSlide: "+nxtSlide.id);
+        currSlide.pause();
+        nxtSlide.play();
+    }
+</script>
+<?php } ?>

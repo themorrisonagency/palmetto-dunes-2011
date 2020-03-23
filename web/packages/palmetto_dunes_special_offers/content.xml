@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<concrete5-cif version="1.0">
+    <blocktypes>
+        <blocktype handle="special_offers" package="palmetto_dunes_special_offers"/>
+        <blocktype handle="special_offers_topic_list" package="palmetto_dunes_special_offers"/>
+    </blocktypes>
+    <blocktypesets>
+        <blocktypeset handle="navigation">
+            <blocktype handle="special_offers"/>
+            <blocktype handle="special_offers_topic_list"/>
+        </blocktypeset>
+    </blocktypesets>
+    <attributekeys>
+        <attributekey handle="special_offer_topics" name="Category" package="palmetto_dunes_special_offers" searchable="1" indexed="0" type="topics" category="collection">
+            <tree name="Special Offers" path="/"/>
+        </attributekey>
+        <attributekey handle="special_offer_end_date" name="End Date" package="palmetto_dunes_special_offers" searchable="1" indexed="0"
+                      type="date_time" category="collection">
+        </attributekey>
+        <attributekey handle="special_offer_image" name="Image" package="palmetto_dunes_special_offers" searchable="0" indexed="0"
+                      type="image_file" category="collection">
+        </attributekey>
+        <attributekey handle="special_offer_mobile_image" name="Mobile Image" package="palmetto_dunes_special_offers" searchable="0" indexed="0"
+                      type="image_file" category="collection">
+        </attributekey>
+        <attributekey handle="special_offer_is_deactivated" name="Deactivated" package="palmetto_dunes_special_offers" searchable="1" indexed="0" type="boolean" category="collection">
+            <type checked=""/>
+        </attributekey>
+
+        <attributekey handle="special_offer_show_booking_link" name="Show Booking Link" package="palmetto_dunes_special_offers" searchable="1" indexed="0" type="boolean" category="collection">
+            <type checked=""/>
+        </attributekey>
+
+        <attributekey handle="special_offer_show_alternate_link" name="Show Alternate Link" package="palmetto_dunes_special_offers" searchable="1" indexed="0" type="boolean" category="collection">
+            <type checked=""/>
+        </attributekey>
+        <attributekey handle="special_offer_booking_link" name="Booking Link" package="palmetto_dunes_special_offers" searchable="0" indexed="0" type="page_selector" category="collection"/>
+        <attributekey handle="special_offer_mobile_booking_link" name="Mobile Booking Link" package="palmetto_dunes_special_offers" searchable="0" indexed="0" type="page_selector" category="collection"/>
+        <attributekey handle="special_offer_alternate_link" name="Alternate Link" package="palmetto_dunes_special_offers" searchable="0" indexed="0" type="page_selector" category="collection"/>
+        <attributekey handle="special_offer_alternate_mobile_link" name="Mobile Alternate Link" package="palmetto_dunes_special_offers" searchable="0" indexed="0" type="page_selector" category="collection"/>
+        <attributekey handle="special_offer_alternate_link_text" name="Alternate Link Text" package="palmetto_dunes_special_offers" searchable="1" indexed="1" type="text" category="collection"/>
+        <attributekey handle="special_offer_tags" name="Tags" package="palmetto_dunes_special_offers" searchable="1" indexed="0"
+                      type="select" category="collection">
+            <type allow-multiple-values="1" display-order="display_asc" allow-other-values="1">
+                <options>
+                </options>
+            </type>
+        </attributekey>
+    </attributekeys>
+    <attributesets>
+        <attributeset handle="special_offers" name="Special Offers" package="palmetto_dunes_special_offers" locked="0" category="collection">
+            <attributekey handle="special_offer_end_date"/>
+            <attributekey handle="special_offer_image"/>
+            <attributekey handle="special_offer_mobile_image"/>
+            <attributekey handle="special_offer_tags"/>
+            <attributekey handle="special_offer_is_deactivated"/>
+            <attributekey handle="special_offer_show_booking_link"/>
+            <attributekey handle="special_offer_show_alternate_link"/>
+            <attributekey handle="special_offer_booking_link"/>
+            <attributekey handle="special_offer_mobile_booking_link"/>
+            <attributekey handle="special_offer_alternate_link"/>
+            <attributekey handle="special_offer_topics"/>
+            <attributekey handle="special_offer_alternate_mobile_link"/>
+            <attributekey handle="special_offer_alternate_link_text"/>
+        </attributeset>
+    </attributesets>
+    <pagetypes>
+        <pagetype name="Special Offer" handle="special_offer" package="palmetto_dunes_special_offers" is-frequently-added="1" launch-in-composer="1">
+            <pagetemplates type="custom" default="full">
+                <pagetemplate handle="full"/>
+            </pagetemplates>
+            <target handle="parent_page" package="palmetto_dunes_special_offers" path="/special-offers"/>
+            <composer>
+                <formlayout>
+                    <set name="Basics">
+                        <control custom-template="" required="1" custom-label="Title" type="core_page_property"
+                                 handle="name"/>
+                        <control custom-template="" custom-label="Description" type="core_page_property" handle="description"/>
+                        <control custom-template="" custom-label="SEO Title" type="collection_attribute" handle="meta_title"/>
+                        <control custom-template="" custom-label="SEO Description" type="collection_attribute" handle="meta_description"/>
+                        <control custom-template="" custom-label="SEO Keywords" type="collection_attribute" handle="meta_keywords"/>
+                        <control custom-template="" custom-label="" type="collection_attribute" handle="special_offer_is_deactivated"/>
+                    </set>
+                    <set name="Dates">
+                        <control custom-template="" custom-label="Start Date" type="core_page_property" handle="date_time"/>
+                        <control custom-template="" custom-label="End Date" type="collection_attribute" handle="special_offer_end_date"/>
+                    </set>
+                    <set name="Classify">
+                        <control custom-template="" custom-label="" type="collection_attribute" handle="special_offer_topics"/>
+                        <control custom-template="" custom-label="Tags" type="collection_attribute" handle="special_offer_tags"/>
+                    </set>
+                    <set name="Content">
+                        <control custom-template="" custom-label="Image" type="collection_attribute" handle="special_offer_image"/>
+                        <control custom-template="" custom-label="Mobile Image" type="collection_attribute" handle="special_offer_mobile_image"/>
+                    </set>
+                    <set name="Links">
+                        <control custom-template="" custom-label="" type="collection_attribute" handle="special_offer_show_booking_link"/>
+                        <control custom-template="" custom-label="" type="collection_attribute" handle="special_offer_booking_link"/>
+                        <control custom-template="" custom-label="" type="collection_attribute" handle="special_offer_mobile_booking_link"/>
+                        <control custom-template="" custom-label="" type="collection_attribute" handle="special_offer_show_alternate_link"/>
+                        <control custom-template="" custom-label="" type="collection_attribute" handle="special_offer_alternate_link"/>
+                        <control custom-template="" custom-label="" type="collection_attribute" handle="special_offer_alternate_mobile_link"/>
+                        <control custom-template="" custom-label="" type="collection_attribute" handle="special_offer_alternate_link_text"/>
+                    </set>
+                    <set name="Content">
+                        <control custom-template="" custom-label="" output-control-id="6y4mB58T" type="block" handle="content"/>
+                    </set>
+                </formlayout>
+                <output>
+                    <pagetemplate handle="full">
+                        <page name="" path="" filename="" pagetype="special_offer" template="full" user="admin" description="" package="">
+                            <attributes>
+                                <attributekey handle="exclude_nav">
+                                    <value>1</value>
+                                </attributekey>
+                                <attributekey handle="exclude_search_index">
+                                    <value>1</value>
+                                </attributekey>
+                                <attributekey handle="exclude_sitemap">
+                                    <value>1</value>
+                                </attributekey>
+                            </attributes>
+                            <area name="Main">
+                                <blocks>
+                                    <block type="core_page_type_composer_control_output" name="">
+                                        <control output-control-id="6y4mB58T"/>
+                                    </block>
+                                </blocks>
+                            </area>
+                        </page>
+                    </pagetemplate>
+                </output>
+            </composer>
+        </pagetype>
+    </pagetypes>
+
+    <pages>
+    <page name="Special Offers" path="/special-offers" filename="" pagetype="full" template="full" user="admin" description="" package="palmetto_dunes_special_offers">
+    </page>
+    </pages>
+
+    <trees>
+        <tree type="topic" name="Special Offers">
+            <topic name="Featured Packages"/>
+            <topic name="Golf"/>
+            <topic name="Tennis"/>
+            <topic name="Romance"/>
+            <topic name="Family"/>
+            <topic name="Seasonal"/>
+            <topic name="Group Offers"/>
+            <topic name="Spa"/>
+        </tree>
+    </trees>
+
+</concrete5-cif>

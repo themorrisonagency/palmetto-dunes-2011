@@ -1,0 +1,7 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+Order Allow,Deny
+Deny from all
+
+Options All -Indexes

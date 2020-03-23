@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.opengis.net/gml" xmlns:mappoint="http://virtualearth.msn.com/apis/annotate#">
+<channel>
+	<item>
+        <id>1</id>
+		<title><![CDATA[The Hay-Adams Hotel]]></title>
+		<address><![CDATA[800 16th St NW, Washington, DC 20006]]></address>
+		<description><![CDATA[]]></description>
+		<type><![CDATA[in the area]]></type>
+		<image><![CDATA[]]></image>
+		<pushpin><![CDATA[/templates/desktablet/images/layout/pin-ha.png]]></pushpin>
+		<moreinfo><![CDATA[]]></moreinfo>
+		<georss:point>38.90051858534431 -77.03699111938477</georss:point>
+	</item>
+	<item>
+        <id>2</id>
+		<title><![CDATA[White House]]></title>
+		<address><![CDATA[1600 Pennsylvania Ave NW, Washington, DC 20500]]></address>
+		<description><![CDATA[]]></description>
+		<type><![CDATA[in the area]]></type>
+		<image><![CDATA[]]></image>
+		<pushpin><![CDATA[/templates/desktablet/images/layout/map-pin.png]]></pushpin>
+		<moreinfo><![CDATA[]]></moreinfo>
+		<georss:point>38.89871505269059 -77.03621864318848</georss:point>
+	</item>
+	<item>
+        <id>3</id>
+		<title><![CDATA[John F. Kennedy Center For The Performing Arts]]></title>
+		<address><![CDATA[2700 F St NW, Washington, DC 20566]]></address>
+		<description><![CDATA[]]></description>
+		<type><![CDATA[in the area]]></type>
+		<image><![CDATA[]]></image>
+		<pushpin><![CDATA[/templates/desktablet/images/layout/map-pin.png]]></pushpin>
+		<moreinfo><![CDATA[]]></moreinfo>
+		<georss:point>38.897379073043865 -77.05501556396484</georss:point>
+	</item>
+	<item>
+        <id>4</id>
+		<title><![CDATA[LINCOLN MEMORIAL]]></title>
+		<address><![CDATA[LINCOLN MEMORIAL SW CIR, Washington, DC 20037]]></address>
+		<description><![CDATA[]]></description>
+		<type><![CDATA[in the area]]></type>
+		<image><![CDATA[]]></image>
+		<pushpin><![CDATA[/templates/desktablet/images/layout/map-pin.png]]></pushpin>
+		<moreinfo><![CDATA[]]></moreinfo>
+		<georss:point>38.88849416908775 -77.04926490783691</georss:point>
+	</item>
+	<item>
+        <id>5</id>
+		<title><![CDATA[Washington Monument]]></title>
+		<address><![CDATA[2 15th St NW, Washington, DC 20007]]></address>
+		<description><![CDATA[]]></description>
+		<type><![CDATA[in the area]]></type>
+        <image><![CDATA[]]></image>
+v		<pushpin><![CDATA[/templates/desktablet/images/layout/map-pin.png]]></pushpin>
+		<moreinfo><![CDATA[]]></moreinfo>
+		<georss:point>38.8921017077243 -77.03364372253418</georss:point>
+	</item>
+	<item>
+        <id>6</id>
+		<title><![CDATA[NATIONAL MUSEUM OF NATURAL HISTORY]]></title>
+		<address><![CDATA[1000 Constitution NW Ave, Washington, DC 20004]]></address>
+		<description><![CDATA[]]></description>
+		<type><![CDATA[in the area]]></type>
+        <image><![CDATA[]]></image>
+		<pushpin><![CDATA[/templates/desktablet/images/layout/map-pin.png]]></pushpin>
+		<moreinfo><![CDATA[]]></moreinfo>
+		<georss:point>38.8921017077243 -77.02609062194824</georss:point>
+	</item>
+	<item>
+        <id>7</id>
+		<title><![CDATA[National Museum-Natrl History]]></title>
+		<address><![CDATA[10th St & Constitution Ave N, Washington, DC 20560]]></address>
+		<description><![CDATA[]]></description>
+		<type><![CDATA[in the area]]></type>
+        <image><![CDATA[]]></image>
+		<pushpin><![CDATA[/templates/desktablet/images/layout/map-pin.png]]></pushpin>
+		<moreinfo><![CDATA[]]></moreinfo>
+		<georss:point>38.89223531674779 -76.99244499206543</georss:point>
+	</item>
+	<item>
+        <id>8</id>
+		<title><![CDATA[National Air & Space Museum]]></title>
+		<address><![CDATA[14th St & Constitution Ave N, Washington, DC 20439]]></address>
+		<description><![CDATA[]]></description>
+		<type><![CDATA[in the area]]></type>
+        <image><![CDATA[]]></image>
+		<pushpin><![CDATA[/templates/desktablet/images/layout/map-pin.png]]></pushpin>
+		<moreinfo><![CDATA[]]></moreinfo>
+		<georss:point>38.891968098449475 -76.98549270629883</georss:point>
+	</item>
+</channel>
+</rss>

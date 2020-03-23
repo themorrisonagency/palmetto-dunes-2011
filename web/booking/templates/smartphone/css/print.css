@@ -1,0 +1,4 @@
+a img { border:0; }
+div#jump-links, div#nav, div#browser-warning, noscript { display:none; }
+.sIFR-flash object, .sIFR-flash embed { display:none !important; height:0; width:0; position:absolute; overflow:hidden; }
+.sIFR-flash span.sIFR-alternate { visibility:visible !important; display:block !important; position:static !important; left:auto !important; top:auto !important; }

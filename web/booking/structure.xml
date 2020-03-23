@@ -1,0 +1,178 @@
+ <configuration>
+	<info>
+		<address title="Palmetto Dunes Oceanfront Resort" street="4 Queens Folly Road" city="Hilton Head Island" state="SC" zip="29928" phone1="8663801778" phone2="" fax="" email="SHSSalesRequest@sabre.com" maplink="" url="" />
+		<facebook api_key="137163128098" page_id="341943635841244" secret="de07bb46ffc518d88ff079ddd9dd640b"/> <!-- LOCAL -->
+		<google api_key="xxx" ga_id="UA-16884571-7" gplus="" ga_domain=".raynor.localhost" gatagit_token="YXZkew%3D%3D"/>
+		<name short="Palmetto Dunes Oceanfront Resort" long="Palmetto Dunes Oceanfront Resort" />
+		<sugar id="" />
+		<synxis chain_id="12011" hotel_id="10155" />
+		<sugar id="xxx" />
+	</info>
+	<templates>
+		<template name="DeskTablet Template" path="main/" id="a">
+			<rule use="interior.xsl" for="." title="Interior Template" type="xslt" />
+			<rule use="rental-calendar.xsl" for="^rental-calendar" title="Rental Calendar Ajax File" type="xslt"/>
+			<!--<rule use="home.xsl" for="index?" title="Home Template" type="xslt" />-->
+			<rule use="404.xsl" for="^404\/?" title="404 Template" type="xslt" />
+		</template>
+	</templates>
+	<structure>
+		<site id="default" name="Main Site" root="" template="a" content="content/" modules="weather" lang="en">
+			<page id="index" title="Home Page" exclude="true" />
+			<page id="about" title="About the Resort" name="/category/7">
+				<page id="resort-overview" title="Resort Overview" name="/resort/hilton-head-sc-resorts/" />
+				<page id="packages" title="Vacation Packages" name="/resort/hilton-head-vacation-packages/" />
+				<page id="amenities" title="Services &#38; Amenities" name="/resort/hilton-head-resort-amenities/" />
+				<page id="marina" title="Marina" name="/shelter-cove/marina-hilton-head" />
+				<page id="dining" title="Dining" name="/dining/hilton-head-island-dining/" />
+				<page id="shopping" title="Shopping" name="/resort/hilton-head-shopping/" />
+				<page id="spa" title="Spa Services" name="/resort/hilton-head-island-spas/" />
+				<page id="calendar" title="Resort Calendar" name="/resort/hilton-head-events/" />
+			</page>
+			<page id="vacation-rentals" title="Vacation Rentals" name="/category/18">
+				<page id="hilton-head-villa-rentals" title="Home &#38; Villa Rentals" name="http://www.palmettodunes.com/vacation-rentals/hilton-head-villa-rentals/">
+					<page id="search-results" title="Search Results" name="/vacation-rentals/hilton-head-vacation-rentals" />
+					<page id="search-results-details" title="Search Results Details" name="/vacation-rentals/hilton-head-rental-units" />
+				</page>
+				<page id="service" title="Rental Services &amp; Amenities" name="http://www.palmettodunes.com/vacation-rentals/rental-services-amenities/" />
+				 
+				<page id="prop-mgmt" title="Property Management" name="http://www.palmettodunes.com/vacation-rentals/hilton-head-property-management/" />
+				<page id="pets" title="Pet Friendly" name="http://www.palmettodunes.com/vacation-rentals/hilton-head-pet-friendly-rentals/" />
+				<page id="planner" title="Contact a Vacation Planner" name="http://www.palmettodunes.com/vacation-rentals/hilton-head-vacation-planner/" />
+			</page>
+			<page id="golf" title="Golf" name="/category/26">
+				<page id="play" title="Play Palmetto Dunes" name="/golf/hilton-head-golf/" />
+				<page id="golf-rates" title="Rates &#38; Packages" name="/golf/hilton-head-golf-packages/" />
+				<page id="courses" title="Courses" name="/golf/hilton-head-golf-courses/" />
+				<page id="groups" title="Golf Groups" name="/golf/hilton-head-group-golf/" />
+				<page id="instruction" title="Golf Instruction" name="/golf/hilton-head-golf-instruction/" />
+				<page id="golf-shops" title="Golf Pro Shops" name="/golf-pro-shops/" />
+				<page id="quote" title="Get a Quick Golf Quote" name="/golf/hilton-head-golf-quote/" />
+			</page>
+			<page id="recreation" title="Tennis &#38; Recreation" name="/category/40">
+				<page id="activities" title="Activities Overview" name="/activities/hilton-head-island-activities/" />
+				<page id="bike" title="Bike Rentals" name="/activities/hilton-head-bike-rentals/" />
+				<page id="tennis" title="Tennis" name="/activities/hilton-head-island-tennis/" />
+				<page id="kids" title="Kids Activities" name="/activities/hilton-head-kids-activities/" />
+				<page id="watersports" title="Water Sports" name="/activities/hilton-head-water-sports/" />
+				<page id="tours" title="Boat Tours" name="/shelter-cove/hilton-head-boat-tours" />
+				<page id="charters" title="Boat Charters" name="/shelter-cove/hilton-head-boat-charters" />
+				<page id="Beach Access" title="Beach Access" name="/activities/hilton-head-island-beach/" />
+			</page>
+			<page id="weddings-events" title="Weddings &#38; Events" name="/category/56">
+				<page id="weddings" title="Weddings" name="/meetings-weddings/hilton-head-island-weddings/" />
+				<page id="meetings" title="Meetings &#38; Events" name="/meetings-weddings/hilton-head-meetings-events/" />
+				<page id="catering" title="Catering &#38; Services" name="/meetings-weddings/hilton-head-event-catering/" />
+			</page>
+			<page id="local" title="Shelter Cove Harbour" name="/category/64">
+				<page id="overview" title="Overview" name="/shelter-cove/shelter-cove-harbour/" />
+				<page id="local-dining" title="Dining" name="/shelter-cove/dining-hilton-head/" />
+				<page id="local-shopping" title="Shopping" name="/shelter-cove/shopping-hilton-head/" />
+				<page id="local-marina" title="Marina" name="/shelter-cove/marina-hilton-head/" />
+				<page id="local-tours" title="Boat Tours" name="/shelter-cove/hilton-head-boat-tours/" />
+				<page id="local-charters" title="Boat Charters" name="/shelter-cove/hilton-head-boat-charters/" />
+				<page id="local-events" title="Events" name="/shelter-cove/events-hilton-head/" />
+				<page id="leasing" title="Leasing Opportunities" name="/shelter-cove/hilton-head-leasing/" />
+			</page>
+			<page id="utility" title="Utility Navigation" exclude="true">
+				<page id="directions" name="http://www.palmettodunes.com/hilton-head-resort-directions/" title="Location &#38; Directions" exclude="true" />
+				<!-- <page id="gift-cards" title="Gift Cards" name="http://www.palmettodunes.com/hilton-head-resort-gift-card/" exclude="true" /> -->
+				<page id="blog-link" title="Resort Blog" name="http://www.palmettodunes.com/hilton-head-resort-blog/" exclude="true" />
+				<page id="press" title="Press Center" name="http://www.palmettodunes.com/hilton-head-island-resort-press/" exclude="true" />
+				<page id="careers" title="Careers" name="http://www.palmettodunes.com/careers/" exclude="true" />
+				<page id="sales" title="Hilton Head Real Estate" name="http://www.palmettodunes.com/hilton-head-real-estate/" exclude="true" />
+			</page>
+			<!-- Permalink pages -->
+			<!-- <page id="events" title="Event Calendar" exclude="true" permalink="type/title" name="events" />
+			<page id="press" title="Press Release Permalink" permalink="type/title" exclude="true" />
+			<page id="packages" title="Special Offers" permalink="type/title" exclude="true" />
+			<page id="blog" title="Blog Permalink" permalink="id" exclude="true" /> -->
+			<!-- Other necessary pages -->
+			<page id="404" title="404 Page Not Found" exclude="true" />
+			<page id="success" title="Thank you" exclude="true" />
+			<page id="poi" title="POI data" exclude="true" />
+			<!--Booking pages-->
+			<page id="book" title="what up" exclude="true">
+				<page id="process" name="processbooking" title="Book this property" exclude="true" />
+				<page id="wholesaleprocess" name="wholesaleprocess" title="Book this property" exclude="true" />
+				<page id="userinfo" name="guestinfo" title="save user data" exclude="true" />
+				<page id="paymentinfo" name="payment" title="save user address" exclude="true" />
+				<page id="complete" name="confirmation" title="save user address" exclude="true" />
+				<page id="emailprocess" name="emailprocess" title="" exclude="true" />
+			</page>
+			<page id="emailunit" title="" exclude="true">
+			</page>
+			<page id="error" name="error" title="Error" exclude="true" />
+			<!-- JSON Ajax pages -->
+			<!-- <page id="ajax" title="Ajax Data" exclude="true">
+				<page id="event-calendar" title="Event data" permalink="id" exclude="true" />
+				<page id="packagedata" title="Package data" permalink="id" exclude="true" />
+				<page id="pressdata" title="Press Release data" permalink="id" exclude="true" />
+				<page id="blog-details" title="Blog data" permalink="id" exclude="true" />
+			</page> -->
+			<!--<page id="rss" title="RSS Feeds">
+				<page id="feeds" title="RSS Feeds" permalink="cid/type" exclude="true" />
+			</page>-->
+			<forwarding>
+				<!-- This is an example of a nav item forwarding to an external url -->
+				<!--<rule from="reservations" path="http://google.com" external="true" type="301"/>-->
+            </forwarding>
+			<endpoints>
+				<rule path="ajax\/event-calendar?" id="events" returntype="json" targets="//events/data" />
+				<rule path="ajax\/packagedata?" id="package" returntype="json" targets="//offers/data" />
+				<rule path="ajax\/pressdata?" id="press" returntype="json" targets="//press/data" />
+				<rule path="ajax\/blog-details?" id="blog-details" returntype="json" targets="//blog/data/record/item_html" />
+				<rule path="ajax\/property-images?" id="property-images" returntype="json" targets="//data" />
+				<rule path="rss\/feeds?" id="rss" returntype="rss" targets="//rss/data/record/result" />
+				<rule path="^poi?" id="poi" returntype="json" targets="//poi/data/record" />
+				<rule path="^calendar-data?" id="rental" returntype="json" targets="//data" />
+			</endpoints>
+		</site>
+	</structure>
+	<modules directory="">
+		<module id="mcc" name="MCC Module">
+			<param name="swamp_client_id" value="176" />
+			<!--<param name="dhr_client_id" value="61" />
+			<param name="is_dhr" value="true" />-->
+		</module>
+		<module id="weather" name="Weather Feed Module">
+			<param name="zip" value="29928"/>
+			<param name="days" value="5"/>
+			<param name="units" value="f"/>
+		</module>
+		<module id="device" name="Device Information" />
+		<module id="auth" name="Auth module">
+			<param name="username" value="" />
+			<param name="password" value="01dd82fb6989e2b2237cbec72e853684" />
+			<param name="usernameParam" value="username" />
+			<param name="usernameParamType" value="GET" />
+			<param name="passwordParam" value="password" />
+			<param name="passwordParamType" value="GET" />
+			<param name="usernameParamStored" value="username" />
+			<param name="usernameParamStoredType" value="PARAM" />
+			<param name="passwordParamStored" value="password" />
+			<param name="passwordParamStoredType" value="PARAM" />
+			<param name="page_login" value="password-protected-login" />
+			<param name="page_logout" value="password-protected-logout" />
+			<param name="page_landing" value="password-protected" />
+			<param name="page_validate" value="password-protected-validate" />
+		</module>
+		<module id="calendar" name="Calendar Module" />
+		<module id="dhr_crosspromo" name="DHR Cross Promo" localpath="modules/"/>
+		<module id="poi" name="POI module" />
+		<module id="amaxus" name="Amaxus" localpath="modules/"/>
+		<module id="reservations" name="Reservations" localpath="modules/"/>
+	</modules>
+	<languages>
+		<language id="en" title="English" name="english" code="us" country="USA" />
+		<!--<language id="es" title="Espa&#241;ol" name="spanish" code="sp" country="Spain" />-->
+		<!--language id="fr" title="Français" name="french" code="fr" country="France" />-->
+	</languages>
+	<devices>
+		<device name="pc" group="0" template="a" rule="device:pc;" />
+		<device name="smart tablets" group="1" template="a" rule="tablet:1" />
+		<device name="smartphones" group="2" template="a" rule="pc:0;webkit:1;tablet:0" />
+		<device name="all other devices" group="3" template="a" rule="device:.;" />
+	</devices>
+	<segments />
+</configuration>

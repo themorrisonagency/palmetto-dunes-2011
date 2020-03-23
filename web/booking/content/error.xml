@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<output>
+	<content>
+		<class></class>
+		<heading>
+			<![CDATA[Reservation Details]]>
+		</heading>
+		<meta>
+			<![CDATA[
+			<!-- cmt id="meta" type="metatag" limit="1" aux="private:true;"--><!-- cmt_item type="metatag" aux="private:true;"-->
+				<title>Reservation Details</title>
+				<meta name="keywords" content="" />
+				<meta name="description" content="" />
+			<!-- /cmt_item--><!-- /cmt-->
+			]]>
+		</meta>
+		<masthead>
+			<![CDATA[
+				<img src="/assets/images/masthead/masthead.jpg" alt="" border="0" />
+			]]>
+		</masthead>
+		<inset>
+			<![CDATA[
+				<img src="/assets/images/inset/inset.jpg" alt="" border="0" />
+			]]>
+		</inset>
+		<copy>
+			<![CDATA[
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In ornare, elit nec feugiat mattis, tortor dolor condimentum augue, sit amet hendrerit urna lorem eget quam. Donec eu enim a felis egestas tincidunt. Sed nonummy. Praesent euismod sollicitudin est. Nulla placerat. Donec id mauris id lectus posuere vehicula. Vivamus et ante eu lorem commodo fermentum. Quisque in turpis. Sed tellus nulla, gravida vel, consequat eu, fermentum tincidunt, nulla. </p>
+			]]>
+		</copy>
+	</content>
+	<module type="module" id="amaxusheader" module="amaxus" action="getpage">
+		<param name="url" value="https://www.palmettodunes.com/cde-header/" />
+	</module>
+	<module type="module" id="amaxusfooter" module="amaxus" action="getpage">
+		<param name="url" value="https://www.palmettodunes.com/cde-footer/" />
+	</module>
+	<caliban import="activeContentPath, includes/extra.xml" />
+</output>

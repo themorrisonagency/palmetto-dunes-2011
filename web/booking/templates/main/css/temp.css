@@ -1,0 +1,69 @@
+.footer-wrapper { clear: both; width: 100%; background: #3e78a8 url("/application/themes/theme_palmetto/images/layout/bg-footer.jpg") top center repeat-x; min-height: 407px; text-align: center; }
+.footer-wrapper .footer { max-width: 1048px; margin: 0 auto; }
+.footer-wrapper .footer .footer-top { width: 100%; }
+.footer-wrapper .footer .footer-top a { background: url("/application/themes/theme_palmetto/images/buttons/top.png") 0 0 no-repeat; width: 54px; height: 54px; display: block; margin: -28px auto 0; position: absolute; left: 50%; margin-left: -27px; }
+.footer-wrapper .footer .col { display: inline-block; margin: 0 0 20px 0; width: 33%; vertical-align: top; float: left; }
+.footer-wrapper .footer .col h3 { color: white; text-transform: uppercase; margin: 5px 0 25px 0; font-family: "Cabin", Arial, sans-serif; font-weight: 700; font-size: 20px; }
+.footer-wrapper .footer .col-1 { width: 68%; }
+.footer-wrapper .footer .col-1 h3 { text-align: left; font-size: 18px; font-weight: normal; position: relative; }
+.footer-wrapper .footer .col-1 h3 a { color: #fff; text-decoration: none; }
+.footer-wrapper .footer .col-1 h3 a:hover { text-decoration: underline; }
+.footer-wrapper .footer .col-1 h3 span { padding-left: 30px; }
+.footer-wrapper .footer .col-1 h3:before { background: url("/application/themes/theme_palmetto/images/layout/ftr-instagram-icon-bg.png") 0 0 no-repeat; content: ""; position: absolute; top: -3px; width: 21px; height: 21px; }
+.footer-wrapper .footer .col-1 .insta-feed { width: 100%; }
+.footer-wrapper .footer .col-1 .insta-feed img { width: 25%; padding: 0; margin: 0; display: inline-block; border-radius: 0; position: relative; float: left; }
+.footer-wrapper .footer .col-2 { width: 25%; float: right; border-left: 1px solid rgba(255, 255, 255, 0.5); padding-left: 3%; text-align: left; }
+.footer-wrapper .footer .col-2 ul { display: inline-block; width: auto; float: left; }
+.footer-wrapper .footer .col-2 ul li { display: inline-block; margin: 0; width: 100%; }
+.footer-wrapper .footer .col-2 ul .footer-push-inset { position: relative; margin: 0 0 5px; display: inline-block; }
+.footer-wrapper .footer .col-2 ul .footer-push-inset img { margin: 0; padding-right: 1rem; width: 36px !important; height: auto; float: left; }
+.footer-wrapper .footer .col-2 ul .footer-push-title { width: auto; margin: 0 auto; line-height: 36px; float: left; text-transform: uppercase; font-family: "Cabin", Arial, sans-serif; font-weight: 400; font-size: 16px; }
+.footer-wrapper .footer .col-2 ul a { text-decoration: none; color: white; display: inline-block; }
+.footer-wrapper .footer .col-2 ul li.push-webcams .overlay { background: url("/application/themes/theme_palmetto/images/push/overlay-webcams.png") 0 0 no-repeat; }
+.footer-wrapper .footer .col-2 ul li.push-photos .overlay { background: url("/application/themes/theme_palmetto/images/push/overlay-photos.png") 0 0 no-repeat; }
+.footer-wrapper .footer .col-2 .footer-btn { display: inline-block; margin-bottom: 8px; }
+.footer-wrapper .footer .col-2 h3 { text-align: left; margin: 5px 0 25px 20px; }
+.footer-wrapper .footer .col-2 p { margin: 0 0 11px; color: white; line-height: 18px; font-family: "Cabin", Arial, sans-serif; font-weight: 400; font-size: 14px; }
+.footer-wrapper .footer .col-2 p a { color: #b0ddff; }
+.footer-wrapper .footer .col-2 .phone { font-size: 18px; }
+.footer-wrapper .footer .col-2 .logo-gw { width: 184px; height: 30px; margin-left: 20px; }
+.footer-wrapper .footer .col-2 a.footer-link { color: #b0ddff; }
+.footer-wrapper .footer .col-2 span.divide { color: #b0ddff; padding: 0 10px; }
+.footer-wrapper .footer #social-icons { width: 100%; border-top: 1px solid #87acc9; padding: 13px 0 0 0; text-align: center; margin-bottom: 5px; }
+.footer-wrapper .footer #social-icons h3 { display: inline; color: #a0cbec; margin: 0 15px 0 0; vertical-align: top; font-family: "Cabin", Arial, sans-serif; font-weight: 700; font-size: 20px; }
+.footer-wrapper .footer #social-icons ul { display: inline; float: left; margin: 5px auto; }
+.footer-wrapper .footer #social-icons ul li { display: inline-block; margin: 0 5px 5px 0; }
+.footer-wrapper .footer #social-icons ul li a { width: 32px; height: 32px; display: block; background: url("/application/themes/theme_palmetto/images/layout/social-sprite.png") 0 0 no-repeat; }
+.footer-wrapper .footer #social-icons ul li#footer-sc { color: #a0cbec; margin: 0 15px 0 0; vertical-align: top; padding: 5px 0 0 0; font-family: "Cabin", Arial, sans-serif; font-weight: 700; font-size: 20px; }
+.footer-wrapper .footer #social-icons ul li#footer-facebook:hover a { background-position: 0 -32px; }
+.footer-wrapper .footer #social-icons ul li#footer-twitter a { background-position: -40px 0; }
+.footer-wrapper .footer #social-icons ul li#footer-twitter:hover a { background-position: -40px -32px; }
+.footer-wrapper .footer #social-icons ul li#footer-youtube a { background-position: -78px 0; }
+.footer-wrapper .footer #social-icons ul li#footer-youtube:hover a { background-position: -78px -32px; }
+.footer-wrapper .footer #social-icons ul li#footer-googleplus a { background-position: -118px 0; }
+.footer-wrapper .footer #social-icons ul li#footer-googleplus:hover a { background-position: -118px -32px; }
+.footer-wrapper .footer #social-icons ul li#footer-pinterest a { background-position: -158px 0; }
+.footer-wrapper .footer #social-icons ul li#footer-pinterest:hover a { background-position: -158px -32px; }
+.footer-wrapper .footer #social-icons ul li#footer-rss a { background-position: -116px 0; }
+.footer-wrapper .footer #social-icons ul li#footer-blog a { background-position: -192px 0; }
+.footer-wrapper .footer #social-icons ul li#footer-instagram a { background-position: -267px 0; }
+.footer-wrapper .footer #social-icons ul li#footer-fb-like, .footer-wrapper .footer #social-icons ul li#footer-tw-count { vertical-align: top; padding: 6px 0 0 0; }
+.footer-wrapper .footer #social-icons .ftr-signup-btn { float: left; margin-left: 2rem; }
+.footer-wrapper .footer #social-icons .ftr-signup-btn a { width: 160px; margin: 9px auto 0; }
+.footer-wrapper .footer #social-icons #footer-search { max-width: 270px; text-align: right; float: right; margin: 0 auto; }
+.footer-wrapper .footer #social-icons #footer-search form { width: 270px; }
+.footer-wrapper .footer #social-icons #footer-search input.ccm-search-block-text { width: 208px !important; color: #4c4c4c; text-transform: uppercase; border-radius: 0; padding: 6px 0 5px 8px; display: inline-block; font-family: "Cabin", Arial, sans-serif; font-weight: 600; font-size: 14px; }
+.footer-wrapper .footer #social-icons #footer-search input.ccm-search-block-submit { width: 43px !important; height: 34px; border: none; text-indent: -9999em; display: inline-block; overflow: hidden; background: url("/application/themes/theme_palmetto/images/buttons/search.png") no-repeat 0 0; }
+.footer-wrapper .footer .footer-bottom { width: 100%; max-width: 1048px; clear: both; float: none; color: #a0cbec; border-top: 1px solid #87acc9; padding: 18px 0 0 0; min-height: 40px; }
+.footer-wrapper .footer .footer-bottom #footer-links { float: left; font-family: "Cabin", Arial, sans-serif; font-weight: 400; font-size: 14px; }
+.footer-wrapper .footer .footer-bottom #footer-links #amax-menu-footernav { display: inline-block; }
+.footer-wrapper .footer .footer-bottom #footer-links a { color: white; }
+.footer-wrapper .footer .footer-bottom #footer-links .logo-gw { width: 168px; height: 27px; margin-left: 38px; float: right; }
+.footer-wrapper .footer .footer-bottom #footer-links span { margin: 0 0 0 20px; }
+.footer-wrapper .footer .footer-bottom #utility-nav { float: right; }
+.footer-wrapper .footer .footer-bottom #utility-nav ul { display: inline-block; margin: 0; }
+.footer-wrapper .footer .footer-bottom #utility-nav li { line-height: 33px; display: inline-block; margin-right: 1rem; font-family: "Cabin", Arial, sans-serif; font-weight: 400; font-size: 14px; }
+.footer-wrapper .footer .footer-bottom #utility-nav li a { color: #b0ddff; }
+.footer-wrapper .footer .footer-bottom #utility-nav li:last-child { margin-right: 0; }
+
+.landing .footer-wrapper .footer .col-3 .btn-contact { margin: 0 auto; }

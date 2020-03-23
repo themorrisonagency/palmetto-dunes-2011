@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btShsVideoSlider">
+        <field name="bID" type="I"><KEY/><UNSIGNED/></field>
+        <field name="loopVideo" type="I"><default value="1" /></field>
+        <field name="muteSound" type="I"><default value="1" /></field>
+        <field name="autoplay" type="I"><default value="0" /></field>
+        <field name="arrows" type="I"><default value="1" /></field>
+        <field name="speed" type="I"><default value="300" /></field>
+        <field name="autoplaySpeed" type="I"><default value="3000" /></field>
+    </table>
+    <table name="btShsVideoSliderEntries">
+        <field name="id" type="I"><UNSIGNED/><key/><AUTOINCREMENT/></field>
+        <field name="bID" type="I"><UNSIGNED /></field>
+        <field name="video" type="C" size="255"/>
+        <field name="videoImage" type="I"><default value="0" /></field>
+        <field name="promoTitle" type="X2"></field>
+        <field name="promoDescription" type="X2"></field>
+        <field name="promoButtonText" type="C" size="255"/>
+		<field name="internalLinkCID"  type="I">
+			<unsigned />
+			<default value="0" />
+		</field>
+        <field name="externalLinkURL" type="C" size="255"/>
+        <field name="linkedFileID" type="I">
+            <unsigned />
+        </field>
+        <field name="sortOrder" type="I"></field>
+    </table>
+</schema>

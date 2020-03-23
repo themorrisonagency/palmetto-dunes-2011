@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btSpecialOfferList">
+        <field name="bID" type="I">
+            <key/>
+            <unsigned/>
+        </field>
+        <field name="filterByTopicID" type="I" size="10">
+            <unsigned />
+            <notnull />
+            <default value="0" />
+        </field>
+        <field name="filterBy" type="X2">
+            <notnull />
+            <default value="all"/>
+        </field>
+    </table>
+
+    <table name="btSpecialOfferListItems">
+        <field name="id" type="I"><unsigned/><key/><autoincrement/></field>
+        <field name="bID" type="X2"></field>
+        <field name="pageID" type="X2"></field>
+        <field name="sort" type="I"></field>
+    </table>
+</schema>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<output>
+	<content>
+		<meta>
+			<![CDATA[
+			<!-- cmt id="meta" type="metatag" limit="1" aux="private:true;"--><!-- cmt_item type="metatag" aux="private:true;"-->
+				<title>Forms</title>
+				<meta name="keywords" content="" />
+				<meta name="description" content="" />
+			<!-- /cmt_item--><!-- /cmt-->
+			]]>
+		</meta>
+		<masthead>
+			<![CDATA[
+				<img src="/assets/images/masthead/masthead.jpg" alt="" border="0" />
+			]]>
+		</masthead>
+		<inset>
+			<![CDATA[
+				<img src="/assets/images/inset/inset.jpg" alt="" border="0" />
+			]]>
+		</inset>
+		<copy>
+			<![CDATA[
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In ornare, elit nec feugiat mattis, tortor dolor condimentum augue, sit amet hendrerit urna lorem eget quam. Donec eu enim a felis egestas tincidunt. Sed nonummy. Praesent euismod sollicitudin est. Nulla placerat. Donec id mauris id lectus posuere vehicula. Vivamus et ante eu lorem commodo fermentum. Quisque in turpis. Sed tellus nulla, gravida vel, consequat eu, fermentum tincidunt, nulla.</p>
+					<h3>Heading Level 3</h3>
+					<p>Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing elit</a>. In ornare, elit nec feugiat mattis, tortor dolor condimentum augue, sit amet hendrerit urna lorem eget quam. Donec eu enim a felis egestas tincidunt. Sed nonummy. Praesent euismod sollicitudin est.</p>
+					<blockquote>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In ornare, elit nec feugiat mattis, tortor dolor condimentum augue, sit amet hendrerit urna lorem eget quam. Donec eu enim a felis egestas tincidunt. Sed nonummy.</p>
+						<cite>Praesent euismod sollicitudin est.</cite>
+					</blockquote>
+					<h4>Heading Level 4</h4>
+					<ol>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+					</ol>
+					<h5>Heading Level 5</h5>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In ornare, elit nec feugiat mattis, tortor dolor condimentum augue, sit amet hendrerit urna lorem eget quam. Donec eu enim a felis egestas tincidunt. Sed nonummy. Praesent euismod sollicitudin est. Nulla placerat. Donec id mauris id lectus posuere vehicula. Vivamus et ante eu lorem commodo fermentum. Quisque in turpis. Sed tellus nulla, gravida vel, consequat eu, fermentum tincidunt, nulla.</p>
+					<ul>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+					</ul>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In ornare, elit nec feugiat mattis, tortor dolor condimentum augue, sit amet hendrerit urna lorem eget quam. Donec eu enim a felis egestas tincidunt. Sed nonummy. Praesent euismod sollicitudin est. Nulla placerat. Donec id mauris id lectus posuere vehicula. Vivamus et ante eu lorem commodo fermentum. Quisque in turpis. Sed tellus nulla, gravida vel, consequat eu, fermentum tincidunt, nulla.</p>
+			]]>	
+		</copy>
+	</content>
+	<caliban import="activeContentPath, includes/extra.xml" />
+</output>

@@ -1,0 +1,15 @@
+User-agent: */ 
+Disallow: /packages
+Disallow: /updates
+Disallow: /index.php 
+Disallow: /category/
+Disallow: /tag/
+Disallow: /ppc-bikes
+Disallow: /ppc-golf
+Disallow: /scgolf
+Disallow: /cde-header
+Disallow: /cde-footer
+Dissalow: /survey 
+Disallow: /elopement-package
+
+Sitemap: https://www.palmettodunes.com/sitemap.xml

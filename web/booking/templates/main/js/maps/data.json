@@ -1,0 +1,103 @@
+record: [
+{
+@attributes: {
+id: "375",
+georss_point: "32.747598480396704 -97.09293007850647",
+title: "Cowboys Stadium",
+type: "point",
+pushpin: "/swamp/images/map/pins/pin-red.gif",
+linecolor: "255,0,0",
+linewidth: "1",
+fillcolor: "0,0,155"
+},
+address: { },
+description: "<p>Home of the Dallas Cowboys professional football team, the gleaming new Cowboys Stadium also plays host to a wide range of exciting concert performances and other events.</p>",
+website: "http://www.dallascowboys.com",
+moreinfo: { },
+schedule: { },
+images: { },
+category: {
+record: "Entertainment"
+}
+},
+{
+@attributes: {
+id: "376",
+georss_point: "32.75251865386963 -97.07240179181099",
+title: "Six Flags Over Texas",
+type: "point",
+pushpin: "/swamp/images/map/pins/pin-red.gif",
+linecolor: "255,0,0",
+linewidth: "1",
+fillcolor: "0,0,155"
+},
+address: "2201 Road to Six Flags Street East",
+description: "<p>Six Flags Over Texas is the must-see theme park in north Texas. From rollercoasters to live performances, visitors to this sprawling park will experience a piece of the rich heritage of the state of Texas.</p>",
+website: "http://www.sixflags.com",
+moreinfo: { },
+schedule: { },
+images: { },
+category: {
+record: "Entertainment"
+}
+},
+{
+@attributes: {
+id: "377",
+georss_point: "32.784629821777344 -97.34833526611328",
+title: "Joe T. Garcia's",
+type: "point",
+pushpin: "/swamp/images/map/pins/pin-red.gif",
+linecolor: "255,0,0",
+linewidth: "1",
+fillcolor: "0,0,155"
+},
+address: { },
+description: "<p>A trip to historic Fort Worth isn't complete without dining at Joe T. Garcia's family-run Mexican restaurant. For the fullest experience, dine outside in the lush patio area that spans an entire city block.</p>",
+website: "http://www.joets.com",
+moreinfo: { },
+schedule: { },
+images: { },
+category: {
+record: "Dining"
+}
+},
+{
+@attributes: {
+id: "379",
+georss_point: "",
+title: "Test",
+type: "point",
+pushpin: "/swamp/",
+linecolor: "",
+linewidth: "",
+fillcolor: ""
+},
+address: { },
+description: "<p>Test</p>",
+website: { },
+moreinfo: { },
+schedule: { },
+images: { },
+category: { }
+},
+{
+@attributes: {
+id: "380",
+georss_point: "",
+title: "Test",
+type: "point",
+pushpin: "/swamp/",
+linecolor: "",
+linewidth: "",
+fillcolor: ""
+},
+address: { },
+description: "<p>Test</p>",
+website: { },
+moreinfo: { },
+schedule: { },
+images: { },
+category: { }
+}
+]

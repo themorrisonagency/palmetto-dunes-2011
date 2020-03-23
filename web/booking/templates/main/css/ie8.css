@@ -1,0 +1,56 @@
+#application-form { float:left; width: 460px !important; }
+.fake { position: relative; top: -6px !important; }
+.file { width: 200px !important;  }
+.browse-button { padding: 0 10px !important; position: relative; top: -2px; line-height: 20px !important;}
+
+#gallery { background: transparent url('../images/photo-gallery/darker-transparent-ie.png') top left repeat; }
+#menu-bar { background: transparent url('../images/photo-gallery/darker-transparent-ie.png') top left repeat-x; }
+#gallery-footer { background: #000; }
+.galleria-thumbnails-list { padding-top: 2px; background: #000; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; }
+
+.galleria-info { background: #000;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; }
+.notouch .galleria-info-close:hover { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+.touch .galleria-info-close:active { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+.galleria-info-link { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; }
+.notouch .galleria-info-link:hover { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+.touch .galleria-info-link:active { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+
+.dropdown dd ul { background: transparent url('../images/photo-gallery/darker-transparent-ie.png') top left repeat; }
+
+input#resume_file { height: 20px; }
+
+.galleria-tooltip {-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important; }
+.galleria-tooltip p { background: transparent url('../images/photo-gallery/darker-transparent-ie.png') top left repeat; }
+
+.galleria-layer { background: url(../images/photo-gallery/blank.gif) top left repeat; }
+
+.galleria-thumbnails-container { padding: 0 0 2px; margin: 0 auto; }
+
+/* embedded */
+.gallery-embedded #gallery-picker ul { list-style: none; width: 590px; position: absolute; top: 10px; left: 50%; margin-left: -295px; padding: 0 0 50px; }
+	.gallery-embedded #gallery-picker ul li { float: left; margin: 5px; }
+	.gallery-embedded #gallery-picker ul li a { width: 285px; height: 100px; display: block; background: url("../images/photo-gallery/main-menu-small.jpg") no-repeat; }
+		#gallery-picker ul li a.accommodations { background-position: 0 0; }
+		.gallery-embedded #gallery-picker ul li a.dining { background-position: -295px 0; }
+		.gallery-embedded #gallery-picker ul li a.golf { background-position: 0 -110px; }
+		.gallery-embedded #gallery-picker ul li a.spa { background-position: -295px -110px; }
+		.gallery-embedded #gallery-picker ul li a.activities { background-position: 0 -220px; }
+		.gallery-embedded #gallery-picker ul li a.events { background-position: -295px -220px; }
+		.gallery-embedded #gallery-picker ul li a.weddings { background-position: 0 -330px; }
+		.gallery-embedded #gallery-picker ul li a.location { background-position: -295px -330px; }
+
+/* media gallery */
+#corp-facts-footer-wrapper {position:relative; top:5px; margin-top:-5px; padding:20px 20px 0; } /* to fix gap under corp footer */
+
+.home #sidebar { margin:311px 40px 50px 0;}
+#home-push h3 { letter-spacing:0.04em; }
+
+.social #twitter-wrapper .twtr-widget .twtr-bd {height:408px;}
+.social #twitter-wrapper .twtr-widget .twtr-tweet {padding:0;}
+.social #twitter-wrapper .twtr-widget .twtr-tweet .twtr-tweet-wrap { background:url(/images/layout/social-underline.png) repeat-x 0 0; padding:20px 0 12px; }
+.social #twitter-wrapper .twtr-widget #tweet-id-4 .twtr-tweet-wrap {background-image:none; padding:4px 0 12px;}
+
+.form #content form#golf-request #golf-services #service-group li {height:24px;}
+
+#reservations-console #group-code {width: 120px; padding: 4px 0 0 2px; margin-top:1px;}
+#reservations-console #iata-number {height: 12px; width: 120px; padding: 2px 0 0 2px; }

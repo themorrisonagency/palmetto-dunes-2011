@@ -1,0 +1,18 @@
+#header, .book-section-heading, .activities-push-wrapper, .footer-wrapper, .sec-nav, .conf-send, .h-line { display: none; }
+.book-block, .block-heading { border: 0; }
+
+
+/* confirmation page */
+.confirmation #header { display: block; }
+.confirmation .page-wrapper { margin: 80px auto 0; width: 90%;}
+.confirmation #edit-guestinfo,
+.confirmation #header .bg-subnav,
+.confirmation #header .primary-nav,
+.confirmation .conf-send,
+.confirmation .h-line,
+.confirmation .conf-share { display: none; }
+
+.confirmation .book-unit-details { float: none; width: 100%; }
+.confirmation .book-pricing-details { float: none; width: 100%; }
+
+.confirmation .confirmation-number, .confirmation .conf-contact { text-align: left; color: #000; }

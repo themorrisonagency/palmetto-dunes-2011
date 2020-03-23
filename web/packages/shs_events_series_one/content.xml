@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<concrete5-cif version="1.0">
+    <blocktypes>
+      <blocktype handle="shs_event_slider" package="shs_events_series_one"/>
+      <blocktype handle="shs_event_calendar_series_one" package="shs_events_series_one"/>
+    </blocktypes>
+</concrete5-cif>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<output>
+	<content>
+		<heading>
+			<![CDATA[Event]]>
+		</heading>
+		<meta>
+			<![CDATA[
+			<!-- cmt id="meta" type="metatag" limit="1" aux="private:true;"--><!-- cmt_item type="metatag" aux="private:true;"-->
+				<title>Enter Page Title Here</title>
+				<meta name="keywords" content="" />
+				<meta name="description" content="" />
+			<!-- /cmt_item--><!-- /cmt-->
+			]]>
+		</meta>
+		<masthead>
+			<![CDATA[
+				<img src="/assets/images/masthead/masthead.jpg" alt="" border="0" />
+			]]>
+		</masthead>
+		<inset>
+			<![CDATA[
+				<img src="/assets/images/inset/inset.jpg" alt="" border="0" />
+			]]>
+		</inset>
+		<copy>
+			<![CDATA[
+					<p>Events are fun!</p>
+			]]>	
+		</copy>
+	</content>
+	<module type="module" id="events" title="Events Calendar" module="mcc" action="getEvents">
+		<param name="cid" value="1509" />
+	</module>
+	<module type="module" id="calendar" title="Events Calendar" module="calendar" action="getCalendar">
+		<param name="start_day" value="2" />
+        <param name="cid" value="1509" />
+	</module>
+	<caliban import="activeContentPath, includes/extra.xml" />
+</output>

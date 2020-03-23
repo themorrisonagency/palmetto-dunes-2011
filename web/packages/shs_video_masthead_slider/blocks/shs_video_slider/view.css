@@ -1,0 +1,382 @@
+ /* ------------------------------------------ */
+
+.headerWrapper {
+/*  border: 1px solid green; */
+    position: fixed;
+    z-index: 20;
+    height: 470px;
+    overflow: hidden;
+}
+
+#scrollBtn {
+/*  border: 1px solid red; */
+    width: 75px;
+    height: 58px;
+    position: absolute;
+    cursor:pointer;
+    top: 500px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 20px;
+}
+
+/* ------------------------------------------- */
+
+.contentHeaderVid {
+
+}
+
+.contentHeaderVid div.video {
+    position: relative;
+    height: 568px;
+    max-height: 568px;
+}
+
+@media (min-width: 1920px) {
+    .contentHeaderVid div.video {
+        height: 650px;
+        max-height: 650px;
+    }
+}
+
+.video video { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 1. No object-fit support: */
+@media (min-aspect-ratio: 16/9) {
+  .video video { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video video { width: 300%; left: -100%; }
+}
+
+/* 2. If supporting object-fit, overriding (1): */
+@supports (object-fit: cover) {
+  .video video {
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+}
+
+.masthead-wrapper .buttons { top: 230px; z-index: 100; width: 100%; display: block; }
+
+.masthead-wrapper .buttons .vidBtn {
+    width: 37px;
+    height: 69px;
+    display: block;
+    position: absolute;
+    top: 40%;
+}
+
+#slickPrev, #slickNext {
+    width: 37px;
+    height: 69px;
+    display: block;
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+}
+
+#slickPrev {
+    background: url("/application/themes/theme_palmetto/images/layout/masthead-arrows2.png") 0 0 no-repeat;
+    left: 45px;
+}
+
+#slickNext {
+    background: url("/application/themes/theme_palmetto/images/layout/masthead-arrows2.png") -286px 0 no-repeat;
+    right: 45px;
+}
+
+/*.next-icon, .prev-icon {
+    display: block;
+    border-top: solid 2px #fff;
+    border-right: solid 2px #fff;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+.next-icon {
+    left: -5px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.prev-icon {
+    left: auto;
+    right: -5px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}*/
+
+#contentHeaderVidCover {
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    width: 1400px;
+    height: 2000px;
+    top: 0;
+}
+
+/* ------------------------------------------- */
+
+#stayBtn {
+/*  border: 2px solid blue; */
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    top: 83px;
+    left: 423px;
+    cursor: pointer;
+}
+
+#stayPanelWrapper {
+/*  border: 1px solid red; */
+    overflow: hidden;
+    position: absolute;
+    top: 129px;
+}
+
+#stayPanel {
+    position: relative;
+    top: -430px;
+}
+
+/* ------------------------------------------- */
+
+.bodyWrapper {
+/*  border: 1px solid green; */
+    position: absolute;
+    top:171px;
+}
+
+#contentBody {
+/*  border: 1px solid red; */
+    overflow: hidden;
+    /* height is overall image height - header height (not in this case though for some reason) */
+    height: 4470px;
+}   
+
+#contentBody img {
+    position: relative;
+    top: -171px;
+}
+
+#pushPanelWrapper {
+/*  border: 1px solid red; */
+    width: 1400px;
+    height: 578px;
+    position: absolute;
+    overflow: hidden;
+    top: 180px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /*   */
+/*  z-index: 10; */
+}
+
+#pushPanel {
+    position: absolute;
+    top: 441px;
+}
+
+#pushPanelPlus {
+    position: absolute;
+    top: 510px;
+    left: 1317px;
+}
+
+/* ------------------------------------------- */
+
+.hiddenButtons {
+    position: fixed;
+    z-index: 100;
+}
+
+.hiddenButtons div {
+/*  border: 1px solid red; */   
+}
+
+#slickPrevHidd {
+    position: absolute;
+    background-color: rgba(0, 133, 255, 0.0);
+    width: 62px;
+    height: 62px;
+    top: 694px;
+    left: 120px;
+    cursor: pointer;        
+}
+
+#slickNextHidd {
+    position: absolute;
+    background-color: rgba(0, 133, 255, 0.0);
+    width: 62px;
+    height: 62px;
+    top: 694px;
+    left: 188px;
+    cursor: pointer;        
+}
+
+#pushPanelHotspot {
+    position: absolute;
+    background-color: rgba(0, 133, 255, 0.0);
+    width: 500px;
+    height: 200px;
+    top: 556px;
+    left: 900px;
+    cursor: pointer;
+}
+
+.home .masthead-wrapper {
+    /*height: 568px;*/
+    max-height: 568px;
+}
+
+@media (min-width: 1920px) {
+    .home .masthead-wrapper {
+        /*height: 100%;*/
+        max-height: 650px;
+    }
+}
+
+.home .masthead-wrapper img { display: none; }
+
+.masthead-promo {
+    color: white;
+    width: 700px;
+    text-align: center;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    margin-left: -350px;
+    font-family: "Cabin", Arial, sans-serif;
+    opacity: 0;
+}
+.slick-active .masthead-promo {
+    -webkit-transition: opacity 1.6s ease-in;
+       -moz-transition: opacity 1.6s ease-in;
+         -o-transition: opacity 1.6s ease-in;
+    opacity: 1;
+}
+
+.masthead-title {
+    text-shadow: 2px 2px 5px black;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.masthead-description {
+    width: 555px;
+    margin: 0 auto 20px;
+    text-shadow: 2px 2px 5px black;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05rem;
+    font-weight: 300;
+}
+
+.masthead-buttons a.orange-btn {
+    width: 157px;
+    margin: 0 auto;
+    -moz-box-shadow: 0 0 0 3px #d16428, 4px 4px 10px #000;
+    -webkit-box-shadow: 0 0 0 3px #d16428, 4px 4px 10px #000;
+    box-shadow: 0 0 0 3px #d16428, 4px 4px 10px #000;
+}
+
+@media only screen and (min-device-width : 615px) and (max-device-width : 765px) {
+    .home .masthead-wrapper img { width: 100%; }
+}
+
+@media only screen and (max-width: 764px) {
+    .home .masthead-wrapper { margin: 131px 0 auto; }
+    .contentHeaderVid { max-height: 375px; }
+        .slick-list { min-height: 240px; }
+    .home .masthead-wrapper img { display: block; width: initial; height: inherit; max-height: 240px; }
+    .home .video video { display: none; }
+    .contentHeaderVid div.video { max-height: 240px; }
+
+    .masthead-title {
+        text-shadow: none;
+        margin: 0 auto 18px;
+        font-size: 28px;
+        max-width: 260px;
+    }
+    .masthead-description { display: none; }
+    .masthead-wrapper .buttons { top: 85px; display: none; }
+        .masthead-wrapper .buttons .vidBtn {
+            background: url("/application/themes/theme_palmetto/images/layout/masthead-arrows-mobile2.png") -16px 0 no-repeat;
+            width: 19px;
+            height: 36px;
+            display: block;
+        }
+        .masthead-wrapper .buttons #slickPrev { 
+            background: url("/application/themes/theme_palmetto/images/layout/masthead-arrows-mobile2.png") -16px 0 no-repeat;
+            left: 15px; 
+        }
+        .masthead-wrapper .buttons #slickNext { 
+            background: url("/application/themes/theme_palmetto/images/layout/masthead-arrows-mobile2.png") -286px 0 no-repeat;
+            right: 15px; 
+        }
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}

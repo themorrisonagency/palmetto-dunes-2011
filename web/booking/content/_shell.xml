@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<output>
+	<content>
+		<meta>
+			<![CDATA[
+			<!-- cmt id="meta" type="metatag" limit="1" aux="private:true;"--><!-- cmt_item type="metatag" aux="private:true;"-->
+				<title>Enter Page Title Here</title>
+				<meta name="keywords" content="" />
+				<meta name="description" content="" />
+			<!-- /cmt_item--><!-- /cmt-->
+			]]>
+		</meta>
+		<heading>
+			<![CDATA[
+            <!-- cmt id="heading" type="text" limit="1"--><!-- cmt_item type="text"-->Page Heading<!-- /cmt_item--><!-- /cmt-->
+            ]]>
+		</heading>
+		<masthead>
+			<![CDATA[
+           		<!-- cmt id="masthead" type="image" limit="1" aux="path:assets/images/masthead/"--><!-- cmt_item type="image" aux="path:assets/images/masthead/"--><img src="/assets/images/masthead/masthead.jpg" alt="" border="0" /><!-- /cmt_item--><!-- /cmt--> 
+			]]>
+		</masthead>
+		<inset>
+			<![CDATA[
+				<!-- cmt id="inset" type="image" limit="1" aux="path:assets/images/inset/"--><!-- cmt_item type="image" aux="path:assets/images/inset/"--><img src="/assets/images/inset/inset.jpg" alt="" border="0" /><!-- /cmt_item--><!-- /cmt-->
+			]]>
+		</inset>
+		<copy>
+			<![CDATA[
+            <!-- cmt id="content"--><!-- cmt_item type="0"--><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In ornare, elit nec feugiat mattis, tortor dolor condimentum augue, sit amet hendrerit urna lorem eget quam. Donec eu enim a felis egestas tincidunt. Sed nonummy. Praesent euismod sollicitudin est. Nulla placerat. Donec id mauris id lectus posuere vehicula. Vivamus et ante eu lorem commodo fermentum. Quisque in turpis. Sed tellus nulla, gravida vel, consequat eu, fermentum tincidunt, nulla.</p>
+					<h3>Heading Level 3</h3>
+					<p>Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing elit</a>. In ornare, elit nec feugiat mattis, tortor dolor condimentum augue, sit amet hendrerit urna lorem eget quam. Donec eu enim a felis egestas tincidunt. Sed nonummy. Praesent euismod sollicitudin est.</p>
+					<blockquote>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In ornare, elit nec feugiat mattis, tortor dolor condimentum augue, sit amet hendrerit urna lorem eget quam. Donec eu enim a felis egestas tincidunt. Sed nonummy.</p>
+						<cite>Praesent euismod sollicitudin est.</cite>
+					</blockquote>
+					<h4>Heading Level 4</h4>
+					<ol>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+					</ol>
+					<h5>Heading Level 5</h5>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In ornare, elit nec feugiat mattis, tortor dolor condimentum augue, sit amet hendrerit urna lorem eget quam. Donec eu enim a felis egestas tincidunt. Sed nonummy. Praesent euismod sollicitudin est. Nulla placerat. Donec id mauris id lectus posuere vehicula. Vivamus et ante eu lorem commodo fermentum. Quisque in turpis. Sed tellus nulla, gravida vel, consequat eu, fermentum tincidunt, nulla.</p>
+					<ul>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+					</ul>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In ornare, elit nec feugiat mattis, tortor dolor condimentum augue, sit amet hendrerit urna lorem eget quam. Donec eu enim a felis egestas tincidunt. Sed nonummy. Praesent euismod sollicitudin est. Nulla placerat. Donec id mauris id lectus posuere vehicula. Vivamus et ante eu lorem commodo fermentum. Quisque in turpis. Sed tellus nulla, gravida vel, consequat eu, fermentum tincidunt, nulla.</p><!-- /cmt_item--><!-- /cmt-->
+			]]>	
+		</copy>
+	</content>
+	<caliban import="activeContentPath, includes/extra.xml" />
+</output>

@@ -1,0 +1,38 @@
+.ui-dialog .ui-dialog-content.ui-dialog-spinner{
+    background: url("https://assets.sabrecdn.com/images/loading.gif") no-repeat scroll 15px 20px transparent;
+    padding: 30px 0 0px 70px;
+    border: 2px solid #DDDDDD;
+    font-weight: 900;
+    line-height: 1em;
+    font-size: 1.1em;
+    color: #737373;
+}
+
+
+.shs-edit-helper-text {
+    background-color:#def; 
+    padding: 20px; 
+    margin: 20px;
+    border: 1px solid #89a;
+}
+
+#ccm-dashboard-content .ccm-search-main-lookup-field {
+	border: 1px #ccc solid;
+	border-radius: 4px;
+	margin-left: 10px;
+}
+
+.ccm-ui form.ccm-search-fields ul.ccm-search-form-advanced {
+	top: -22px;
+	right: 160px;
+}
+
+.ccm-ui form.ccm-search-fields div.ccm-search-main-lookup-field input {
+	border: 1px #ccc solid;
+	border-radius: 4px;
+	padding-left: 10px;
+}
+
+.ccm-ui form.ccm-search-fields select.ccm-search-bulk-action, .ccm-ui form.ccm-search-fields select.ccm-search-choose-field {
+	border: 1px #ccc solid;
+}

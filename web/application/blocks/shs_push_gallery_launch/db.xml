@@ -1,0 +1,17 @@
+<?php xml version="1.0"?>
+<schema version="0.3">
+	<table name="btShsPushGalleryLaunch">
+		<field name="bID" type="I">
+			<key/>
+			<unsigned/>
+		</field>
+        <field name="image" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+        <field name="title" type="C" size="255"></field>
+        <field name="ctaIcon" type="C" size="255"></field>
+        <field name="pinterestBtn" type="C"></field>
+        <field name="linkUrl" type="C" size="255"></field>
+	</table>
+</schema>

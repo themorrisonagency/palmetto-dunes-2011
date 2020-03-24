@@ -1,0 +1,293 @@
+//Golf Pages
+
+.golf-instruction {
+  #ccm-layout-column-567 {
+    width: 65% !important;
+  }
+
+  .ccm-custom-style-main103,
+  .ccm-custom-style-main104 {
+    margin-bottom: 20px;
+  }
+
+  .content-wrapper {
+    table {
+      @media only screen and (max-width: 764px) {
+        margin-bottom: 20px !important;
+      }
+    }
+
+    .content-left {
+      .green-btn {
+        &.pdf-link {
+          margin-left: 4px;
+        }
+      }
+    }
+
+    .ccm-custom-style-main505682-115837 {
+      margin-bottom: 60px;
+    }
+  }
+
+  .push-interior-right {
+    padding-top: 0;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .ccm-custom-style-main103 {
+      padding-bottom: 20px;
+
+      .green-btn {
+        padding: 0 28px;
+      }
+    }
+
+    .mobile-content-wrapper {
+      margin: 0 auto;
+      width: 90%;
+
+      img {
+        height: auto;
+        margin: 0 auto !important;
+        width: 100%;
+      }
+
+      p {
+        clear: both;
+        padding-top: 15px;
+        width: 100% !important;
+      }
+
+      td {
+        padding-left: 10px;
+      }
+    }
+
+    .ccm-custom-style-main505 {
+      h2 {
+        margin-bottom: 0;
+      }
+    }
+
+    #ccm-layout-column-567 {
+      width: 90% !important;
+
+      .events-controls {
+        padding-top: 15px;
+      }
+
+      .tag {
+        display: none;
+      }
+    }
+
+    .golf-course-wrapper-no-overlay {
+      &.push-Unit {
+        max-width: 95%;
+
+        img {
+          height: auto !important;
+        }
+      }
+
+      .push-inset {
+        height: auto;
+      }
+
+      .push-title {
+        margin-top: -40px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 765px) and (max-width: 1024px) {
+    .mobile-tert-nav {
+      .section-title {
+        color: $gray;
+        font-family: $cabin;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 26px;
+        margin: 10px 0 15px;
+        text-align: center;
+        text-transform: uppercase;
+
+        span {
+          color: $dk-gray;
+          display: block;
+          font-size: 24px;
+        }
+      }
+    }
+
+    ul {
+      &.tertiary {
+        border-bottom: 4px double $line-blu;
+        border-top: 1px solid $line-blu;
+        margin: 0;
+
+        li {
+          border-bottom: 1px solid $line-blu;
+        }
+      }
+    }
+
+    .row {
+      .columns {
+        .content-left {
+          margin-left: 2.5%;
+          padding-right: 20px;
+          width: 60% !important;
+        }
+      }
+    }
+
+    .ccm-custom-style-main104 {
+      padding-left: 20px !important;
+      width: 30% !important;
+    }
+
+    #ccm-layout-column-wrapper-423 {
+      div {
+        &.ccm-layout-column {
+          width: 100%;
+        }
+      }
+    }
+
+    .golf-course-wrapper-no-overlay {
+      &.push-Unit {
+        max-width: 95%;
+
+        img {
+          height: auto !important;
+        }
+      }
+
+      .push-inset {
+        height: auto;
+      }
+
+      .push-title {
+        margin-top: -38px;
+      }
+    }
+  }
+}
+
+.golf-course-wrapper {
+  display: inline-block;
+
+  .push-inset {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    img {
+      margin: 0;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  .overlay {
+    background: url('#{$img-path}/push/golf-course-overlay.png') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-size: cover;
+    bottom: 18px !important;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  p { margin: 2em 0 3em !important; }
+
+  .push-title {
+    background: none repeat scroll 0 0 $green;
+    color: $white;
+    font-family: $cabin;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -18px;
+    position: relative;
+    width: 100%;
+
+    a {
+      color: $white;
+      font-weight: normal;
+      text-decoration: none;
+
+      &:hover { color: $white; }
+    }
+  }
+
+  &.push-Unit {
+    margin: 20px auto;
+    padding: 0;
+    vertical-align: top;
+
+    @media only screen and (max-width: 767px) {
+      width: 95% !important;
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+
+    .overlay {
+      background-position: center 0;
+    }
+
+    &:nth-child(odd) {
+      @media only screen and (min-width: 768px) {
+        margin-right: 2%;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      //width: 48% !important;
+    }
+  }
+}
+
+.push-half {
+  @media only screen and (max-width: 767px) {
+    margin: 0 2.5%;
+    width: 95% !important;
+  }
+
+  .golf-course-wrapper {
+    &.push-Unit {
+      .overlay {
+        bottom: 0;
+      }
+
+      .push-title {
+        padding: 12px 0;
+      }
+
+      .blue-btn {
+        display: inline-block;
+        padding: 8px 10px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.three-col.golf-courses .golf-course-wrapper.push-Unit,
+.medium-4 .golf-course-wrapper.push-Unit {
+    @media only screen and (min-width: 768px) {
+        width: 100% !important;
+    }
+   
+}

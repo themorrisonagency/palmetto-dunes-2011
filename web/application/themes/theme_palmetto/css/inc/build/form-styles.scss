@@ -1,0 +1,114 @@
+.contact-property-management {
+	div.ccm-block-type-form {
+		form {
+			margin: 0 auto;
+
+			legend { display: none; }
+			span {
+				&.alert { 
+					color: #CC0000;
+					padding: 2px;
+					font-weight: bold;
+				}
+			
+				&.required {
+					color: red;
+				}
+			}
+			
+			.fieldGroup {
+				padding: 5px;
+				overflow: hidden;
+				position: relative;
+
+				label.control-label {
+					display: inline-block;
+	    			margin: 0;
+	    			width: 45%;
+	    			height: 36px;
+	    			line-height: 36px;
+	    			float: left;
+					text-align: right;
+					font-weight: 400;
+					font-size: 15px;
+					padding-right: 2%;
+				}
+			
+				input, select, textarea {
+					border: 1px solid #999999;
+					border-radius: 1px;
+					font-family: Verdana;
+					padding: 3px 8px;
+					width: 50%;
+					height: 36px;
+					line-height: 1.467;
+					font-size: 16px;
+					box-sizing: border-box;
+				}
+				input.date-picker {
+					width: 30% !important;
+				}
+				input#num_rounds {
+					width: 25%;
+				}
+				.radio {
+					display: inline-block;
+	    			height: 36px;
+	    			line-height: 36px;
+	    			float: left;
+					text-align: right;
+					font-weight: 400;
+					font-size: 15px;
+
+					input {
+						display: inline-block;
+						width: auto;
+					}
+					span {
+						line-height:38px;
+						margin-right: 8px;
+						vertical-align: top;
+					}
+				}
+				img.ui-datepicker-trigger {
+					margin-left: -32px;
+					vertical-align: bottom;
+					position: absolute;
+					top: 11px;
+					right: 24%;
+				}
+				select {
+					border-radius: 0;
+					margin-top: 0;
+				}
+				textarea {
+					height: 100px;
+				}
+				input[type="checkbox"] {
+					width: 15px;
+					height: 30px;
+					cursor: pointer;
+				}
+				input[type="radio"] {
+
+				}
+				input[type="submit"] {
+					border-radius: 0;
+					height: auto;
+				}
+			}
+
+			.form-actions {
+				display: inline-block;
+				margin: 20px 0  0 41%;
+				width: 65%;
+
+				.sg-button {
+					float: left;
+					margin-left: 35px;
+					width: 130px !important;
+				}
+			}
+		}
+	}
+}

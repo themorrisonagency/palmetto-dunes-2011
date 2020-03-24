@@ -1,0 +1,34 @@
+.g-recaptcha {
+  float: right;
+  margin-right: 2%;
+  margin-top: 10px;
+
+  div {
+    height: auto !important;
+  }
+}
+
+body[data-pageid="294"] {
+  .g-recaptcha {
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 764px) {
+  body[data-pageid="294"] {
+    .content-inner {
+      width: 95%;
+    }
+
+    .form-rfp {
+      form {
+        width: 100%;
+      }
+    }
+  }
+
+  .g-recaptcha {
+    float: left;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btShsGalleria">
+        <field name="bID" type="I">
+            <key />
+            <unsigned />
+        </field>
+        <field name="fsID" type="I">
+            <unsigned />
+        </field>
+        <field name="shownAttributes" type="C" size="255" />
+        <field name="copyright" type="C" size="255" />
+        <field name="useTrigger" type="L">
+            <unsigned />
+            <notnull />
+            <default value="0" />
+        </field>
+        <field name="triggerPage" type="I">
+            <unsigned />
+            <notnull />
+            <default value="1" />
+        </field>
+    </table>
+    <table name="btShsGalleriaImages">
+        <field name="galleriaImageID" type="I">
+            <key />
+            <autoincrement />
+            <unsigned />
+        </field>
+        <field name="bID" type="I">
+            <unsigned />
+        </field>
+        <field name="fID" type="I">
+            <unsigned />
+        </field>
+        <field name="title" type="C" size="255" />
+        <field name="description" type="X2"></field>
+        <field name="sortOrder" type="I" />
+    </table>
+    <table name="btShsGalleriaVideos">
+        <field name="galleriaVideoID" type="I">
+            <key />
+            <autoincrement />
+            <unsigned />
+        </field>
+        <field name="bID" type="I">
+            <unsigned />
+        </field>
+        <field name="videoURL" type="C" size="255" />
+        <field name="title" type="C" size="255" />
+        <field name="description" type="X2"></field>
+        <field name="sortOrder" type="I" />
+    </table>
+    <table name="btShsGalleriaItemsCategories">
+        <field name="galleriaItemsCategoriesID" type="I">
+            <key />
+            <autoincrement />
+            <unsigned />
+        </field>
+        <field name="bID" type="I">
+            <unsigned />
+        </field>
+        <field name="galleriaImageID" type="I">
+            <unsigned />
+        </field>
+        <field name="galleriaVideoID" type="I">
+            <unsigned />
+        </field>
+        <field name="treeTopicNodesID" type="I">
+            <unsigned />
+        </field>
+    </table>
+</schema>

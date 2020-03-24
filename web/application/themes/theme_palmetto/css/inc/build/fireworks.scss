@@ -1,0 +1,54 @@
+.fireworks-widget-wrapper {
+  float: right;
+}
+
+.fireworks-widget {
+  margin: 10px 0;
+
+  @media (min-width: 765px) {
+    margin-right: 8px;
+  }
+
+  &.inactive {
+    display: none;
+  }
+
+  &.active {
+    display: block;
+  }
+
+  a {
+    background: url('../../images/fireworks-icon.png') no-repeat;
+    background-position: 10px 0;
+    background-size: 50px;
+    color: $tawny;
+    display: block;
+    font-family: 'Cabin', sans-serif;
+    font-size: 13px;
+    padding-top: 25px;
+    text-decoration: none;
+
+    @media (min-width: 765px) {
+      padding-left: 55px;
+      padding-top: 0;
+    }
+
+    span {
+      display: block;
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+  }
+}
+
+html {
+  &.ccm-toolbar-visible {
+    .fireworks-widget {
+      display: block !important;
+
+      &.inactive {
+        opacity: .5;
+      }
+    }
+  }
+}

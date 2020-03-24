@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btShsWeather">
+        <field name="bID" type="I">
+            <key/>
+            <unsigned/>
+        </field>
+        <field name="location" type="C"></field>
+        <field name="zipCode" type="C"></field>
+        <field name="units" type="C">
+        	<default value="F" />
+        </field>
+    </table>
+</schema>

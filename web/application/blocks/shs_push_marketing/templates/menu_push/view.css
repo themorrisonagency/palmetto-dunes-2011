@@ -1,0 +1,33 @@
+.push-Unit {
+	max-width: 460px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.push-Unit .blue-btn {
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 8px 10px;
+}
+
+.push-Unit .overlay {
+	background-image: url(/application/themes/theme_palmetto/images/push/view-the-menu-overlay.png);
+}
+
+.push-Unit .push-inset {
+	height: 285px;
+}
+
+.push-Unit .push-inset img {
+	height: 285px;
+}
+
+.push-Unit .overlay {
+	bottom: 0;
+}
+
+.push-Unit .push-title {
+	padding: 12px 0px;
+	margin-top: 0;
+}

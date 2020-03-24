@@ -1,0 +1,1098 @@
+/* Home Events/Blog Section ---------------------------------------------------- */
+.event-blog {
+  clear: both;
+  width: 100%;
+
+  .eb-wrapper {
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+
+		@media only screen and (max-width: 764px) {
+      border-top: 1px solid #909090;
+      max-width: 90%;
+      padding: 20px 0 0;
+		}
+
+    .eb-col {
+      float: left;
+      margin: 0 0 50px;
+      width: 47%;
+
+			@media only screen and (max-width: 764px) {
+ 	      width: 100%;
+			}
+
+      h2 {
+        color: $dk-gray;
+        font: {
+          family: $cabin;
+          size: 26px;
+          weight: 700;
+        }
+        margin: 0 0 22px;
+        text-transform: uppercase;
+
+				@media only screen and (max-width: 764px) {
+					text-align: center;
+				}
+      }
+
+			.e-prev,
+			.b-prev {
+				background: url('#{$img-path}/layout/arrows.png') no-repeat 0 -60px;
+				height: 36px;
+				width: 30px;
+
+				&:disabled {
+					background-position: 0 0;
+				}
+			}
+
+			.e-next,
+			.b-next {
+				background: url('#{$img-path}/layout/arrows.png') no-repeat -70px -60px;
+				height: 36px;
+				margin: 0 6px 0 0;
+				width: 30px;
+
+				&:disabled {
+					background-position: -70px 0;
+				}
+			}
+
+			.white-btn {
+				float: left;
+        padding: 7px 10px;
+
+				@media only screen and (max-width: 764px) {
+					display: block;
+					float: none;
+					margin: 20px auto 0;
+					padding: 11px 10px;
+					width: 90%;
+				}
+			}
+
+			button {
+				border: none;
+				cursor: pointer;
+				float: left;
+				outline: none;
+			}
+
+			.buttons {
+				float: left;
+				padding: 0;
+			}
+
+			.events-controls .e-next,
+			.events-controls .e-prev,
+			.blog-controls .b-prev,
+			.blog-controls .b-next {
+				@media only screen and (max-width: 764px) {
+					display: none;
+				}
+			}
+    }
+
+    .eb-left {
+      padding: 0 0 0 25px;
+
+			@media only screen and (max-width: 764px) {
+				display: block;
+				float: none;
+				max-width: 100%;
+        padding: 0;
+      }
+
+			@media only screen and (min-width : 765px) and (max-width : 1024px) {
+        padding: 0 0 0 15px;
+			}
+
+			.events-page {
+				.amax-module-body {
+					@media only screen and (min-width : 765px) and (max-width : 1024px) {
+						min-height:104px;
+					}
+				}
+			}
+
+      .events-wrapper {
+				@media only screen and (max-width: 764px) {
+					width: 300px;
+				}
+
+				@media only screen and (min-width : 765px) and (max-width : 1024px) {
+					width: 350px;
+				}
+      }
+
+      .event {
+        clear: both;
+        float: none;
+
+				@media only screen and (max-width: 764px) {
+					margin: 0 0 25px 0;
+				}
+      }
+
+      .dates {
+        float: left;
+        margin: 0 14px 15px 0;
+        text-align: center;
+
+				@media only screen and (min-width : 765px) and (max-width : 1024px) {
+					margin: 0 14px 25px 0;
+				}
+
+        .start-date {
+          background: url('#{$img-path}/layout/bg-event-date.png') no-repeat 0 0;
+          color: $dknavy-blu;
+          display: block;
+          font: {
+            family: $ssp;
+            size: 18px;
+            weight: 600;
+          }
+          height: 42px;
+          width: 47px;
+
+          .mo {
+            color: $white;
+            display: block;
+            font:  {
+              family: $cabin;
+              weight: 600;
+              size: 10px;
+            }
+            margin: 0 0 5px;
+            padding: 2px 0 0;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .tag {
+        color: $dknavy-blu;
+        font: {
+          family: $cabin;
+          size: 18px;
+          weight: 700;
+        }
+        text-transform: uppercase;
+      }
+
+      .title {
+				color: $blu;
+        font: {
+          family: $lora;
+          size: 16px;
+          weight: 700;
+        }
+				line-height: 20px;
+
+        a {
+          color: $blu;
+        }
+      }
+
+      .events-controls {
+        clear: both;
+        margin: 10px 0 0;
+
+				@media only screen and (min-width : 765px) and (max-width : 1024px) {
+					margin: 0;
+				}
+      }
+    }
+
+    .eb-right {
+			border-left: 1px solid $border-gray;
+			max-width: 485px;
+			padding: 0 0 0 25px;
+
+			@media only screen and (max-width: 764px) {
+				border-left: none;
+				border-top: 1px solid $border-gray;
+				display:block;
+				float:none;
+				margin: 0 auto 10px;
+        max-width: 100%;
+        padding: 50px 0 0;
+			}
+
+			@media only screen and (min-width : 765px) and (max-width : 1024px) {
+        padding: 0 0 0 20px;
+			}
+
+      .entry-header {
+				display: none;
+			}
+
+      .blog-controls {
+        clear: both;
+        margin: -10px 0 0;
+      }
+
+			.white-btn {
+        padding: 7px 50px;
+
+				@media only screen and (max-width: 764px) {
+					padding: 11px 10px;
+				}
+			}
+
+      ul {
+				height:auto;
+				max-width: 460px;
+				min-height: 192px;
+				width: 100%;
+
+				@media only screen and (max-width: 764px) {
+          margin: 0 auto;
+          min-height: 160px;
+          width: 96%;
+				}
+
+				@media only screen and (min-width : 765px) and (max-width : 1024px) {
+          min-height: 201px;
+        }
+
+        li {
+					height:auto;
+					position: relative;
+					width:100%;
+
+					h3 {
+						@media only screen and (max-width: 764px) {
+            	margin-bottom: 5px;
+						}
+					}
+          .amax-module-header,
+					.amax-module-body {
+            float: right;
+            margin-right: 10px;
+            width: 57%;
+
+						@media only screen and (max-width: 764px) {
+							float: left;
+							margin-right: 0;
+							width: 55%;
+						}
+          }
+
+					.amax-module-body {
+						@media only screen and (max-width: 764px) {
+							display: block;
+							margin-bottom: 20px;
+						}
+					}
+
+          p { line-height: 24px; color: $superdk-gray;
+            font: {
+              family: $cabin;
+              weight: 400;
+              size: 15px;
+            }
+          }
+          h3 {
+						color: $blu;
+            font: {
+              family: $lora;
+              weight: 700;
+              size: 16px;
+            }
+						line-height: 24px;
+						margin: 0 0 13px 0;
+
+            a {
+							color: $blu;
+						}
+          }
+        }
+      }
+
+      .thumb {
+				float: left;
+				margin: 0 3% 0 0;
+				width: 35%;
+
+				@media only screen and (max-width: 764px) {
+          margin: 0 5% 0 0;
+          width: 40%;
+        }
+        img {
+					height: auto;
+					width: 100%;
+				}
+      }
+
+			.blog-controls {
+				@media only screen and (max-width: 764px) {
+        	margin: 0 auto;
+				}
+			}
+
+			@media only screen and (min-width : 765px) and (max-width : 1024px) {
+        .blog-controls {
+          margin: 0;
+
+          .buttons {
+            float: left;
+            padding: 0;
+          }
+        }
+			}
+    }
+  }
+}
+
+.view-blog.white-btn {
+	padding: 7px 17px;
+
+	@media only screen and (min-width : 765px) and (max-width : 1024px) {
+		padding: 12px 95px;
+	}
+}
+
+.view-cal.white-btn {
+	@media only screen and (min-width : 765px) and (max-width : 1024px) {
+  	padding: 12px 50px;
+	}
+}
+
+// Events List Widget
+.widget-featured-events {
+  display: inline;
+  margin: 0 0 30px;
+
+  h2 {
+    color: $dk-gray;
+    font: {
+      family: $cabin;
+      weight: 700;
+      size: 26px;
+    }
+    line-height: 1;
+    margin: 0 0 22px 0;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .event {
+    clear: both;
+    float: none;
+    text-align: left;
+
+    .dates {
+      display: inline;
+      margin: 0 14px 15px 0;
+      text-align: center;
+
+      .start-date {
+        background: url('#{$img-path}/layout/bg-event-date.png') no-repeat 0 0;
+        color: $dknavy-blu;
+        display: block;
+        font: {
+          family: $ssp;
+          weight: 600;
+          size: 18px;
+        }
+        height: 42px;
+        width: 47px;
+
+        .mo {
+          color: $white;
+          display: block;
+          font:  {
+            family: $cabin;
+            weight: 600;
+            size: 10px;
+          }
+          margin: 0 0 5px 0;
+          padding: 2px 0 0 0;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .tag {
+      color: $dknavy-blu;
+      font: {
+        family: $cabin;
+        weight: 700;
+        size: 18px;
+      }
+      text-transform: uppercase;
+    }
+
+    .title {
+      color: $blu;
+      font: {
+        family: $lora;
+        weight: 700;
+        size: 16px;
+      }
+      line-height: 20px;
+
+      a {
+        color: $blu;
+      }
+    }
+  }
+
+  .events-controls {
+    clear: both;
+    margin: 10px 0 50px;
+
+    button {
+      border: 0;
+      cursor: pointer;
+      float: left;
+      outline: none;
+    }
+
+    .white-btn {
+      float: left;
+      margin: 0 0 0 4px;
+      padding: 12px 50px;
+    }
+
+    .blue-btn {
+      float: left;
+      margin: 3px 0 0 4px;
+      padding: 5px 12px;
+      text-transform: uppercase;
+    }
+
+    .e-prev {
+      background: url('#{$img-path}/layout/arrows.png') no-repeat 0 -60px;
+      height: 36px;
+      padding: 0;
+      width: 30px;
+
+      &:disabled {
+        background-position: 0 0;
+      }
+
+			@media only screen and (max-width: 764px) {
+				display: none;
+			}
+    }
+
+    .e-next {
+      background: url('#{$img-path}/layout/arrows.png') no-repeat -70px -60px;
+      height: 36px;
+      padding: 0;
+      margin: 0 6px 0 0;
+      width: 30px;
+
+      &:disabled {
+        background-position: -70px 0;
+      }
+
+			@media only screen and (max-width: 764px) {
+				display: none;
+			}
+    }
+
+    p.no-events { text-align: left; }
+  }
+
+  .activities {
+    .crosspromo-title,
+    .widget-featured-events {
+      h2 {
+        font: {
+          family: $cabin;
+          size: 24px;
+          weight: 400;
+        }
+      }
+    }
+  }
+
+  .activities {
+    .widget-featured-events {
+      display: inline-block;
+      padding: 0 0 0 30px;
+      vertical-align: top;
+      width: 390px;
+
+      h2 { color: #565656; text-align: left; margin-bottom: 20px; }
+      .event { margin: 0 0 12px 0; }
+      .tag,
+      .title { text-align: left; }
+      .blue-btn { padding: 5px 20px; margin: 3px 0 0 0; }
+      .events-controls { margin: 20px 0 0 0; }
+      .events-wrapper { margin: 0 0 30px 0; width: 100%; }
+      .blue-btn { text-transform: uppercase; width: 220px; padding: 5px 0; display: inline-block; margin: 2px 0 0 4px; }
+    }
+  }
+
+  .activities-overview {
+    .promo-left {
+      float: left;
+      width: 58%;
+    }
+  }
+}
+
+body.golf-schools,
+body.golf-lessons,
+body.tennis-overview,
+body.tennis-tournament {
+  .widget-featured-events {
+    .events-wrapper {
+      margin: 0 0 30px 0;
+      width: 100%;
+    }
+  }
+}
+
+/**********************************
+/*
+/*   MEDIA QUERIES
+/*
+/**********************************/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 720px) {
+}
+
+@media only screen and (max-width: 764px) {
+  .widget-featured-events {
+    .events-controls {
+      > a.view-cal {
+				float: none;
+				margin: 0 auto;
+        padding: 11px 0;
+				text-align: center;
+				width: 100%;
+      }
+    }
+
+    div {
+      &:first-of-type {
+        height: auto;
+        min-height: 1px;
+      }
+    }
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media handheld, only screen
+and (min-width : 765px)
+and (max-width : 1024px) {
+  .activities-overview {
+    .widget-featured-events {
+      margin-bottom: 30px;
+      width: 100%;
+    }
+  }
+
+  .activities {
+    .widget-featured-events {
+      .blue-btn {
+        padding: 6px 10px;
+        width: 180px;
+      }
+    }
+  }
+}
+
+/* Desktop ----------- */
+@media only screen
+and (min-width : 1024px) {
+  .widget-featured-events {
+    .events-controls {
+      > a.view-cal {
+        min-width: 180px;
+      }
+    }
+  }
+}
+
+// End of Events List Widget
+
+.palmetto-event-stream {
+  clear: both;
+  width: 90%;
+  margin: 0 auto;
+
+  .clearfix {
+    *zoom: 1;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+}
+
+#filter-wrapper {
+  display: none;
+}
+
+.stream-event-item-image {
+  display: none;
+}
+
+.palmetto-event-stream {
+  .mobile-filters {
+    margin-bottom: 6px;
+  }
+
+  .stream-sidebar {
+    margin: 0 auto;
+  }
+
+  .stream-stream {
+    clear: both;
+    margin: 0 auto;
+    vertical-align: top;
+  }
+
+  .stream-container {
+    height: 540px;
+    overflow: hidden;
+  }
+
+  .stream-container > .spacer {
+    height: 100%;
+  }
+
+  .stream-topics {
+    border: 1px solid $lter-gray;
+    border-bottom: none;
+    color: #4c4c4c;
+    font-family: "Cabin", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    list-style: disc;
+    line-height: 24px;
+  }
+
+  .stream-topic {
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodΓÇªEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+');
+    background: -moz-linear-gradient(top, $white 0%, #f8f8f8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $white), color-stop(100%, #f8f8f8));
+    background: -webkit-linear-gradient(top, $white 0%, #f8f8f8 100%);
+    background: -o-linear-gradient(top, $white 0%, #f8f8f8 100%);
+    background: -ms-linear-gradient(top, $white 0%, #f8f8f8 100%);
+    background: linear-gradient(to bottom, $white 0%, #f8f8f8 100%);
+    background: $white;
+    border-bottom: 1px solid $lter-gray;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$white', endColorstr='#f8f8f8', GradientType=0);
+    font-family: "Cabin", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+
+    &:hover > a,
+    &.active > a,
+    &.active > span {
+        background: $dknavy-blu url('/application/blocks/event_stream/images/filters-event-calendar.png') no-repeat 17px 8px;
+        color: $white;
+    }
+
+    & > a,
+    & > span {
+      background: transparent url('/application/blocks/event_stream/images/filters-event-calendar.png') no-repeat 17px -247px;
+      color: $dk-gray;
+      display: block;
+      height: auto;
+      padding: 8px 0 6px 55px;
+      text-decoration: none;
+    }
+
+    &.stream-topic-golf {
+      & > a {
+        background-position: 17px -281px;
+      }
+
+      &:hover > a {
+        background-position: 17px -26px;
+      }
+
+      & > span {
+        background-position: 17px -26px;
+      }
+    }
+
+    &.stream-topic-tennis > a {
+      background-position: 17px -318px;
+    }
+
+    &.stream-topic-tennis:hover > a,
+    &.stream-topic-tennis > span {
+      background-position: 17px -63px;
+    }
+
+    &.stream-topic-dining > a {
+      background-position: 17px -350px;
+    }
+
+    &.stream-topic-dining:hover > a,
+    &.stream-topic-dining > span {
+      background-position: 17px -95px;
+    }
+
+    &.stream-topic-seasonal > a {
+      background-position: 17px -385px;
+    }
+
+    &.stream-topic-seasonal:hover > a,
+    &.stream-topic-seasonal > span {
+      background-position: 17px -130px;
+    }
+
+    &.stream-topic-shelter-cove-harbor > a {
+      background-position: 17px -453px;
+    }
+
+    &.stream-topic-shelter-cove-harbor:hover > a,
+    &.stream-topic-shelter-cove-harbor > span {
+      background-position: 17px -198px;
+    }
+  }
+
+  .stream-calendar-wrapper {
+    background: $blu;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  .stream-calendar {
+    border: 1px solid $pale-lt-blu;
+    font-family: Cabin, Arial, sans-serif;
+    padding: 15px;
+
+    .header {
+      text-align: center;
+    }
+
+      .header > .date-select {
+          font-size: 12px;
+          width: auto;
+          margin-top: 5px;
+      }
+
+      .header > button {
+          background: url("/application/blocks/event_stream/images/arrows-month.png") 0 0 no-repeat;
+          display: inline-block;
+          width: 35px;
+          height: 31px;
+          box-shadow: none;
+          -webkit-box-shadow: none;
+          text-indent: -9999em;
+          border: none;
+      }
+
+      .header > button.previous {
+          float: left;
+      }
+
+      .header > button.next {
+          background-position: -218px 0;
+          float: right;
+      }
+
+      .pal-cal {
+          font-size: 14px;
+
+          a {
+              font-weight: 400;
+          }
+
+          .active a, .occupied a, .selected a {
+              font-weight: 700;
+          }
+      }
+
+      .pal-cal-header,
+      .pal-cal-week {
+          text-align: center;
+      }
+
+      .pal-cal > .pal-cal-header > .pal-cal-day-header {
+          display: inline-block;
+          text-align: center;
+          width: 31px;
+          padding: 5px 0;
+          margin: 2px;
+          font-size: 14px;
+          color: white;
+      }
+
+      .pal-cal > .pal-cal-week {
+          white-space: nowrap;
+      }
+
+      .pal-cal > .pal-cal-week > .pal-cal-day {
+          display: inline-block;
+          text-align: center;
+          background: #b3cbde;
+          color: #4C4C4C;
+          margin: 2px;
+      }
+
+      .pal-cal > .pal-cal-week > .pal-cal-day > a {
+          text-decoration: none;
+          color: inherit;
+          padding: 5px 0;
+          width: 31px;
+          display: block;
+      }
+
+      .pal-cal > .pal-cal-week > .pal-cal-day.active {
+          background: #fff;
+          color: #222;
+          font-weight: 700;
+      }
+
+      .pal-cal > .pal-cal-week > .pal-cal-day.occupied {
+          background: #fff;
+          color: #4C4C4C;
+      }
+
+      .pal-cal > .pal-cal-week > .pal-cal-day.selected {
+          background: #003e70;
+          color: #fff;
+      }
+  }
+
+    .stream-prev,
+    .stream-next {
+        height: 48px;
+        background: $white url("/application/blocks/event_stream/images/events-scroll.png") no-repeat center 0;
+        cursor: pointer;
+    }
+
+    .stream-prev.disabled,
+    .stream-next.disabled {
+        background: $white url("/application/blocks/event_stream/images/events-scroll-disabled.png") no-repeat center 0;
+        cursor: default;
+    }
+
+    .stream-prev,
+    .stream-prev.disabled {
+        background-position: center -84px;
+    }
+
+    .stream-title {
+        font-family: "Lora", serif;
+        font-weight: 700;
+        font-size: 26px;
+        color: $dknavy-blu;
+        margin-bottom: 20px;
+    }
+
+    .stream-event-item-header a {
+        text-decoration: none;
+    }
+
+    .stream-event-item-header a:hover {
+        color: $blu;
+    }
+
+    .stream-event-group .stream-event-group-title {
+        color: $dknavy-blu;
+        font-family: "Lora", serif;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 10px 0;
+    }
+
+    .stream-event-group .stream-event-item {
+        border: 1px solid #b5b5b5;
+        border-bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    .stream-event-group .stream-event-item.active .stream-event-item-title {
+        background-position: 13px 10px;
+    }
+
+    .stream-event-group .stream-event-item-content {
+        display: none;
+        overflow: hidden;
+        border-bottom: 1px solid #b5b5b5;
+    }
+
+    .stream-event-group .stream-event-item-title {
+        background: #f9f7ee url("/application/blocks/event_stream/images/arrows-events.png") 13px -124px no-repeat;
+        padding: 0 0 0 45px;
+        cursor: pointer;
+        border: none;
+        font-family: "Lora", serif;
+        font-weight: 700;
+        font-size: 20px;
+        border-bottom: 1px solid #b5b5b5;
+    }
+
+    .stream-event-group .stream-event-item-description {
+        padding: 20px;
+    }
+
+    .stream-event-group .stream-event-item-description p {
+        margin: 0;
+    }
+
+    .stream-event-group .stream-event-item-title-text {
+        border-left: 1px solid #b5b5b5;
+        padding: 9px 0 10px 17px;
+        text-decoration: none;
+        color: $blu;
+        display: block;
+    }
+
+    .stream-event-group .stream-event-item-topic {
+        color: #023f72;
+        text-transform: uppercase;
+        font-family: "Cabin", Arial, sans-serif;
+    }
+
+    .sidebar-rss-icon {
+        margin-top: 20px;
+        float: left;
+    }
+
+    .share li {
+        margin-bottom: 10px;
+    }
+
+    ul li.share-google {
+        clear: none;
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .palmetto-event-stream {
+        .stream-calendar {
+            .pal-cal > .pal-cal-header > .pal-cal-day-header,
+            .pal-cal > .pal-cal-week > .pal-cal-day > a {
+                width: 68px;
+                margin: 4px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #filter-wrapper {
+        display: block;
+    }
+
+    .palmetto-event-stream {
+        width: 95%;
+
+        .stream-sidebar {
+            width: 286px;
+            margin: 0;
+            display: inline-block;
+        }
+
+        .stream-calendar {
+            padding-left: 18px;
+            padding-right: 18px;
+
+            .pal-cal > .pal-cal-header > .pal-cal-day-header,
+            .pal-cal > .pal-cal-week > .pal-cal-day > a {
+                width: 30px;
+            }
+        }
+
+        .stream-stream {
+            display: inline-block;
+            margin-left: 15px;
+            width: 420px;
+        }
+
+        .stream-event-item-image {
+            display: inline-block;
+            margin-right: 10px;
+            width: 30%;
+
+            img {
+                width: 100%;
+                max-width: 175px;
+                max-height: 175px;
+            }
+        }
+
+        .stream-event-item-info {
+            float: right;
+            width: 65%;
+
+            &.no-img {
+                width: 100%;
+            }
+        }
+    }
+
+    .stream-event-group .share {
+        float: right;
+        text-align: right;
+
+        & > ul > li {
+            margin: 0;
+            text-align: left;
+        }
+
+        .share-facebook {
+            margin-top: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .palmetto-event-stream {
+        width: 100%;
+
+        .stream-stream {
+            width: 690px;
+            margin-left: 40px;
+            min-height: 650px;
+        }
+    }
+}
+
+body[data-pageid="167"] {
+    .main-content, .secondary-content, .content-inner,
+    .content-full, .supplemental-content-inner {
+        max-width: 1024px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.event-permalink,
+.resort-calendar {
+    #signup-widget {
+      .masthead-signup {
+        form {
+          * {
+              box-sizing: border-box;
+          }
+
+          .field, .buttons {
+              padding: 5px;
+          }
+        }
+      }
+    }
+
+    .share-tags li a {
+        text-decoration: none;
+    }
+}

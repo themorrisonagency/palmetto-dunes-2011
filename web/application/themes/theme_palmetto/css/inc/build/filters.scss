@@ -1,0 +1,139 @@
+.mobile-filters { display: none; }
+.filters { width: 286px; margin: 0 0 18px;
+  h2 { color: $blu;
+    font: {
+      family: $lora;
+      weight: 700;
+      size: 18px;
+    }
+  }
+  ul.offer-filter { list-style: none; margin: 0; width: 100%; border: 1px solid $lter-gray;
+    li { width: 100%; border-bottom: 1px solid $lter-gray; text-transform: uppercase;
+      font: {
+        family: $cabin;
+        weight: 700;
+        size: 14px;
+      }
+      background: $white; /* Old browsers */
+      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmOGY4ZjgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(top,  $white 0%, #f8f8f8 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$white), color-stop(100%,#f8f8f8)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  $white 0%,#f8f8f8 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  $white 0%,#f8f8f8 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  $white 0%,#f8f8f8 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  $white 0%,#f8f8f8 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$white', endColorstr='#f8f8f8',GradientType=0 ); /* IE6-8 */
+      a { 
+        background: transparent url('#{$img-path}/layout/filters-vacation-packages.png') no-repeat 17px -316px;
+        color: $dk-gray;
+        display: block;
+        height: auto;
+        padding: 8px 0 6px 55px;
+        text-align: left;
+        text-decoration: none;
+
+        &:hover { background: #003f72 url('#{$img-path}/layout/filters-vacation-packages.png') no-repeat 17px 8px; color: $white; }
+      }
+      &.active a {
+        background: #003f72 url('#{$img-path}/layout/filters-vacation-packages.png') no-repeat 17px 8px; 
+        color: $white;
+      }
+    }
+    li.last { border: none; }
+    li.offers-golf a { background-position: 17px -353px; }
+    li.offers-tennis a { background-position: 17px -388px; }
+    li.offers-romance a { background-position: 17px -423px; }
+    li.offers-family a { background-position: 17px -458px; }
+    li.offers-seasonal a { background-position: 17px -493px; }
+    li.offers-wedding a { background-position: 17px -598px; }
+    li.offers-group a { background-position: 17px -528px; }
+    li.offers-spa a { background-position: 17px -563px; }
+
+    li.offers-golf.active a, li.offers-golf a:hover { background-position: 17px -27px; }
+    li.offers-tennis.active a, li.offers-tennis a:hover { background-position: 17px -62px; }
+    li.offers-romance.active a, li.offers-romance a:hover { background-position: 17px -97px; }
+    li.offers-family.active a, li.offers-family a:hover { background-position: 17px -132px; }
+    li.offers-seasonal.active a, li.offers-seasonal a:hover { background-position: 17px -167px; }
+    li.offers-wedding.active a, li.offers-wedding a:hover { background-position: 17px -272px; }
+    li.offers-group.active a, li.offers-group a:hover { background-position: 17px -202px; }
+    li.offers-spa.active a, li.offers-spa a:hover { background-position: 17px -237px; }
+  }
+}
+
+.filters {
+  margin: 0 0 18px 0;
+  width: 100%;
+
+  ul.events-filter { 
+    border: 1px solid $lter-gray;
+    list-style: none; 
+    margin: 0; 
+    width: 100%;
+
+    li {
+      background: $white; /* Old browsers */
+      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmOGY4ZjgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(top,  $white 0%, #f8f8f8 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$white), color-stop(100%,#f8f8f8)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  $white 0%,#f8f8f8 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  $white 0%,#f8f8f8 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  $white 0%,#f8f8f8 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  $white 0%,#f8f8f8 100%); /* W3C */
+      border-bottom: 1px solid $lter-gray;
+      font: {
+        family: $cabin;
+        size: 14px;
+        weight: 700;
+      }
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$white', endColorstr='#f8f8f8',GradientType=0 ); /* IE6-8 */
+      text-transform: uppercase;
+      width: 100%;
+
+      a {
+        background: transparent url('#{$img-path}/layout/filters-event-calendar.png') no-repeat 17px -281px;
+        color: $dk-gray;
+        display: block;
+        height: auto;
+        padding: 8px 0 6px 55px;
+        text-decoration: none;
+
+        &:hover { background: #003f72 url('#{$img-path}/layout/filters-event-calendar.png') no-repeat 17px 8px; color: $white; }
+      }
+
+      &.active a {
+        background: #003f72 url('#{$img-path}/layout/filters-event-calendar.png') no-repeat 17px 8px; color: $white;
+      }
+      &.last {
+        border: none;
+      }
+      &.events-golf a { background-position: 17px -281px; }
+      &.events-tennis a { background-position: 17px -318px; }
+      &.events-dining a { background-position: 17px -350px; }
+      &.events-seasonal a { background-position: 17px -386px; }
+      &.events-shopping a { background-position: 17px -421px; }
+      &.events-cove a { background-position: 17px -453px; }
+      &.events-golf.active a, 
+      &.events-golf a:hover { background-position: 17px -26px; }
+      &.events-tennis.active a, 
+      &.events-tennis a:hover { background-position: 17px -63px; }
+      &.events-dining.active a, 
+      &.events-dining a:hover { background-position: 17px -95px; }
+      &.events-seasonal.active a, 
+      &.events-seasonal a:hover { background-position: 17px -131px; }
+      &.events-shopping.active a, 
+      &.events-shopping a:hover { background-position: 17px -166px; }
+      &.events-cove.active a, 
+      &.events-cove a:hover { background-position: 17px -198px; }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .filters { display: none; }
+  .mobile-filters { display: block; margin: 0 auto 30px;
+    form { width: 100% !important; }
+    select { width: 100% !important; }
+  }
+}

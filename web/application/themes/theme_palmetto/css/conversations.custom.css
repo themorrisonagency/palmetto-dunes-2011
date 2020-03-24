@@ -1,0 +1,26 @@
+div.page-template-blog-entry div.ccm-conversation-add-reply div.ccm-conversation-message-form,
+div.page-template-blog-entry div.ccm-conversation-add-new-message div.ccm-conversation-message-form,
+div.page-template-blog-entry div.ccm-conversation-edit-message div.ccm-conversation-message-form {
+  padding-left: 0px;
+}
+
+div.page-template-blog-entry div.ccm-conversation-message {
+  padding-left: 0px;
+}
+
+div.page-template-blog-entry div.ccm-conversation-message .ccm-conversation-message-body {
+  padding: 0px 8px 0px 0px;
+}
+
+div.page-template-blog-entry div.ccm-conversation-message div.ccm-conversation-message-byline {
+  padding: 8px 0px 8px 0px;
+}
+
+div.page-template-blog-entry div.ccm-conversation-message div.ccm-conversation-message-controls {
+  padding: 0px;
+}
+
+div.ccm-conversation-errors  {
+  margin-bottom: 10px;
+  color: #f00;
+}

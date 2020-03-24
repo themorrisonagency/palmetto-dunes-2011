@@ -1,0 +1,19 @@
+.int-push-wrapper { text-align: center; }
+.int-push-wrapper .int-push-link {
+	width: 280px;
+	margin-left: 4px;
+}
+
+.int-push-wrapper .int-push-description {
+	text-align: center;
+	width: 280px;
+}
+
+.int-push-wrapper .push-inset {
+	margin-top: 25px;
+}
+
+.int-push-wrapper .int-push-description {
+	margin-left: 4px;
+	margin-top: 18px;
+}

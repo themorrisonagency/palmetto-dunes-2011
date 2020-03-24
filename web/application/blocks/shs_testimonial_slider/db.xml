@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btShsTestimonialSlider">
+		<field name="bID"  type="I"><KEY/><UNSIGNED/></field>
+		<field name="displayViewAll" type="I"/>
+		<field name="viewAllButtonText" type="C" size="255"/>
+		<field name="viewAllButtonLink" type="C" size="255"/>
+	</table>
+	<table name="btShsTestimonialSliderItems">
+		<field name="id" type="I"><KEY/><UNSIGNED/><AUTOINCREMENT/></field>
+		<field name="img"  type="C" size="255"/>
+		<field name="descr" type="X2"></field>
+		<field name="title"  type="C" size="255"/>
+		<field name="readMoreLink"  type="C" size="255"/>
+		<field name="linkText"  type="C" size="255"/>
+		<field name="articleDate"  type="C" size="255"/>
+		<field name="sortOrder" type="I"></field>
+		<field name="viewButton" type="I"><default value="0" /></field>
+		<field name="buttonText" type="C" size="255"></field>
+		<field name="buttonLink" type="C" size="255"></field>
+		<field name="bID"  type="I" />
+	</table>
+</schema>

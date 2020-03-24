@@ -1,0 +1,36 @@
+div.ccm-block-feature-item p {
+    margin-left: 30px;
+}
+
+div.ccm-block-feature-item i {
+    margin-right: 10px;
+}
+
+div.ccm-block-feature-item {
+    margin-bottom: 40px;
+}
+
+.single-push-img img {
+	width: 290px;
+}
+
+.single-push-img {
+	width: 285px;
+}
+
+.amax-crosspromo.single-push {
+	width: 100%;
+}
+
+.single-push-description {
+	width: 685px;
+}
+
+.single-push-title {
+	text-align: left;
+	color: #003f72;
+	margin: 0px 0px 20px 0px;
+	font-family: "Cabin", Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+}

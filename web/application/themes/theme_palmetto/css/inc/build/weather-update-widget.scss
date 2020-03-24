@@ -1,0 +1,116 @@
+.weather-update-widget-wrapper {
+  float: right;
+  margin-top: 1px;
+}
+
+.weather-update-widget {
+  margin: 10px 0;
+  @media (min-width: 765px) {
+    margin-right: 8px;
+  }
+
+  &.inactive {
+    display: none;
+  }
+
+  &.active {
+    display: block;
+  }
+
+  a {
+    background: url('../../images/weather-icon.png') no-repeat;
+    background-position: 18px 0;
+    background-size: 44px;
+    color: $tawny;
+    display: block;
+    font-family: 'Cabin', sans-serif;
+    font-size: 13px;
+    padding-top: 25px;
+    text-decoration: none;
+
+    @media (min-width: 765px) {
+      padding-left: 55px;
+      padding-top: 0;
+    }
+
+    span {
+      display: block;
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.weather-update-widget-wrapper-mobile {
+  left: 0;
+  position: absolute;
+  top: 0;
+
+  .weather-update-widget {
+    margin: 0;
+
+    &.inactive {
+      display: none;
+    }
+
+    &.active {
+      display: block;
+    }
+
+    a {
+      background: url('../../images/weather-icon.png') no-repeat;
+      background-position: 5px 8px;
+      background-size: 25px;
+      color: $tawny !important;
+      display: block;
+      font-family: 'Cabin', sans-serif;
+      font-size: 13px;
+      line-height: 29px;
+      padding-left: 26px;
+      padding-top: 0;
+      text-decoration: none;
+
+      span {
+        display: inline-block;
+        text-decoration: underline;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+html {
+  &.ccm-toolbar-visible {
+    .weather-update-widget {
+      display: block !important;
+
+      &.inactive {
+        opacity: .5;
+      }
+    }
+
+    .weather-update-widget-wrapper-mobile {
+      display: block !important;
+
+      &.inactive {
+        opacity: .5;
+      }
+    }
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 764px) {
+  .weather-update-widget-wrapper {
+    display: none;
+  }
+
+  .weather-update-widget-wrapper-mobile {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 764px) {
+  .weather-update-widget-wrapper-mobile {
+    display: none;
+  }
+}

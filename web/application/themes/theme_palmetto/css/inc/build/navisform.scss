@@ -1,0 +1,907 @@
+// Basic Navis Form Elements
+
+.form-rfp {
+  form {
+    margin: 0 auto;
+
+    legend {
+      display: none;
+    }
+
+    span {
+      &.alert {
+        color: $dk-red;
+        font-weight: bold;
+        padding: 2px;
+      }
+    }
+
+    fieldset {
+      p {
+        @media only screen and (min-width: 768px) {
+          text-align: center;
+        }
+      }
+
+      .field {
+        overflow: hidden;
+        padding: 5px;
+        position: relative;
+
+        label {
+          float: left;
+          font-size: 15px;
+          font-weight: 400;
+          height: 36px;
+          line-height: 36px;
+          margin: 0;
+          padding-right: 2%;
+          text-align: right;
+          width: 45%;
+        }
+
+        input,
+        select,
+        textarea {
+          border: 1px solid $form-gray;
+          border-radius: 1px;
+          box-sizing: border-box;
+          font-family: Verdana;
+          font-size: 16px;
+          height: 36px;
+          line-height: 1.467;
+          padding: 3px 8px;
+          width: 50%;
+        }
+
+        input {
+          &.date-picker {
+            width: 30% !important;
+          }
+
+          &#num_rounds {
+            width: 25%;
+          }
+
+          &.radio {
+            margin-top: 8px;
+            max-height: 20px;
+            vertical-align: sub;
+            width: 5%;
+          }
+        }
+
+        img {
+          &.ui-datepicker-trigger {
+            margin-left: -32px;
+            position: absolute;
+            right: 24%;
+            top: 11px;
+            vertical-align: bottom;
+          }
+        }
+
+        select {
+          border-radius: 0;
+          margin-top: 0;
+        }
+
+        textarea {
+          height: 100px;
+        }
+
+        input[type="checkbox"] {
+          cursor: pointer;
+          height: 30px;
+          width: 15px;
+
+          @media only screen and (min-width: 768px) {
+            margin-left: 35px;
+          }
+        }
+
+        input[type="submit"] {
+          border-radius: 0;
+          height: auto;
+        }
+      }
+
+      .rental-toggle,
+      .email-check {
+        margin-top: 10px;
+      }
+
+      .email-check {
+        label {
+          color: $lt-green;
+        }
+      }
+
+      .label-switch {
+        display: inline-block;
+        margin-left: 41%;
+        width: 65%;
+
+        label {
+          float: left;
+          padding-left: 1%;
+          text-align: left;
+          width: auto;
+
+          &[for=yes_email] {
+            margin-left: 0;
+
+            & + label {
+              @media only screen and (max-width: 768px) {
+                line-height: 1;
+                margin-top: 10px;
+                max-width: 92%;
+              }
+            }
+          }
+        }
+
+        input {
+          float: left;
+
+          &.sg-button {
+            margin-left: 0;
+            width: 130px !important;
+
+            @media only screen and (min-width: 768px) {
+              margin-left: 25px;
+            }
+          }
+        }
+      }
+
+      .sg-button-bar {
+        margin-left: -5px;
+        padding: 3px 8px;
+
+        @media only screen and (min-width: 768px) {
+          margin-left: 0;
+        }
+      }
+
+      .field {
+        &.navis-cal { overflow: visible; }
+      }
+    }
+
+
+  }
+
+  .sel-home-view,
+  .sel-villa-view,
+  .sel-num-rooms,
+  #contact-planner-form {
+    .less-players { display: none; }
+  }
+
+  form {
+    &#sign-up-form {
+      fieldset {
+        .field {
+          width: 65%;
+          float: left;
+          label { display: none; }
+          input { width: 100%; }
+        }
+
+        .last {
+          width: 30%;
+
+          input { width: 130px !important; }
+        }
+      }
+
+      li.parsley-type { width: auto; }
+    }
+  }
+  @media (min-height: 33.875em) {
+    .picker__holder .picker__frame {
+        top: 15%;
+        bottom: auto;
+      }
+  }
+  
+  .picker__button--close { display: none; }
+}
+
+label[for=yes_email] {
+  color: $lt-green;
+  font-weight: 700 !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.content-wrapper ul.parsley-errors-list {
+  width: 100%;
+  margin: 0;
+  display: inline-block;
+  list-style-type: none;
+
+  li {
+    width: 50%;
+    float: right;
+    color: $red;
+  }
+}
+
+/* Blue Bar Sign Up */
+.signup-content {
+  .form-rfp {
+    .signup-inner {
+      .signup-wrap {
+        margin: 6px auto 0;
+
+        .sb-text {
+            width: 31%;
+            height: 36px;
+            line-height: 36px;
+            padding: 5px 5px 5px 0;
+            float: left;
+            vertical-align: middle;
+            color: $white;
+            font-family: $cabin;
+            font-weight: 700;
+            font-size: 16px;
+
+            @media only screen and (min-width: 764px) and (max-width: 1023px) {
+              width: 42%;
+            }
+
+            .email-icon {
+              position: relative;
+
+              img {
+                position: absolute;
+                top: -2px;
+                left: 0;
+                width: 29px;
+                height: 21px;
+              }
+            }
+
+            .special-text1 {
+              padding-left: 35px;
+            }
+        }
+        form {
+          width: 68%;
+          display: inline-block;
+
+          @media only screen and (min-width: 764px) and (max-width: 1023px) {
+            margin-bottom: 10px;
+            width: 100%;
+          }
+
+          p { display: none; }
+
+          fieldset {
+            width: 100%;
+            float: left;
+
+            .field {
+              width: 40%;
+              float: left;
+
+              label { display: none; }
+
+              input {
+                margin-left: 0;
+                width: 100%;
+
+                @media only screen and (max-width: 764px) {
+                  float: left;
+                }
+              }
+            }
+
+            .middle {
+              @media only screen and (min-width: 764px) {
+                height: 36px;
+                margin-right: 1%;
+                width: 24%;
+              }
+
+              .g-recaptcha {
+                float: left;
+                margin-top: 0;
+								overflow: hidden;
+
+                @media only screen and (max-width: 764px) {
+                  float: none;
+                  margin-top: 20px;
+                  margin-bottom: 20px;
+                  overflow: hidden;
+                  width: 95%;
+                }
+
+                div {
+                  border-radius: 1px;
+                  overflow: hidden;
+
+                  @media only screen and (min-width: 764px) and (max-width: 1023px) {
+                    height: 36px !important;
+                    width: 87% !important;
+                  }
+
+                  @media only screen and (min-width: 769px) {
+                    height: 36px !important;
+                    width: 75% !important;
+                  }
+
+                  iframe {
+                    border: 1px solid $form-gray;
+										overflow: hidden;
+
+                    @media only screen and (max-width: 764px) {
+                      margin-left: -10px;
+                    }
+
+                    @media only screen and (min-width: 768px) {
+                      margin: -18px auto 0 -8px;
+                    }
+                  }
+
+                  .parsley-errors-list.filled {
+                    @media only screen and (min-width: 1024px) {
+                      position: absolute;
+                    }
+                  }
+                }
+              }
+            }
+
+            .last {
+              width: 30%;
+              display: inline-block;
+              padding-top: 8px;
+              input { height: 30px; }
+              @media only screen and (min-width: 764px) and (max-width: 1023px) {
+                width: 29%;
+              }
+            }
+
+            .sg-button-bar { padding: 0; }
+          }
+
+          ul.parsley-errors-list {
+            li {
+              padding: 10px 0;
+              background:$white;
+              color: $red;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Sidebar Signup
+.form-rfp {
+  .offers-signup {
+    background: $blu;
+    border: 1px solid $pale-lt-blu;
+    color: $white;
+    margin: 0 auto 20px;
+    outline: 2px solid $blu;
+    padding: 30px 25px;
+
+    h2 {
+      color: $white;
+      font: {
+        family: $cabin;
+        size: 24px;
+        weight: 600;
+      }
+      line-height: 30px;
+    }
+
+    @media only screen
+    and (min-width: 765px)
+    and (max-width: 1024px) {
+      margin: 0 0 20px;
+    }
+
+    form {
+      display: inline-block;
+      width: 100%;
+
+      fieldset {
+        float: left;
+        width: 100%;
+
+        .field {
+          float: left;
+          padding: 0;
+          overflow: visible;
+
+          label { display: none; }
+          input { width: 130px; }
+        }
+
+        .last { float: right; width: 106px; }
+
+        .sg-button-bar {
+          padding: 3px;
+          margin: 0;
+        }
+      }
+
+      ul.parsley-errors-list {
+        position: absolute;
+        top: -22px;
+        left: 0;
+        width: 180%;
+
+        li { width: 100%; float: left; }
+      }
+    }
+
+    .formfield input { width: 100% !important; padding: 6px 0 6px 8px;  -moz-box-shadow: 0 2px 5px #376a95; -webkit-box-shadow: 0 2px 5px #376a95; box-shadow: 0 2px 5px #376a95; color: #4c4c4c; border: 1px solid $white;
+      font: {
+        family: $cabin;
+        size: 14px;
+        weight: 400;
+      }
+    }
+
+    .sg-button { -moz-box-shadow: 0 0 0 3px #d16428,0 5px 5px #376a95; -webkit-box-shadow: 0 0 0 3px #d16428,0 5px 5px #376a95; box-shadow: 0 0 0 3px #d16428,0 5px 5px #376a95; }
+    .sg-button:hover { -moz-box-shadow: 0 0 0 3px #e4903e,0 5px 5px #376a95 !important; -webkit-box-shadow: 0 0 0 3px #e4903e,0 5px 5px #376a95 !important; box-shadow: 0 0 0 3px #e4903e,0 5px 5px #376a95 !important; }
+  }
+}
+
+.signup-tab {
+  position: fixed;
+  top: 180px;
+  left:0;
+  z-index: 101;
+
+  a { font-family: $cabin; background: #73a240; padding: 10px 24px; text-transform: uppercase; text-decoration: none; color: $white; font-size: 1.125em; }
+  a:hover { background: rgba(66,102,27,0.95); }
+
+  .home & {
+    @media only screen and (min-width: 1025px) {
+      top: 157px;
+    }
+  }
+
+	.weddings-overview & {
+		@media only screen and (min-width: 1025px) {
+			top: 203px;
+		}
+	}
+
+	.press & {
+		@media only screen and (min-width: 1025px) {
+			top: 202px;
+		}
+	}
+}
+
+// Fly-in Form - Banner Style
+.signup-widget {
+
+  .home & {
+    top: 168px;
+    height: auto;
+    @media only screen and (min-width: 1025px) {
+      top:145px;
+    }
+  }
+	
+  width: 100%;
+  position: fixed;
+  top: 177px;
+  left: -100%;
+  z-index: 200;
+  background: rgba(94,142,45,0.95);
+  text-align: center;
+
+  .signup { width: 100%; max-width: 1024px; margin: 0 auto; padding: 4px 0; }
+  .sb-text { 
+    width: 43%;
+    height: 36px;
+    line-height: 36px;
+    padding: 5px;
+    float: left;
+    vertical-align: middle;
+    color: $white;
+    font-family: $cabin;
+    font-weight: 700;
+    font-size: 16px; 
+    @media only screen and (min-width: 1024px) {
+      padding-left: 2.5%;
+    }
+    @media only screen and (min-width: 764px) and (max-width: 1023px) {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-left: 1.5%;
+      width: 100%;
+    }
+  }
+  .special-text1 { font-size: 1.125em; padding-right: 10px; }
+  .special-text2 { font-size: 1.125em; font-weight: 300; text-transform: none; }
+  .masthead-signup {
+    width: 54%;
+    display: inline-block;
+    form {
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 0;
+      p { display: none; }
+      fieldset {
+        width: 100%;
+        float: left;
+        .field {
+          width: 30%;
+          float: left;
+          label { display: none; }
+          input { 
+            width: 95%; 
+            margin-left: 0;
+            border: 1px solid $form-gray;
+            border-radius: 1px;
+            font-family: Verdana;
+            padding: 3px 8px;
+            height: 36px;
+            line-height: 1.467;
+            font-size: 15px;
+            box-sizing: border-box; 
+          }
+          @media only screen and (max-width: 764px) {
+            padding: 0;
+          }
+        }
+        .last {
+          display: inline-block;
+          input { 
+            height: 30px; 
+            margin-top: 3px; 
+            border-radius: 0;
+            background: #f6f3e9 none repeat scroll 0 0 !important;
+            border: 1px solid #003f72 !important;
+            box-shadow: 0 0 0 3px #f6f3e9, 5px 5px 5px #000;
+            color: #003f72 !important;
+            top: 0;
+            @media only screen and (max-width: 764px) {
+              margin-left: 10%;
+            }
+          }
+        }
+        .middle {
+          @media only screen and (min-width: 1024px) {
+            height: 36px;
+          }
+          .g-recaptcha {
+            float: left;
+            margin-top: 0;
+            @media only screen and (max-width: 764px) {
+              float: none;
+              margin-top: 20px;
+              margin-bottom: 20px;
+              margin-left: 2.5%;
+              overflow: hidden;
+              width: 95%;
+            }
+            div {
+              border-radius: 1px;
+              overflow: hidden;
+              @media only screen and (min-width: 764px) and (max-width: 1023px) {
+                height: 36px !important;
+                width: 87% !important;
+              }
+              @media only screen and (min-width: 769px) {
+                height: 36px !important;
+                width: 73% !important;
+              }
+              iframe {
+                border: 1px solid $form-gray;
+								overflow: hidden;
+
+                @media only screen and (max-width: 764px) {
+                  margin-left: -10px;
+                }
+                @media only screen and (min-width: 768px) {
+                  margin: -18px auto 0 -8px;
+                }
+              }
+              .parsley-errors-list.filled {
+                @media only screen and (min-width: 1024px) {
+                  position: absolute;
+                } 
+              }
+            }
+          }
+        }
+        .sg-button-bar { padding: 0; margin: 0; }
+      }
+      ul.parsley-errors-list li {
+        color: $red; 
+        font-weight: bold;
+      }
+    }
+    .signup-widget .offer {
+      padding: 25px 0 20px;
+
+      .logo { margin-bottom: 19px; }
+      a { font-family: "Futura W01 Book", sans-serif; color: $white; text-transform: uppercase; background: $teal-blu; padding: 8px; }
+    }
+    @media only screen and (min-width: 764px) and (max-width: 1023px) {
+      width: 100%;
+    }
+  }
+
+  .top { position: relative;;
+    .close { position: absolute; right: 10px; top:20px; margin-top: -12px;
+      a { width: 29px; height: 29px; display: inline-block; background: url("#{$img-path}/buttons/close-signup-green.png") 0 0 no-repeat; }
+    }
+  }
+
+  .signed-up form { width: 100%; }
+  .interior & {
+    top: 190px;
+    &.fixed {
+      top: 132px;
+    }
+  }
+
+	.press & {
+			top: 171px;
+			@media only screen and (min-width: 1025px) {
+				top: 190px;
+			}
+	}
+
+  .ppc-page & {
+    top: 137px;
+    &.fixed {
+      top: 92px;
+    }
+  }
+}
+.signup-tab {
+  .interior & {
+
+    &.fixed {
+      top: 145px;
+    }
+  }
+
+  .ppc-page & {
+    top: 148px;
+    &.fixed {
+      top: 105px;
+    }
+  }
+}
+
+body[data-pageid="1115"]{
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+     
+      .interior .signup-tab {
+        top: 162px 
+      }
+  }
+}
+
+.this-box { 
+  width: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#1E000000,endColorstr=#1E000000)";
+  zoom: 1;
+  background: rgba(0, 0, 0, 0.32);
+  position: fixed;
+  -webkit-transition: background 0.15s ease-out;
+  -moz-transition: background 0.15s ease-out;
+  transition: background 0.15s ease-out;
+  z-index: 1;
+  display: none;
+}
+.this-inner-box {
+  z-index: 99;
+  width: 300px;
+  padding: 10px;
+    background: $off-white;
+    border: 1px solid #000;
+    position: absolute;
+    -moz-border-radius: 5px;
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,.5);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+    p {
+      color: $blu;
+      font-size: 1.25em;
+      line-height: 1.72222;
+      margin: 0 0 .833em;
+      max-width: 278px;
+    }
+}
+.close-inner-box {
+  span {
+    padding: 10px;
+      font-size: 16px;
+      color: #d57034;
+  }
+}
+
+// Smartphones (portrait and landscape) -----------
+@media only screen and (max-width: 764px) {
+  .form-rfp form { width: 90% }
+  .form-rfp form fieldset .field { padding: 0; overflow: visible; }
+  .form-rfp form fieldset .field label { width: 100%; text-align: left; padding-right: 0; }
+  .form-rfp form fieldset .field input, 
+  .form-rfp form fieldset .field select, 
+  .form-rfp form fieldset .field textarea { width: 100%; }
+  .form-rfp form fieldset .field input.date-picker { width: 75% !important; }
+  .form-rfp form fieldset .field input#num_rounds { width: 50%; }
+  .form-rfp form fieldset .field img.ui-datepicker-trigger { top: 43px; right: auto; left: 66%; margin-left: 0; }
+  .form-rfp form fieldset .label-switch { margin-left: 0; width: 100%; }
+  .form-rfp form fieldset .label-switch label { width: auto; }
+  .form-rfp form#sign-up-form fieldset .field,
+  .form-rfp form#sign-up-form fieldset .field.last { width: 100%; margin-bottom: 15px; }
+
+  // Blue Bar Sign Up
+  .signup-content {
+    .form-rfp .signup-inner {
+      .signup-wrap {
+        .sb-text { 
+          padding: 10px 0;
+          width: 100%; 
+        }
+        form fieldset {
+          .field { 
+            width: 100%; 
+            input { 
+              margin: 0;
+              width: 95%;
+            }
+            .middle {
+              .g-recaptcha {
+                div {
+                  margin: 0 auto;
+                  padding:0;
+                }
+              }
+            }
+          }
+          .sg-button-bar { padding: 3px 8px; float: none; }
+        }
+      }
+    }
+  }
+  
+  .home .signup-widget { top: 0; }
+  .sg-signup-widget { display: block; position: absolute; top: 338px; width: 100%; z-index: 1; }
+  .signup-tab { position: relative; top: 0; text-align: center; }
+  .signup-tab a { padding: 12px 0; width: 100%; display: inline-block; font-weight: bold; }
+  .signup-tab a span { 
+    position: relative; 
+
+    &:after { 
+      content: "";
+      position: absolute;
+      background: url("#{$img-path}/arrow-white.png") no-repeat;
+      display: inline-block;
+      width: 10px;
+      height: 7px;
+      top: 7px;
+      right: -20px; 
+    }
+
+    &.active:after {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }
+  .sg-signup-widget .signup-widget .close { display: none; }
+  
+  .signup-widget {
+    display: none; position: relative; top: 0; left: 0 !important; background: #457e20;
+    .signup { 
+      width: 90%; 
+      padding: 20px 0; 
+      .sb-text { 
+        width: 100%; 
+        height: auto; 
+        padding: 0; 
+        line-height: 24px; 
+        font-weight: bold;
+      }
+      .masthead-signup { 
+        width: 100%; 
+        form {
+          margin-bottom: 0;
+
+          fieldset {
+            float: none;
+            margin: 0 auto 0 -7px;
+            width: 60%;
+
+            .field { width: 100%; float: none; }
+          }
+        }
+        .sg-wrapper .sg-button-bar { float: none; 
+          input { 
+            display: inline !important;
+            position: relative !important;
+            width: 220px !important;
+            box-shadow: 0 0 0 3px #f6f3e9;
+            padding: 5px;
+            left: initial;
+            top: initial;
+          }
+        }
+        .sg-question-set { width: 230px; }
+      }
+
+    }
+    .special-text1 { float: none; display: inline; font-size: 1.25em; padding-right: 0; }
+    .special-text2 { float: none; display: inline; font-size: 1.25em; }
+  }
+
+  .this-inner-box { width: 250px; }
+  
+  .form-rfp {
+    .offers-signup { 
+      height: auto; 
+    
+      form {
+        fieldset {
+          .field {
+            padding: 5px 0;
+
+            input {
+              width: 100%;
+            }
+          }
+
+          .last {
+            float: left;
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+  .content-wrapper ul.parsley-errors-list li { width: 100%; float: none; }
+}
+
+// iPads (portrait and landscape) ----------- 
+@media handheld, only screen and (min-width: 765px) and (max-width: 1024px) {
+  .signup-widget {
+    .masthead-signup { 
+      height: 46px;
+
+      input { padding: 3px 3px 4px 6px !important; }
+    }
+    .sg-int-virtual-page .sg-question-set > .sg-question { 
+      overflow: visible !important; 
+      visibility: visible !important;
+    }
+    .interior {
+      .signup-tab {
+        top: 180px;
+      }
+    }
+  }
+}

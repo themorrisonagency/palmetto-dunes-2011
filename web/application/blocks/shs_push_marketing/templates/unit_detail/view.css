@@ -1,0 +1,32 @@
+.push-Unit {
+	max-width: 460px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.push-Unit .blue-btn {
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 8px 10px;
+}
+
+.push-Unit .overlay {
+	background-image: url(/application/themes/theme_palmetto/images/push/golf-push-overlay.png);
+}
+
+.push-Unit .push-inset {
+	height: 256px;
+}
+
+.push-Unit .push-inset img {
+	height: 212px !important;
+}
+
+.push-Unit .overlay {
+	bottom: -29px;
+}
+
+.push-Unit .push-title {
+	padding: 12px 0px;
+}

@@ -1,0 +1,42 @@
+@media print {
+  #map-wrapper #category-wrapper #categories,
+  #map-wrapper #controls-panel,
+  .primary-nav,
+  .footer-wrapper .footer .footer-top,
+  .footer-wrapper .footer .col-1,
+  .footer-wrapper .footer .col-2,
+  .footer-wrapper .footer #social-icons,
+  #map-wrapper .dir-toggle.close,
+  #map-wrapper #controls-panel,
+  #map-wrapper .categories,
+  .footer-wrapper .footer .footer-bottom #footer-search,
+  .footer-wrapper .footer .footer-bottom #footer-links #amax-menu-footernav { display: none !important; visibility: hidden !important; }
+
+  #map-wrapper { 
+    height: auto !important;
+
+    .MapContainer { 
+      display: block !important;
+      float: none !important;
+      height: 600px !important;
+      margin: 0 auto 10px !important;
+      width: 90% !important;
+    }
+
+    .directions {
+      background: none !important;
+    }
+  
+    #category-wrapper {
+      display: block !important;
+      float: none !important;
+      width: 100% !important; 
+    }
+
+    .dir-wrap {
+      border: none !important;
+      display: block !important;
+      width: 90% !important;
+    }
+  }
+}

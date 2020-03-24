@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btShsPushSlider">
+		<field name="id" type="I"><KEY/><UNSIGNED/><AUTOINCREMENT/></field>
+		<field name="img"  type="C" size="255"/>
+		<field name="descr" type="X2"></field>
+		<field name="guest_name"  type="C" size="255"/>
+		<field name="date"  type="C" size="255"/>
+		<field name="sort_order"  type="C" size="255"/>
+		<field name="bID"  type="I" />
+	</table>
+</schema>

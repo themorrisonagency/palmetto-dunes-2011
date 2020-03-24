@@ -1,0 +1,821 @@
+// Footer Styles ----------------------------------- */
+.footer-cols {
+  display: flex;
+  padding: 47px 0 20px;
+  width: 100%;
+}
+
+.footer-wrapper {
+  background: $dk-blu url('#{$img-path}/layout/bg-footer.jpg') top center repeat-x;
+  clear: both;
+  min-height: 407px;
+  text-align: center;
+  width: 100%;
+
+  .footer {
+    margin: 0 auto;
+    max-width: 1048px;
+
+    .footer-top {
+      width: 100%;
+
+      a {
+        background: url('#{$img-path}/buttons/top.png') 0 0 no-repeat;
+        display: block;
+        height: 54px;
+        left: 50%;
+        margin: -28px auto 0 -27px;
+        position: absolute;
+        width: 54px;
+      }
+    }
+
+    .col {
+      float: left;
+      margin: 0 0 20px;
+      vertical-align: top;
+      width: 33%;
+
+      h3 {
+        color: $white;
+        font: {
+          family: $cabin;
+          size: 20px;
+          weight: 700;
+        }
+        margin: 5px 0 25px;
+        text-transform: uppercase;
+      }
+    }
+
+    .col-1 {
+      padding-right: 3%;
+      width: 68%;
+
+      h3 {
+        font-size: 18px;
+        font-weight: normal;
+        position: relative;
+        text-align: left;
+
+        a {
+          color: $white;
+          line-height: 1.5;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        span {
+          padding-left: 30px;
+        }
+
+        &:before {
+          background: url('#{$img-path}/layout/ftr-instagram-icon-bg.png') 0 0 no-repeat;
+          content: '';
+          height: 21px;
+          position: absolute;
+          top: 3px;
+          width: 21px;
+        }
+      }
+
+      .insta-feed {
+        width: 100%;
+
+        img {
+          border-radius: 0;
+          float: left;
+          margin: 0;
+          padding: 0;
+          position: relative;
+          width: 25%;
+        }
+      }
+    }
+
+    .col-2 {
+      border-left: 1px solid rgba(255, 255, 255, .5);
+      float: right;
+      padding-left: 3%;
+      text-align: left;
+      width: 25%;
+
+      ul {
+        float: left;
+        width: auto;
+
+        li {
+          display: inline-block;
+          margin: 0;
+          width: 100%;
+
+          &.push-webcams {
+            .overlay {
+              background: url('#{$img-path}/push/overlay-webcams.png') 0 0 no-repeat;
+            }
+          }
+
+          &.push-photos {
+            .overlay {
+              background: url('#{$img-path}/push/overlay-photos.png') 0 0 no-repeat;
+            }
+          }
+        }
+
+        .footer-push-inset {
+          display: inline-block;
+          margin: 0 0 5px;
+          min-width: 187px;
+          position: relative;
+
+          img {
+            float: left;
+            height: auto;
+            margin: 0;
+            padding-right: 1rem;
+            width: 36px;
+          }
+        }
+
+        .footer-push-title {
+          float: left;
+          font: {
+            family: $cabin;
+            size: 16px;
+            weight: 400;
+          }
+          line-height: 36px;
+          margin: 0 auto;
+          text-transform: uppercase;
+          width: auto;
+        }
+
+        a {
+          color: $white;
+          display: inline-block;
+          text-decoration: none;
+        }
+      }
+
+      .footer-btn {
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+
+      h3 {
+        margin: 5px 0 25px 20px;
+        text-align: left;
+      }
+
+      p {
+        color: $white;
+        font: {
+          family: $cabin;
+          size: 14px;
+          weight: 400;
+        }
+        line-height: 18px;
+        margin: 0 0 11px;
+
+        a {
+          color: $cotton-blu;
+        }
+      }
+
+      .phone {
+        font-size: 18px;
+      }
+
+      .logo-gw {
+        height: 30px;
+        margin-left: 20px;
+        width: 184px;
+      }
+
+      a {
+        &.footer-link {
+          color: $cotton-blu;
+        }
+      }
+
+      span {
+        &.divide {
+          color: $cotton-blu;
+          padding: 0 10px;
+        }
+      }
+    }
+
+    #social-icons {
+      border-top: 1px solid $line-blu;
+      margin-bottom: 5px;
+      padding: 13px 0 0;
+      text-align: center;
+      width: 100%;
+
+      h3 {
+        color: $lt-blu;
+        display: inline;
+        font: {
+          family: $cabin;
+          size: 20px;
+          weight: 700;
+        }
+        margin: 0 15px 0 0;
+        vertical-align: top;
+      }
+
+      ul {
+        float: left;
+        margin: 5px auto;
+
+        li {
+          display: inline-block;
+          margin: 0 5px 5px 0;
+
+          a {
+            background: url('#{$img-path}/layout/social-sprite.png') 0 0 no-repeat;
+            display: block;
+            height: 32px;
+            width: 32px;
+          }
+
+          &#footer-sc {
+            color: $lt-blu;
+            font: {
+              family: $cabin;
+              size: 20px;
+              weight: 700;
+            }
+            margin: 0 15px 0 0;
+            padding: 5px 0 0;
+            vertical-align: top;
+          }
+
+          &#footer-facebook {
+            &:hover {
+              a { background-position: 0 -32px; }
+            }
+          }
+
+          &#footer-twitter {
+            a { background-position: -40px 0; }
+
+            &:hover {
+              a { background-position: -40px -32px; }
+            }
+          }
+
+          &#footer-youtube {
+            a { background-position: -78px 0; }
+
+            &:hover {
+              a { background-position: -78px -32px; }
+            }
+          }
+
+          &#footer-googleplus {
+            a { background-position: -118px 0; }
+
+            &:hover {
+              a { background-position: -118px -32px; }
+            }
+          }
+
+          &#footer-pinterest {
+            a { background-position: -158px 0; }
+
+            &:hover {
+              a { background-position: -158px -32px; }
+            }
+          }
+
+          &#footer-rss {
+            a { background-position: -116px 0; }
+          }
+
+          &#footer-blog {
+            a { background-position: -192px 0; }
+          }
+
+          &#footer-instagram {
+            a { background-position: -267px 0; }
+          }
+
+          &#footer-fb-like,
+          &#footer-tw-count {
+            padding: 6px 0 0;
+            vertical-align: top;
+          }
+        }
+      }
+
+      .ftr-signup-btn {
+        float: left;
+        margin-left: 2rem;
+
+        a {
+          margin: 9px auto 0;
+          /*width: 160px;*/
+          padding: 4px;
+
+        }
+      }
+
+      #footer-search {
+        float: right;
+        margin: 0 auto;
+        max-width: 270px;
+        text-align: right;
+
+        form { width: 270px; }
+
+        input {
+          &.ccm-search-block-text {
+            border-radius: 0;
+            color: $superdk-gray;
+            display: inline-block;
+            font: {
+              family: $cabin;
+              size: 14px;
+              weight: 600;
+            }
+            padding: 6px 0 5px 8px;
+            text-transform: uppercase;
+            width: 208px;
+          }
+
+          &.ccm-search-block-submit {
+            background: url('#{$img-path}/buttons/search.png') no-repeat 0 0;
+            border: 0;
+            display: inline-block;
+            height: 34px;
+            overflow: hidden;
+            text-indent: -9999em;
+            width: 43px;
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      border-top: 1px solid $line-blu;
+      clear: both;
+      color: $lt-blu;
+      float: none;
+      max-width: 1048px;
+      min-height: 40px;
+      padding: 18px 0 0;
+      width: 100%;
+
+      #footer-links {
+        float: left;
+        font: {
+          family: $cabin;
+          size: 14px;
+          weight: 400;
+        }
+
+        #amax-menu-footernav {
+          display: inline-block;
+        }
+
+        a {
+          color: $white;
+
+          @media only screen and (orientation: landscape) {
+            float: right;
+          }
+
+          .logo-gw {
+            height: 27px;
+            width: 168px;
+
+            @media only screen and (min-width: 764px) and (orientation: landscape) {
+              float: right;
+            }
+
+            @media only screen and (min-width: 1025px) {
+              margin-left: 38px;
+            }
+          }
+        }
+
+        span { margin: 0 0 0 20px; }
+      }
+
+      #footer-search {
+        form {
+          width: 295px;
+        }
+      }
+
+      #utility-nav {
+        float: right;
+
+        ul {
+          display: inline-block;
+          margin: 0;
+        }
+
+        li {
+          display: inline-block;
+          font: {
+            family: $cabin;
+            size: 14px;
+            weight: 400;
+          }
+          line-height: 33px;
+          margin-right: 1rem;
+
+          a {
+            color: $cotton-blu;
+          }
+
+          &:last-child { margin-right: 0; }
+        }
+      }
+    }
+  }
+}
+
+.landing {
+  .footer-wrapper {
+    .footer {
+      .col-1,
+      .col-2 {
+        display: none;
+      }
+
+      .col {
+        float: none;
+        text-align: center;
+      }
+
+      .col-3 {
+        .btn-contact {
+          margin: 0 auto;
+        }
+
+        h3 {
+          margin: 30px 0 25px;
+          text-align: center;
+        }
+
+        p {
+          margin: 0 0 15px;
+        }
+
+        .logo-gw {
+          margin: 0 auto 10px;
+        }
+      }
+    }
+  }
+}
+
+// Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 764px) {
+  .footer-cols {
+    display: inline-block;
+  }
+
+  .footer-wrapper {
+    .footer {
+      #social-icons {
+        padding: 13px 0 10px;
+
+        ul {
+          float: none;
+
+          li {
+            &#footer-sc {
+              display: block;
+              margin: 0 auto 15px;
+            }
+
+            &#footer-fb-like { margin-left: 35px; }
+          }
+
+          span { display: block; margin-bottom: 5px; }
+        }
+
+        .ftr-signup-btn {
+          float: none;
+          margin-bottom: 1rem;
+          margin-left: 0;
+        }
+
+        #footer-search {
+          float: none;
+        }
+      }
+
+      .col {
+        border-bottom: 1px solid $line-blu;
+        float: none;
+        margin: 0 auto 20px;
+        padding-bottom: 20px;
+        padding-right: 0;
+        width: 90%;
+      }
+
+      .col-1 {
+        ul {
+          li {
+            margin: 0 6px 0 0;
+          }
+        }
+
+        h3 { text-align: center; }
+
+        .insta-feed {
+          min-height: 85px;
+        }
+      }
+
+      .col-2 {
+        background: none;
+        border: 0;
+        padding: 0;
+        text-align: center;
+
+        ul {
+          width: 100%;
+        }
+
+        .btn-signup {
+          display: block;
+          margin: 0 auto 20px;
+        }
+      }
+
+      .footer-bottom {
+        #footer-search {
+          float: none;
+          margin: 0 auto;
+          max-width: 280px;
+        }
+
+        #footer-links {
+          float: none;
+          line-height: 22px;
+          padding: 8px 0 10px;
+
+          a {
+            display: inline-block;
+            width: 100%;
+          }
+
+          .logo-gw {
+            float: none;
+            margin: 0 auto;
+            padding: 10px 0;
+          }
+        }
+
+        #utility-nav {
+          float: none;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+// Smartphones (portrait) ----------- */
+@media only screen and (max-width: 375px) {
+  .footer-cols {
+    display: inline-block;
+  }
+
+  .footer-wrapper {
+    .footer {
+      .col-2 {
+        .btn-gc {
+          margin-right: 14px;
+        }
+      }
+
+      .col { float: none; }
+    }
+  }
+}
+
+// iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width: 765px)
+and (max-width: 1024px) {
+  .footer-cols {
+    display: inline-block;
+  }
+
+  .footer-wrapper {
+    .footer {
+      max-width: 98%;
+
+      .footer-bottom {
+        margin: 0 auto;
+        max-width: 100%;
+
+        #footer-search {
+          margin-right: 10px;
+        }
+
+        #footer-links {
+          margin-left: 5px;
+          text-align: left;
+        }
+      }
+
+      .col-2 {
+        #utility-nav {
+          text-align: left;
+
+          ul {
+            display: block;
+            margin: 0 auto 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// iPads (landscape) ----------- */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: landscape) {
+  .footer-cols {
+    display: inline-block;
+  }
+
+  .footer-wrapper {
+    .footer {
+      #footer-search {
+        left: 730px;
+      }
+
+      .col-2 {
+        .btn-gc {
+          margin-right: 50px;
+        }
+      }
+
+      .footer-bottom {
+        #footer-links {
+          #amax-menu-footernav {
+            padding-left: 10px;
+          }
+
+          span { margin: 0 10px 0 0; }
+
+          .logo-gw {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// iPads (portrait) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait) {
+  .footer-cols {
+    display: inline-block;
+  }
+
+  .footer-wrapper {
+    min-height: 460px;
+
+    .footer {
+      .col {
+        width: 29%;
+      }
+
+      .col-1 {
+        width: 50%;
+
+        ul {
+          li {
+            margin: 0 5px 0 0;
+            width: 75px;
+
+            .footer-push-inset {
+              width: 75px;
+
+              img {
+                height: auto;
+                width: 75px;
+              }
+            }
+          }
+        }
+      }
+
+      .col-2 {
+        background: url("/application/themes/theme_palmetto/images/layout/bg-footer-col-tablet.png") no-repeat 0 0;
+        background-size: cover;
+        width: 38%;
+
+        .btn-gc {
+          margin-right: 15px;
+        }
+
+        .btn-contact {
+          width: 120px;
+        }
+
+        #utility-nav {
+          ul {
+            width: 280px;
+
+            li {
+              &.odd {
+                margin: 0 10px 0 20px;
+              }
+            }
+          }
+        }
+      }
+
+      .footer-bottom {
+        #footer-search {
+          margin-right: 15px;
+          max-width: 220px;
+
+          form {
+            width: 230px;
+          }
+
+          input {
+            &.ccm-search-block-text {
+              width: 170px;
+            }
+          }
+        }
+
+        #footer-links {
+          span {
+            margin: 0 0 0 10px;
+          }
+
+          .logo-gw {
+            clear: both;
+            display: block;
+            float: none;
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ppc-page {
+  .footer-wrapper {
+    .col-3 {
+      text-align: center;
+
+      .btn-contact {
+        margin: 0 auto;
+      }
+
+      h3 {
+        margin-left: 0;
+        text-align: center;
+      }
+
+      p {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+// Catering landing pages
+.catering-landing {
+  .footer-wrapper {
+    .footer {
+      .col-3 {
+        text-align: center;
+
+        p {
+          margin-left: 0;
+        }
+
+        .btn-contact {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.weather-widget-wrapper {
+	float: right;
+}
+.weather-widget {
+	margin: 10px 0;
+	@media (min-width: 765px) {
+		margin-right: 8px;
+	}
+	@media (max-width: 764px) {
+		margin-top: 23px;
+	}
+	&.inactive {
+		display: none;
+	}
+	&.active {
+		display: block;
+	}
+	a {
+		width: 67px;
+		height: 30px;
+		padding-left: 50px;
+		display: block;
+		background: url('../../images/weather-icon.png') no-repeat;
+		background-size: 50px;
+		padding-top: 3px;
+		font-family:'Cabin', sans-serif;
+		font-size: 13px;
+		color: $tawny;
+		text-decoration: none;
+		span {
+			display: block;
+			text-transform: uppercase;
+			text-decoration: underline;
+		}
+
+		&.golf-icon {
+			width: 75px;
+    	background: url('../../images/golf-icon.png') no-repeat;
+		}
+	}
+}
+
+html.ccm-toolbar-visible .weather-widget {
+	display: block !important;
+	&.inactive {
+		opacity: 0.5; 
+	}
+}
+
+@media (max-width: 764px) {
+	.weather-widget a {
+		background: none;
+	}
+}
+
+
+.weather-widget a {
+    width: 75px;
+    height: 30px;
+    padding-left: 50px;
+    display: block;
+    background: url(https://www.palmettodunes.com/application/themes/theme_palmetto/images/golf-icon.png) no-repeat;
+    background-size: 50px;
+    padding-top: 3px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 13px;
+    color: #60973c;
+    text-decoration: none;
+}
+.resort-num {
+    margin: 7px 0 0 2px;
+}
+@media (max-width: 764px){
+    .weather-widget a {
+        background: none;
+    }
+}
+@media (min-width: 764px){
+    .resort-num {
+        margin: 20px 15px 0 2px;
+    }
+}
+@media (min-width: 1025px){
+    .resort-num {
+      margin: 20px 0 0 2px;
+    }
+}
